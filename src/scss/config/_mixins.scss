@@ -1,0 +1,13 @@
+@mixin font($fname, $fstyle, $fweight, $furl) {
+  @font-face {
+    font-family: $fname;
+    font-style: $fstyle;
+    font-weight: $fweight;
+    font-display: swap;
+    src: url('#{$furl}.woff') format('woff'), url('#{$furl}.woff2') format('woff2');
+  }
+}
+
+@mixin transitions($prop: all, $dur: 0.25s, $timing: ease, $delay: 0s) {
+  transition: $prop $dur $timing $delay;
+}

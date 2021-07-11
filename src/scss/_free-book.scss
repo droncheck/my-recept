@@ -1,0 +1,157 @@
+.free-book {
+  padding: 80px 0 220px;
+  background: $white-color;
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 55px;
+    padding-bottom: 130px;
+    max-width: 488px;
+
+    &-heading {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 87px;
+    }
+
+    &-input {
+      flex: 0 0 calc(50% - 12px);
+      max-width: calc(50% - 12px);
+      margin-bottom: 36px;
+    }
+
+    &-btn {
+      flex: 0 0 166px;
+      max-width: 166px;
+      margin-right: 31px;
+    }
+
+    &-text {
+      flex: 0 0 calc(100% - 197px);
+      max-width: calc(100% - 197px);
+      opacity: 0.7;
+      @extend .fz-12;
+      @extend .lh-130;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 15px;
+    width: 787px;
+    height: 498px;
+    object-fit: cover;
+
+    &-wrap {
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+      }
+
+      &::before {
+        top: -83px;
+        right: -353px;
+        width: 730px;
+        height: 676px;
+        background: url(../img/free-book-bubble.svg) no-repeat center / 100%;
+      }
+
+      &::after {
+        bottom: -108px;
+        left: -95px;
+        width: 220px;
+        height: 220px;
+        background: url(../img/free.svg) no-repeat center / 100%;
+      }
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    padding: 80px 0 100px;
+
+    &__img {
+      height: 480px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &__img {
+      display: block;
+      position: relative;
+      left: auto;
+      top: auto;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+    }
+
+    &__form {
+      max-width: 100%;
+      padding-bottom: 0;
+      padding-top: 65px;
+      &-wrap {
+        order: 1;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 60px 0px;
+  }
+
+  @media (max-width: 575.98px) {
+    padding: 60px 0px;
+
+    &__img {
+      max-width: calc(100% - 50px);
+      margin: 0 auto;
+
+      &-wrap {
+        &::before {
+          top: -28px;
+          right: -32px;
+          width: 231px;
+          height: 229px;
+        }
+
+        &::after {
+          left: -25px;
+          bottom: -70px;
+          width: 116px;
+          height: 140px;
+        }
+      }
+    }
+
+    &__form {
+      &-heading {
+        margin-bottom: 22px;
+      }
+
+      &-input,
+      &-btn {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 16px;
+      }
+
+      &-btn {
+        margin-top: 10px;
+      }
+
+      &-text {
+        flex-basis: 100%;
+        max-width: 100%;
+
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+}

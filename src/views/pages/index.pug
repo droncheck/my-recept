@@ -1,0 +1,104 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Главная
+
+block main
+  main.main
+
+    include ../blocks/_banners.pug
+
+    section.section.catalog
+      .catalog__bg-text АССОРТИМЕНТ
+
+      .container
+        //- Categories
+
+        .row.catalog__categories
+
+          //- Categories Header
+
+          .col-lg-9.col-md-8.catalog__categories-heading-wrap
+            h2.h2.catalog__categories-heading Наш ассортимент
+          .col-lg-3.col-md-4.catalog__categories-link-wrap
+            +link('shop.html', 'перейти в магазин')(class="catalog__categories-link")
+
+          //- Categories Items
+
+          .col-12.catalog__categories-items-wrap
+
+            include ../blocks/_catalog-categories.pug
+
+        //- Items
+
+        include ../blocks/_catalog-items.pug
+
+        button.btn.catalog__more-btn показать ещё
+
+    .logo-line
+
+    include ../blocks/_steps.pug
+
+    include ../blocks/_discont.pug
+
+    include ../blocks/_about.pug
+
+    include ../blocks/_subscribe.pug
+
+    include ../blocks/_learn.pug
+
+    include ../blocks/_learn-products.pug
+
+    include ../blocks/_free-lesson.pug
+
+    section.section.articles
+      .articles__bg-text НОВОСТИ
+      .container
+        .row.articles__row
+          .col-xl-6.col-md-9.articles__heading-wrap
+            h2.h2.articles__heading Полезные статьи и&nbsp;сладкие новости
+          .col-xl-6.col-md-3.articles__link-wrap
+            +link('diary.html', 'смотреть ещё')(class="articles__link")
+          .col-12.articles__items-wrap
+            .articles__items
+              .articles__item-wrap
+                a.articles__item(href="#")
+                  .articles__item-img-wrap
+                    img.articles__item-img(src="img/articles__item-img-1.jpg" alt="Img")
+                  .articles__item-main
+                    .articles__item-header
+                      .articles__item-type Кулинария
+                      .articles__item-date 22.03.2021
+                    .articles__item-heading Как сделать коржи для торта, чтобы они были супер вкусные
+              .articles__item-wrap
+                a.articles__item(href="#")
+                  .articles__item-img-wrap.articles__item-img-wrap--lg
+                    img.articles__item-img(src="img/articles__item-img-3.jpg" alt="Img")
+                  .articles__item-main
+                    .articles__item-header
+                      .articles__item-type Кулинария
+                      .articles__item-date 22.03.2021
+                    .articles__item-heading Как сделать коржи для торта, чтобы они были супер вкусные
+              .articles__item-wrap
+                a.articles__item(href="#")
+                  .articles__item-img-wrap
+                    img.articles__item-img(src="img/articles__item-img-2.jpg" alt="Img")
+                  .articles__item-main
+                    .articles__item-header
+                      .articles__item-type Кулинария
+                      .articles__item-date 22.03.2021
+                    .articles__item-heading Как сделать коржи для торта, чтобы они были супер вкусные
+
+    include ../blocks/_gallery.pug
+
+    include ../blocks/_free-book.pug
+
+
+
+
+
+
+
+
+
+

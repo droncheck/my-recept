@@ -1,0 +1,131 @@
+.free-lesson {
+  padding-top: 175px;
+  padding-bottom: 120px;
+  background: $white-color;
+
+  &__heading {
+    margin-bottom: 55px;
+    color: $dark-grey-color;
+  }
+
+  &__text {
+    @extend .fz-14;
+  }
+
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+    width: 515px;
+    height: 294px;
+    object-fit: cover;
+  }
+
+  &__form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 45px 492px 63px 68px;
+    margin-bottom: 50px;
+    border: 1px solid $accent-color;
+
+    &-input {
+      flex: 0 0 calc(50% - 12px);
+      max-width: calc(50% - 12px);
+      margin-bottom: 35px;
+    }
+
+    &-btn {
+      flex: 0 0 187px;
+      max-width: 187px;
+    }
+
+    &-text {
+      flex: 0 0 calc(100% - 211px);
+      max-width: calc(100% - 211px);
+      color: #959899;
+      @extend .fz-12;
+      @extend .lh-130;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    padding: 100px 0;
+
+    &__img {
+      &-wrap {
+        display: none;
+      }
+    }
+
+    &__heading {
+      padding: 45px 45px 0;
+      margin-bottom: 0;
+      br {
+        display: none;
+      }
+    }
+
+    &__text {
+      margin-bottom: 35px;
+      br {
+        display: none;
+      }
+    }
+
+    &__main {
+      order: 1;
+    }
+
+    &__form {
+      padding: 45px;
+      margin-bottom: 0;
+      border: none;
+
+      &-wrap {
+        border: 1px solid $accent-color;
+      }
+
+      &-text {
+        br {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 60px 0;
+
+    &__heading {
+      padding: 30px 25px 0px;
+    }
+
+    &__form {
+      padding: 15px 25px 30px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    &__form {
+      &-input {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-bottom: 22px;
+      }
+
+      &-btn {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-top: 7px;
+        margin-bottom: 15px;
+      }
+
+      &-text {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,189 @@
+.about {
+  padding-top: 125px;
+  padding-bottom: 255px;
+
+  &__bg-text {
+    position: absolute;
+    top: 16px;
+    right: 164px;
+    color: #FEF9FA;
+    font-size: 9.375rem;
+    @extend .ff-accent;
+    @extend .fw-300;
+    @extend .ls-3;
+    @extend .ttu;
+  }
+
+  &__heading {
+    margin-bottom: 60px;
+  }
+
+  &__text {
+    &-wrap {
+      padding-bottom: 85px;
+    }
+  }
+
+  &__top-img,
+  &__bot-img {
+    position: absolute;
+    top: 0;
+    object-fit: cover;
+  }
+
+  &__top-img {
+    left: 83px;
+    width: 779px;
+    height: 614px;
+
+    &-wrap {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 33px;
+        right: -304px;
+        width: 895px;
+        height: 857px;
+        background: url(../img/about-bubble.svg) no-repeat center / 100%;
+      }
+    }
+  }
+
+  &__bot-img {
+    left: 15px;
+    width: 491px;
+    height: 487px;
+  }
+
+  &__advantages {
+    max-width: 490px;
+
+    &-item {
+      &-wrap {
+        margin-bottom: 60px;
+      }
+
+      &-text {
+        @extend .lh-130;
+      }
+
+      &-icon {
+        &-wrap {
+          display: flex;
+          align-items: center;
+          justify-content: flex-start;
+          width: 70px;
+          height: 70px;
+          margin-bottom: 11px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    padding-top: 100px;
+    padding-bottom: 200px;
+  }
+
+  @media (max-width: 991.98px) {
+    padding-bottom: 150px;
+
+    &__top-img {
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 50vw;
+
+      &-wrap {
+        order: 1;
+        &::before {
+          top: -56px;
+          right: -93px;
+          width: 211px;
+          height: 245px;
+        }
+      }
+    }
+
+    &__bot-img {
+      &-wrap {
+        display: none;
+      }
+    }
+
+    &__link {
+      &-wrap {
+        order: 2;
+        display: flex;
+        justify-content: center;
+
+        padding-top: 60px;
+      }
+    }
+
+    &__text {
+      &-wrap {
+        padding-bottom: 60px;
+      }
+    }
+
+    &__advantages {
+      &-item {
+        &-wrap {
+          margin-bottom: 30px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    padding-top: 60px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: 575.98px) {
+
+    &__bg-text {
+      top: 0;
+      left: -22px;
+      right: auto;
+      font-size: 72px;
+    }
+
+    &__heading {
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      font-size: 12px;
+
+      &-wrap {
+        padding-bottom: 40px;
+      }
+    }
+
+    &__advantages {
+      &-item {
+        &-wrap {
+          margin-bottom: 24px;
+        }
+
+        &-icon {
+          &-wrap {
+            width: 50px;
+            height: 50px;
+          }
+        }
+
+        &-text {
+          font-size: 12px;
+        }
+      }
+    }
+
+  }
+}

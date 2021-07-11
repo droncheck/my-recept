@@ -1,0 +1,100 @@
+.arrow {
+  flex: 0 0 40px;
+  max-width: 40px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid $accent-color;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--left {
+    background-image: url(../img/left.svg);
+    background-size: 16px 10px;
+  }
+
+  &--right {
+    background-image: url(../img/right.svg);
+    background-size: 16px 10px;
+  }
+
+  &--up {
+    background-image: url(../img/up.svg);
+    background-size: 10px 16px;
+  }
+
+  &--down {
+    background-image: url(../img/down.svg);
+    background-size: 10px 16px;
+  }
+
+  &--lg {
+    flex-basis: 50px;
+    max-width: 50px;
+    height: 50px;
+    width: 50px;
+
+    &.arrow--left,
+    &.arrow--right {
+      background-size: 20px 12px;
+    }
+
+    &.arrow--up,
+    &.arrow--down {
+      background-size: 12px 20px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &--lg {
+      flex-basis: 40px;
+      max-width: 40px;
+      height: 40px;
+      width: 40px;
+
+      &.arrow--left,
+      &.arrow--right {
+        background-size: 16px 10px;
+      }
+
+      &.arrow--up,
+      &.arrow--down {
+        background-size: 10px 16px;
+      }
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    flex-basis: 30px;
+    max-width: 30px;
+    height: 30px;
+    width: 30px;
+
+    &--left,
+    &--right {
+      background-size: 11px 7px;
+    }
+
+    &--up,
+    &--down {
+      background-size: 7px 11px;
+    }
+
+    &--lg {
+      flex-basis: 30px;
+      max-width: 30px;
+      height: 30px;
+      width: 30px;
+
+      &.arrow--left,
+      &.arrow--right {
+        background-size: 11px 7px;
+      }
+
+      &.arrow--up,
+      &.arrow--down {
+        background-size: 7px 11px;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+.input {
+  position: relative;
+  height: 42px;
+
+  &__field {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+    height: 34px;
+    border-bottom: 1px solid rgba($text-color, 0.5);
+    color: $text-color;
+
+    &:focus {
+      & + .input__placeholder {
+        top: 0;
+        font-size: 9px;
+      }
+    }
+  }
+
+  &__placeholder {
+    position: absolute;
+    left: 0;
+    top: 14px;
+    color: #c0c1c1;
+    @extend .fz-15;
+    @include transitions;
+
+    &.focus {
+      top: 0;
+      font-size: 9px;
+    }
+  }
+}

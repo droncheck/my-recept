@@ -1,0 +1,41 @@
+.link {
+  position: relative;
+  border-bottom: 1px solid;
+  color: $accent-color;
+
+  @extend .fz-12;
+  @extend .ls-7;
+  @extend .lh-150;
+  @extend .ttu;
+
+  &--arrow {
+    display: inline-block;
+    padding-right: 25px;
+    padding-bottom: 10px;
+    border: none;
+
+    &::before,
+    &::after {
+      content: '';
+      position: absolute;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 4px;
+      left: 0;
+      right: 1px;
+      height: 1px;
+      background: $accent-color;
+    }
+
+    &::after {
+      right: 0px;
+      bottom: 0px;
+      width: 6px;
+      height: 10px;
+      background: url(../img/link-arrow.svg) no-repeat right center / 100%;
+    }
+  }
+}

@@ -1,0 +1,146 @@
+.steps {
+  padding: 160px 0;
+  background: #FFF3F5;
+
+  &__heading {
+    margin-bottom: 75px;
+  }
+
+  &__item {
+    &-heading {
+      margin-bottom: 12px;
+      color: $dark-grey-color;
+      @extend .ff-accent;
+      @extend .fz-20;
+      @extend .lh-120;
+    }
+
+    &-desc {
+      margin-bottom: 30px;
+      @extend .fz-14;
+    }
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 100px 100px 0 0;
+      object-fit: cover;
+
+      &-wrap {
+        position: relative;
+        width: 200px;
+        height: 200px;
+        margin-bottom: 45px;
+      }
+
+      &-number {
+        position: absolute;
+        top: -16px;
+        right: -12px;
+        color: $accent-color;
+        opacity: 0.5;
+
+        @extend .ff-accent;
+        @extend .fz-60;
+        @extend .fw-300;
+        @extend .lh-120;
+        @extend .ls-3;
+      }
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    padding: 100px 0;
+
+    &__heading {
+      margin-bottom: 60px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 60px 0;
+
+    &__item {
+      position: relative;
+      height: 100%;
+      padding-bottom: 28px;
+
+      &-link {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+
+      &-heading {
+        font-size: 15px;
+      }
+
+      &-img {
+        &-wrap {
+          width: 150px;
+          height: 150px;
+          margin-bottom: 17px;
+        }
+
+        &-number {
+          top: -12px;
+          right: -12px;
+          font-size: 42px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575.98px) {
+
+    &__items {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding-left: 7px;
+      padding-right: 7px;
+      padding-bottom: 5px;
+    }
+
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      &-img {
+        &-wrap {
+          flex: 0 0 108px;
+          max-width: 108px;
+          width: 108px;
+          height: 108px;
+          margin-right: 18px;
+        }
+      }
+
+      &-heading {
+        flex: 0 0 calc(100% - 126px);
+        max-width: calc(100% - 126px);
+        margin-bottom: 17px;
+        align-self: flex-end;
+        word-wrap: break-word;
+      }
+
+      &-desc {
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 20px;
+        min-height: 57px;
+      }
+
+      &-wrap {
+        flex: 0 0 227px;
+        max-width: 227px;
+        padding-left: 8px;
+        padding-right: 8px;
+        margin-top: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  padding: 19px 56px;
+  border-radius: 60px;
+  background: $dark-rose-color;
+  color: #fff;
+  @extend .fz-12;
+  @extend .fw-500;
+  @extend .ls-7;
+  @extend .ttu;
+
+  &:hover,
+  &:focus {
+    color: #fff;
+  }
+
+  @media (max-width: 575.98px) {
+    height: 50px;
+  }
+}

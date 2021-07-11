@@ -1,0 +1,24 @@
+$main-font: 'Muller';
+$accent-font: 'Florentia';
+
+$dark-grey-color: #6A3A43;
+$grey-color: #575A5B;
+
+$chocolate-color: #A98056;
+$light-chocolate-color: #C29E81;
+
+$dark-rose-color: #BB6871;
+$rose-color: #FCE4E4;
+
+$dark-white-color: #F2ECE6;
+$white-color: #FFF8F9;
+
+$text-color: $grey-color;
+$accent-color: $chocolate-color;
+
+$grid-gutter-width: 30px;
+$grid-columns: 12;
+$grid-breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 1170px);
+
+$gutter: $grid-gutter-width;

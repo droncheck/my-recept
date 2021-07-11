@@ -1,0 +1,14 @@
+section.section.subscribe
+  .container
+    .subscribe__wrap
+      .row.subscribe__row
+        .col-xl-4.subscribe__img-wrap
+          img.subscribe__img(src="img/subscribe__img.jpg" alt="Img")
+        .col-xl-8
+          form.subscribe__form
+            h3.h3.subscribe__heading Узнайте о новых десертах #[br]и их секретах
+            +input('text', 'Ваше имя')(class="subscribe__form-input")
+            +input('email', 'Ваша почта')(class="subscribe__form-input")
+            button.btn.subscribe__form-btn узнать
+            .subscribe__form-text *Нажимая кнопку Узнать вы соглашаетесь с #[a(href="#") условиями] использования сервиса, а также с передачей и #[a(href="#") обработкой данных ]в My recept.
+    img.subscribe__berry(src="img/blackberry.png" alt="")

@@ -1,0 +1,11 @@
+section.section.discont
+  .container.discont__container
+    .row
+      .col-lg-6.discont__img-wrap
+        img.discont__img(src="img/discont__img.jpg" alt="Img")
+      .col-lg-6.discont__form-wrap
+        h3.h3.discont__heading Получите скидку 5% #[br]на первую покупку с сайта
+        form.discont__form
+          +input('email', 'Ваша почта')(class="discont__form-input")
+          button.btn.discont__form-btn(type="submit") ПОЛУЧИТЬ
+          .discont__form-text * Нажимая кнопку Получить Вы #[br]соглашаетесь с нашими #[a(href="#") правилами]

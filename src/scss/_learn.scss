@@ -1,0 +1,200 @@
+.learn {
+  z-index: 2;
+  padding-top: 230px;
+
+  & + .products {
+    padding-top: 320px;
+  }
+
+  &__bg-text {
+    position: absolute;
+    transform: rotate(90deg);
+    top: 515px;
+    right: -380px;
+    color: #FEF9FA;
+    font-size: 9.375rem;
+    @extend .ff-accent;
+    @extend .fw-300;
+    @extend .ls-3;
+    @extend .ttu;
+  }
+
+  &__container {
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: -180px;
+      width: 622px;
+      height: 509px;
+      background: url(../img/learn-bubble.svg) no-repeat center / 100%;
+    }
+  }
+
+  &__main {
+    padding-top: 80px;
+    padding-bottom: 290px;
+  }
+
+  &__heading {
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    margin-bottom: 70px;
+    @extend .fz-14;
+  }
+
+  &__btn {
+    display: inline-flex;
+    margin-bottom: 110px;
+  }
+
+  &__top-img {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 750px;
+    height: 834px;
+    object-fit: cover;
+
+    &-wrap {
+      z-index: 2;
+    }
+  }
+
+  &__bot-img {
+    position: absolute;
+    bottom: -87px;
+    right: 15px;
+    width: 882px;
+    height: 379px;
+    object-fit: cover;
+  }
+
+  @media (max-width: 1199.98px) {
+    padding-top: 200px;
+
+    & + .products {
+      padding-top: 220px;
+    }
+
+    &__bot-img {
+      width: 800px;
+    }
+
+    &__main {
+      padding-top: 0;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    & + .products {
+      padding-top: 100px;
+    }
+
+    &__container {
+      &::before {
+        display: none;
+      }
+    }
+
+    &__top-img {
+      width: 100%;
+      height: 100%;
+
+      &-wrap {
+        position: absolute;
+        top: 0;
+        right: 70%;
+        width: 40vw;
+        height: 144px;
+      }
+    }
+
+    &__bot-img {
+      float: right;
+      position: relative;
+      bottom: auto;
+      top: -15px;
+      right: -15px;
+      width: 40vw;
+      height: 170px;
+    }
+
+    &__heading {
+      padding-left: 30%;
+      margin-bottom: 40px;
+    }
+
+    &__text {
+      margin-bottom: 50px;
+    }
+
+    &__btn {
+      margin-bottom: 0;
+    }
+
+    &__main {
+      padding-bottom: 100px;
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    padding-top: 90px;
+
+    & + .products {
+      padding-top: 60px;
+    }
+
+    &__main {
+      padding-bottom: 60px;
+    }
+
+    &__heading {
+      br {
+        display: none;
+      }
+    }
+
+    &__top-img {
+      height: 216px;
+    }
+
+    &__bot-img {
+      height: 200px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+
+    &__bg-text {
+      top: 52px;
+      left: 33px;
+      right: auto;
+      transform: none;
+      font-size: 72px;
+    }
+
+    &__heading {
+      min-height: 138px;
+    }
+
+    &__text {
+      font-size: 12px;
+    }
+
+    &__btn {
+      display: flex;
+      width: 100%;
+    }
+
+    &__top-img {
+      height: 138px;
+    }
+
+    &__bot-img {
+      height: 140px;
+    }
+  }
+}

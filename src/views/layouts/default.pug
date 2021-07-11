@@ -1,0 +1,65 @@
+include ../mixins/mixins.pug
+
+doctype html
+html(lang="ru")
+  head
+    meta(charset="UTF-8")
+
+    block title
+      title Шаблон
+
+    meta(name="viewport", content="width=device-width")
+
+    block seo
+      meta(name="description" content="")
+      meta(name="keywords", content="")
+      meta(name="author" content="")
+
+    //- //- Twitter
+    //- meta(name="twitter:card", content="summary")
+    //- meta(name="twitter:site", content="")
+    //- meta(name="twitter:image", content="")
+    //- meta(name="twitter:description", content="")
+
+    //- //- Facebook
+    //- meta(property="og:url", content="")
+    //- meta(property="og:title", content="")
+    //- meta(property="og:description", content="")
+    //- meta(property="og:image", content="")
+    //- meta(property="og:type", content="website")
+
+    //- //- iOS
+    //- meta(name="apple-mobile-web-app-capable", content="yes")
+    //- meta(name="apple-mobile-web-app-status-bar-style", content="black")
+    //- meta(name="apple-mobile-web-app-title", content="")
+    //- link(rel="apple-touch-icon", href="images/favicons/apple-touch-icon.png")
+
+    //- //- Android
+    //- meta(name="mobile-web-app-capable", content="yes")
+    //- meta(name="theme-color", content="#f8aa27")
+    //- link(rel="icon" type="image/png" href="images/favicons/android-chrome-192x192.png" sizes="192x192")
+
+    //- //- Windows
+    //- meta(name="msapplication-TileImage", content="images/favicons/mstile-144x144.png")
+    //- meta(name="msapplication-TileColor", content="#f8aa27")
+
+    link(rel="icon", href="img/favicon.png")
+    link(rel="stylesheet" href="css/main.min.css")
+
+
+  body
+
+    //- Header
+    block header
+      include ../blocks/_header.pug
+
+    //- Main
+    block main
+
+    //- Footer
+    block footer
+      include ../blocks/_footer.pug
+
+    //- Scripts
+    block scripts
+      script(src="js/index.min.js")

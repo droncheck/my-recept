@@ -1,0 +1,7 @@
+mixin arrow(tag = 'button', direction = 'right')
+  case tag
+    when 'div'
+      div(class=`arrow arrow--${direction}`)&attributes(attributes)
+    when 'button'
+    default
+      button(class=`arrow arrow--${direction}`)&attributes(attributes)

@@ -1,0 +1,12 @@
+section.section.free-book
+  .container
+    .row
+      .col-lg-6.free-book__form-wrap
+        form.free-book__form
+          h3.h3.free-book__form-heading Получите книгу рецептов #[br]БЕСПЛАТНО
+          +input('text', 'Ваше имя')(class="free-book__form-input")
+          +input('email', 'Ваша почта')(class="free-book__form-input")
+          button.btn.free-book__form-btn ПОЛУЧИТЬ
+          .free-book__form-text * Нажимая кнопку Получить, #[br]Вы соглашаетесь с нашими #[a(href="#") правилами]
+      .col-lg-6.free-book__img-wrap
+        img.free-book__img(src="img/free-book__img.jpg" alt="Img")

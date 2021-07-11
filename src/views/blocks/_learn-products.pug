@@ -1,0 +1,52 @@
+section.section.products.learn-products
+  .container
+    h2.h2.learn-products__heading Наши образовательные продукты
+    .row.learn-products__advantages
+      - for (let i = 0; i < 4; i++)
+        .col-xl-2.col-lg-3.col-6.learn-products__advantages__item-wrap
+          .learn-products__advantages-item
+            .learn-products__advantages-item-icon-wrap
+              img.img-responsive.learn-products__advantages-item-icon(src="img/learn-products__advantages-item-icon.svg")
+            .learn-products__advantages-item-text Выгоды от курса
+
+    .row.products__main.learn-products__main(data-products-slider-wrap="")
+      .col-lg-1.products__slider-controls
+        +arrow('button', 'right')(class="products__slider-arrow products__slider-arrow--next" data-products-slider-next="")
+        +arrow('button', 'left')(class="products__slider-arrow products__slider-arrow--prev" data-products-slider-prev="")
+        .products__slider-scrollbar-wrapper
+          .swiper-scrollbar-wrap.products__slider-scrollbar-wrap
+            .swiper-scrollbar.products__slider-scrollbar(data-products-slider-scrollbar="")
+      .col-10
+        .swiper-container.products__slider(data-products-slider="")
+          .swiper-wrapper
+            - for (let i = 0; i < 2; i++)
+              .swiper-slide.products__item-wrap
+                a.learn-products__item(href="#")
+                  .learn-products__item-img-wrap
+                    img.learn-products__item-img(src="img/learn-products__item-img-1.jpg" alt="Img")
+                  .learn-products__item-main-wrap
+                    .learn-products__item-main
+                      .learn-products__item-type Курс
+                      .learn-products__item-heading Как научиться готовить торт за 1 час
+                    .learn-products__item-link-wrap
+                      .link.learn-products__item-link посмотреть подробнее
+              .swiper-slide.products__item-wrap
+                a.learn-products__item(href="#")
+                  .learn-products__item-img-wrap
+                    img.learn-products__item-img(src="img/learn-products__item-img-2.jpg" alt="Img")
+                  .learn-products__item-main-wrap
+                    .learn-products__item-main
+                      .learn-products__item-type Курс
+                      .learn-products__item-heading Как научиться готовить торт за 1 час
+                    .learn-products__item-link-wrap
+                      .link.learn-products__item-link посмотреть подробнее
+              .swiper-slide.products__item-wrap
+                a.learn-products__item(href="#")
+                  .learn-products__item-img-wrap
+                    img.learn-products__item-img(src="img/learn-products__item-img-3.jpg" alt="Img")
+                  .learn-products__item-main-wrap
+                    .learn-products__item-main
+                      .learn-products__item-type Курс
+                      .learn-products__item-heading Как научиться готовить торт за 1 час
+                    .learn-products__item-link-wrap
+                      .link.learn-products__item-link посмотреть подробнее

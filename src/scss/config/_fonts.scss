@@ -1,0 +1,211 @@
+@include font('Muller', normal, 400, '../fonts/MullerRegular');
+@include font('Muller', normal, 500, '../fonts/MullerMedium');
+@include font('Florentia', normal, 300, '../fonts/Florentia-Light');
+@include font('Florentia', normal, 400, '../fonts/Florentia-Regular');
+@include font('Florentia', normal, 500, '../fonts/Florentia-Medium');
+@include font('Florentia', normal, 700, '../fonts/Florentia-Bold');
+
+
+.ff {
+  &-accent {
+    font-family: $accent-font;
+  }
+
+  &-main {
+    font-family: $main-font;
+  }
+}
+
+.fw {
+  &-300 {
+    font-weight: 300;
+  }
+
+  &-400 {
+    font-weight: 400;
+  }
+
+  &-500 {
+    font-weight: 500;
+  }
+
+  &-700 {
+    font-weight: 700;
+  }
+}
+
+.fz {
+  &-100 {
+    font-size: 6.25rem;
+  }
+
+  &-87 {
+    font-size: 5.4375rem;
+  }
+
+  &-72 {
+    font-size: 4.5rem;
+  }
+
+  &-60 {
+    font-size: 3.75rem;
+  }
+
+  &-44 {
+    font-size: 2.75rem;
+  }
+
+  &-32 {
+    font-size: 2rem;
+  }
+
+  &-28 {
+    font-size: 1.75rem;
+  }
+
+  &-24 {
+    font-size: 1.5rem;
+  }
+
+  &-20 {
+    font-size: 1.25rem;
+  }
+
+  &-16 {
+    font-size: 1rem;
+  }
+
+  &-15 {
+    font-size: 0.9375rem;
+  }
+
+  &-14 {
+    font-size: 0.875rem;
+  }
+
+  &-12 {
+    font-size: 0.75rem;
+  }
+
+  &-11 {
+    font-size: 0.6875rem;
+  }
+
+  &-10 {
+    font-size: 0.625rem;
+  }
+
+  &-9 {
+    font-size: 0.5625rem;
+  }
+}
+
+.lh {
+  &-150 {
+    line-height: 1.5;
+  }
+
+  &-140 {
+    line-height: 1.4;
+  }
+
+  &-130 {
+    line-height: 1.3;
+  }
+
+  &-120 {
+    line-height: 1.2;
+  }
+}
+
+.ls {
+  &-7 {
+    letter-spacing: 0.07em;
+  }
+
+  &-3 {
+    letter-spacing: 0.03em;
+  }
+}
+
+.ttu {
+  text-transform: uppercase;
+}
+
+.h1 {
+  @extend .ff-accent;
+  @extend .fz-100;
+  @extend .fw-300;
+  @extend .lh-120;
+  @extend .ls-3;
+  @extend .ttu;
+
+  @media (max-width: 1199.98px) {
+    font-size: 70px;
+  }
+
+  @media (max-width: 991.98px) {
+    font-size: 60px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 36px;
+  }
+}
+
+.h1-1 {
+  @extend .ff-accent;
+  @extend .fz-87;
+  @extend .fw-300;
+  @extend .lh-120;
+  @extend .ls-3;
+}
+
+.h1-2 {
+  @extend .ff-accent;
+  @extend .fz-72;
+  @extend .fw-300;
+  @extend .lh-120;
+  @extend .ls-3;
+}
+
+.h2 {
+  @extend .ff-accent;
+  @extend .fz-44;
+  @extend .fw-300;
+  @extend .lh-120;
+  @extend .ls-3;
+  @extend .ttu;
+
+  @media (max-width: 991.98px) {
+    font-size: 36px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 28px;
+  }
+}
+
+.h3 {
+  @extend .ff-accent;
+  @extend .fz-32;
+  @extend .fw-300;
+  @extend .lh-130;
+
+  @media (max-width: 1199.98px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+.h4 {
+  @extend .ff-accent;
+  @extend .fz-28;
+  @extend .fw-300;
+  @extend .lh-120;
+  @extend .ttu;
+}

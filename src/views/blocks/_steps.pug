@@ -1,0 +1,28 @@
+section.section.steps
+  .container
+    h2.h2.steps__heading как заказать торт
+    .row.steps__items
+      .col-4.steps__item-wrap
+        .steps__item
+          .steps__item-img-wrap
+            img.steps__item-img(src="img/steps__item-img-1.jpg" alt="Img")
+            .steps__item-img-number 01
+          .steps__item-heading Торт из каталога
+          .steps__item-desc Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка
+          +link('shop.html', 'перейти')(class="steps__item-link")
+      .col-4.steps__item-wrap
+        .steps__item
+          .steps__item-img-wrap
+            img.steps__item-img(src="img/steps__item-img-2.jpg" alt="Img")
+            .steps__item-img-number 02
+          .steps__item-heading Собери свой
+          .steps__item-desc Удобный конструктор, который поможет выбрать торт
+          +link('calc.html', 'собрать свой')(class="steps__item-link")
+      .col-4.steps__item-wrap
+        .steps__item
+          .steps__item-img-wrap
+            img.steps__item-img(src="img/steps__item-img-3.jpg" alt="Img")
+            .steps__item-img-number 03
+          .steps__item-heading Индивидуальный
+          .steps__item-desc Воплотим в жизнь любые фантазии, приготовим торт по фотогорафии
+          +link('calc.html', 'заказать')(class="steps__item-link")

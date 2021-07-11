@@ -1,0 +1,70 @@
+-
+  const navList = [
+    {
+      text: 'магазин',
+      href: '#'
+    },
+    {
+      text: 'кулинарный дневник',
+      href: '#'
+    },
+    {
+      text: 'обучение',
+      href: '#'
+    },
+    {
+      text: 'о проекте',
+      href: '#'
+    },
+    {
+      text: 'команда',
+      href: '#'
+    },
+    {
+      text: 'контакты',
+      href: '#'
+    }
+  ]
+
+header.header
+  .container
+    .row.header__row
+      .col-3.header__burger-wrap
+        .header__burger
+          .header__burger-line
+          .header__burger-line
+          .header__burger-line
+      .col-lg-2.col-4.header__logo
+        a.header__logo-link(href="index.html")
+          img.img-responsive.header__logo-img(src="img/logo.svg" alt="MY RECEPT")
+      nav.col-lg-8.header__nav
+        ul.header__nav-list
+          each item in navList
+            li.header__nav-list-item
+              a.header__nav-link(href= item.href)= item.text
+      .col-lg-2.col-3.header__controls
+        button.header__btn.header__btn--search
+        a.header__cart(href="cart.html")
+          span.header__btn.header__btn--cart
+            span.header__btn-counter 14
+          span.header__cart-sum 2 340
+
+.menu
+  ul.menu__nav-list
+    each item in navList
+      li.menu__nav-list-item
+        a.menu__nav-link(href= item.href)= item.text
+
+  .menu__info
+    a.menu__info-tel(href="tel:+79286666950") +7 (928) 666-69-50
+    .menu__info-address Махачкала, #[br]пр-т. Имама Шамиля, 75
+
+  .menu__socials-list-wrap
+    .menu__socials-list-label Мы в сети:
+    ul.menu__socials-list
+      li.menu__socials-list-item
+        a.menu__socials-link(href="#" style="background-image: url(img/icon-inst.svg")
+      li.menu__socials-list-item
+        a.menu__socials-link(href="#" style="background-image: url(img/icon-fb.svg")
+      li.menu__socials-list-item
+        a.menu__socials-link(href="#" style="background-image: url(img/icon-vk.svg")

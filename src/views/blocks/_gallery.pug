@@ -1,0 +1,18 @@
+section.section.gallery
+  .gallery__bg-text @MY_RECEPT_
+  .container
+    .row.gallery__row
+      .col-xl-7.col-lg-6.gallery__heading-wrap
+        h2.h2.gallery__heading Мы в Instagram
+      .col-xl-3.col-lg-4.gallery__text-wrap
+        .gallery__text Подписывайтесь, чтобы быть в курсе всех наших активностей и обновлений
+      .col-xl-2.col-lg-2.gallery__link-wrap
+        +link('#', 'подписаться')(class="gallery__link")
+      .col-12
+        - for (let i = 0; i <= 1; i++)
+          .swiper-container.gallery__slider(data-gallery)
+            .swiper-wrapper.gallery__slider-wrapper
+              - for (let i = 1; i <= 11; i++)
+                .swiper-slide
+                  .gallery__img-wrap
+                    img.gallery__img(src=`img/gallery__img-${i}.jpg` alt="Img")

@@ -1,0 +1,15 @@
+section.section.free-lesson
+  .container
+    .row
+      .col-xl-11.free-lesson__main
+        .free-lesson__form-wrap
+          h3.h3.free-lesson__heading Заполните форму и получите доступ к бесплатному уроку #[br] «Готовим десерты дома, как в ресторане»
+          form.free-lesson__form
+            +input('text', 'Введите имя')(class="free-lesson__form-input")
+            +input('email', 'Ваша почта')(class="free-lesson__form-input")
+            button.btn.free-lesson__form-btn(type="submit") ПОЛУЧИТЬ
+            .free-lesson__form-text * Нажимая кнопку Получить, #[br]Вы соглашаетесь с нашими #[a(href="#") правилами]
+      .col-xl-6
+        .free-lesson__text Как часто, захотев удивить и побаловать своих близких вкусняшками, #[br]вы в итоге думали, что «десерты это все-таки не мое»?
+      .col-xl-6.free-lesson__img-wrap
+        img.free-lesson__img(src="img/free-lesson__img.jpg" alt="Img")

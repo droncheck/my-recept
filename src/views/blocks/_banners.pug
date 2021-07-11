@@ -1,0 +1,37 @@
+section.section.banners
+  .container.banners__container
+    .swiper-container.banners__slider(data-banners-slider="")
+      .swiper-wrapper
+        .swiper-slide.banners__item
+          .row.banners__item-row
+            .col-lg-11.banners__item-heading-wrap
+              .h1.banners__item-heading Уникальные десерты на&nbsp;заказ
+            .col-xl-3.col-lg-4.col-md-5.col-sm-6.col-10.banners__item-main
+              .banners__item-text Обещаем хорошее настроение и&nbsp;незабываемое послевкусие!
+              +link('#', 'перейти в каталог')(class="banners__item-link")
+          img.img-responsive.banners__item-img(src="img/banners__item-img-1.png")
+        .swiper-slide.banners__item
+          .row.banners__item-row
+            .col-lg-11.banners__item-heading-wrap
+              .h1.banners__item-heading Уникальные десерты на&nbsp;заказ
+            .col-xl-3.col-lg-4.col-md-5.col-sm-6.col-10.banners__item-main
+              .banners__item-text Обещаем хорошее настроение и&nbsp;незабываемое послевкусие!
+              +link('#', 'перейти в каталог')(class="banners__item-link")
+          img.img-responsive.banners__item-img(src="img/banners__item-img-1.png")
+      .banners__slider-controls
+        +arrow('button', 'up')(class="arrow--lg banners__slider-arrow" data-banners-slider-prev="")
+        +arrow('button', 'down')(class="arrow--lg banners__slider-arrow" data-banners-slider-next="")
+        .banners__slider-counter(data-banners-slider-counter="")
+    .row.banners__info-row
+      .col-xl-2.col-lg-3
+        .banners__info
+          a.banners__info-tel(href="tel:+79286666950") +7 (928) 666-69-50
+          .banners__info-address Махачкала, #[br]пр-т. Имама Шамиля, 75
+    .banners__socials
+      ul.banners__socials-list
+        li.banners__socials-list-item
+          a.banners__socials-link(href="#") INSTAGRAM
+        li.banners__socials-list-item
+          a.banners__socials-link(href="#") FACEBOOK
+        li.banners__socials-list-item
+          a.banners__socials-link(href="#") VK
