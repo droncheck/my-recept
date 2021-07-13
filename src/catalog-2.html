@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Recept | Каталог Торты</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row header__row">
+          <div class="col-3 header__burger-wrap">
+            <div class="header__burger">
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4 header__logo"><a class="header__logo-link" href="index.html"><img class="img-responsive header__logo-img" src="img/logo.svg" alt="MY RECEPT"></a></div>
+          <nav class="col-lg-8 header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-list-item"><a class="header__nav-link" href="shop.html">магазин</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-link" href="#">кулинарный дневник</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-link" href="#">обучение</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-link" href="about.html">о проекте</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-link" href="#">команда</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-link" href="#">контакты</a></li>
+            </ul>
+          </nav>
+          <div class="col-lg-2 col-3 header__controls">
+            <button class="header__btn header__btn--search"></button><a class="header__cart" href="cart.html"><span class="header__btn header__btn--cart"><span class="header__btn-counter">14</span></span><span class="header__cart-sum">2 340</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="menu">
+      <ul class="menu__nav-list">
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="shop.html">магазин</a></li>
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="#">кулинарный дневник</a></li>
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="#">обучение</a></li>
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="about.html">о проекте</a></li>
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="#">команда</a></li>
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="#">контакты</a></li>
+      </ul>
+      <div class="menu__info"><a class="menu__info-tel" href="tel:+79286666950">+7 (928) 666-69-50</a>
+        <div class="menu__info-address">Махачкала, <br>пр-т. Имама Шамиля, 75</div>
+      </div>
+      <div class="menu__socials-list-wrap">
+        <div class="menu__socials-list-label">Мы в сети:</div>
+        <ul class="menu__socials-list">
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-inst.svg"></a></li>
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-fb.svg"></a></li>
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-vk.svg"></a></li>
+        </ul>
+      </div>
+    </div>
+    <main class="main">
+      <section class="section shop-cover">
+        <div class="container shop-cover__container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная страница</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Магазин</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Макаронс</a></li>
+          </ul>
+          <div class="row shop-cover__row">
+            <div class="col-lg-6 shop-cover__main">
+              <div class="shop-cover__header">
+                <h1 class="h2 shop-cover__heading">Макаронс</h1>
+                <div class="shop-cover__header-text">Обещаем хорошее настроение и незабываемое послевкусие!</div>
+              </div>
+              <div class="shop-cover__text">Макаронс — повод собраться с близкими и друзьями за одним столом, способ поднять настроения или наградить себя за успехи. У нас есть сладость для любого события и настроения: хочется ярких и необычных эмоций — попробуйте фисташку-малину. Чего-то изысканного — трюфельный торт идеально подойдёт.</div>
+            </div>
+            <div class="col-lg-6 shop-cover__img-wrap"><img class="shop-cover__img shop-cover__img--macarons" src="img/shop-cover__img-3.png" alt="Img"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section catalog">
+        <div class="container">
+          <ul class="catalog__categories-filter">
+            <li class="catalog__categories-filter-item"><a class="catalog__categories-filter-link active" href="#">
+                <div class="catalog__categories-filter-icon-wrap"><img class="img-responsive catalog__categories-filter-icon" src="img/catalog__categories-filter-icon-1.svg" alt=""></div>
+                <div class="catalog__categories-filter-text">Популярные десерты</div></a></li>
+            <li class="catalog__categories-filter-item"><a class="catalog__categories-filter-link" href="#">
+                <div class="catalog__categories-filter-icon-wrap"><img class="img-responsive catalog__categories-filter-icon" src="img/catalog__categories-filter-icon-2.svg" alt=""></div>
+                <div class="catalog__categories-filter-text">С шоколадом</div></a></li>
+            <li class="catalog__categories-filter-item"><a class="catalog__categories-filter-link" href="#">
+                <div class="catalog__categories-filter-icon-wrap"><img class="img-responsive catalog__categories-filter-icon" src="img/catalog__categories-filter-icon-3.svg" alt=""></div>
+                <div class="catalog__categories-filter-text">100% Vegan</div></a></li>
+            <li class="catalog__categories-filter-item"><a class="catalog__categories-filter-link" href="#">
+                <div class="catalog__categories-filter-icon-wrap"><img class="img-responsive catalog__categories-filter-icon" src="img/catalog__categories-filter-icon-4.svg" alt=""></div>
+                <div class="catalog__categories-filter-text">Ягодные</div></a></li>
+            <li class="catalog__categories-filter-item"><a class="catalog__categories-filter-link" href="#">
+                <div class="catalog__categories-filter-icon-wrap"><img class="img-responsive catalog__categories-filter-icon" src="img/catalog__categories-filter-icon-5.svg" alt=""></div>
+                <div class="catalog__categories-filter-text">Минимум сахара</div></a></li>
+          </ul>
+          <div class="catalog__items-filter">
+            <div class="catalog__items-filter-slider-wrap" data-slider-parent>
+              <div class="catalog__items-filter-slider-label">Цена:</div>
+              <div class="catalog__items-filter-slider-value" data-slider-value></div>
+              <div class="catalog__items-filter-slider" data-slider data-slider-min="59" data-slider-max="11999" data-slider-step="1" data-slider-decimals="0" data-slider-postfix=" ₽"></div>
+              <div class="catalog__items-filter-slider-value" data-slider-value></div>
+            </div>
+            <div class="catalog__items-filter-slider-wrap" data-slider-parent>
+              <div class="catalog__items-filter-slider-label">Вес:</div>
+              <div class="catalog__items-filter-slider-value" data-slider-value></div>
+              <div class="catalog__items-filter-slider" data-slider data-slider-min="1" data-slider-max="20" data-slider-step="0.5" data-slider-decimals="1" data-slider-postfix=" кг"></div>
+              <div class="catalog__items-filter-slider-value" data-slider-value></div>
+            </div>
+            <div class="catalog__items-filter-select-wrap">
+              <select class="catalog__items-filter-select">
+                <option value="Сначала популярные">Сначала популярные</option>
+                <option value="Сначала дешевые">Сначала дешевые</option>
+                <option value="Сначала дорогие">Сначала дорогие</option>
+              </select>
+            </div>
+          </div>
+          <div class="row catalog__items">
+            <div class="col-xl-4 col-6 catalog__item-wrap">
+              <div class="catalog__item"><a class="catalog__item-link" href="#">
+                  <div class="catalog__item-img-wrap"><img class="catalog__item-img" src="img/catalog__item-img-1.jpg" alt="Img">
+                    <div class="catalog__item-img-info-icons">
+                      <div class="catalog__item-img-info-icon catalog__item-img-info-icon--leaves"></div>
+                      <div class="catalog__item-img-info-icon catalog__item-img-info-icon--choco"></div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-main">
+                    <div class="catalog__item-heading">Торт «Мокко»</div>
+                    <div class="catalog__item-desc">Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка</div>
+                    <div class="catalog__item-weight">1270 гр</div>
+                  </div></a>
+                <div class="catalog__item-footer">
+                  <div class="catalog__item-controls" data-catalog-item-controls>
+                    <button class="catalog__item-btn catalog__item-btn--minus" data-catalog-item-dec="true" type="button"></button>
+                    <div class="catalog__item-input-wrap">
+                      <input class="catalog__item-input" type="number" value="1" readonly data-catalog-item-input>
+                    </div>
+                    <button class="catalog__item-btn catalog__item-btn--plus" data-catalog-item-inc="true" type="button"></button>
+                    <div class="catalog__item-cart" type="button" data-catalog-item-cart="">в корзине</div>
+                  </div>
+                  <div class="catalog__item-price">
+                    <div class="catalog__item-price-active">1 700</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-6 catalog__item-wrap">
+              <div class="catalog__item"><a class="catalog__item-link" href="#">
+                  <div class="catalog__item-img-wrap"><img class="catalog__item-img" src="img/catalog__item-img-2.jpg" alt="Img">
+                    <div class="catalog__item-img-info-icons">
+                      <div class="catalog__item-img-info-icon catalog__item-img-info-icon--berry"></div>
+                    </div>
+                  </div>
+                  <div class="catalog__item-main">
+                    <div class="catalog__item-heading">Фисташка-Малина</div>
+                    <div class="catalog__item-desc">Фисташковый бисквит, крем чиз с фисташкой, малиновое конфи</div>
+                    <div class="catalog__item-weight">840 гр</div>
+                  </div></a>
+                <div class="catalog__item-footer">
+                  <div class="catalog__item-controls hidden" data-catalog-item-controls>
+                    <button class="catalog__item-btn catalog__item-btn--minus" data-catalog-item-dec="true" type="button"></button>
+                    <div class="catalog__item-input-wrap">
+                      <input class="catalog__item-input" type="number" value="0" readonly data-catalog-item-input>
+                    </div>
+                    <button class="catalog__item-btn catalog__item-btn--plus" data-catalog-item-inc="true" type="button"></button>
+                    <button class="catalog__item-cart" type="button" data-catalog-item-cart="true">в корзину</button>
+                  </div>
+                  <div class="catalog__item-price">
+                    <div class="catalog__item-price-active">2 300</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-6 catalog__item-wrap">
+              <div class="catalog__item"><a class="catalog__item-link" href="#">
+                  <div class="catalog__item-img-wrap"><img class="catalog__item-img" src="img/catalog__item-img-3.jpg" alt="Img">
+                    <div class="catalog__item-img-action"></div>
+                  </div>
+                  <div class="catalog__item-main">
+                    <div class="catalog__item-heading">Графские развалины</div>
+                    <div class="catalog__item-desc">Безе, шоколадный бисквит, крем чиз, шоколад, ягоды, грецкий орех</div>
+                    <div class="catalog__item-weight">950 - 1350 гр</div>
+                  </div></a>
+                <div class="catalog__item-footer">
+                  <div class="catalog__item-controls hidden" data-catalog-item-controls>
+                    <button class="catalog__item-btn catalog__item-btn--minus" data-catalog-item-dec="true" type="button"></button>
+                    <div class="catalog__item-input-wrap">
+                      <input class="catalog__item-input" type="number" value="0" readonly data-catalog-item-input>
+                    </div>
+                    <button class="catalog__item-btn catalog__item-btn--plus" data-catalog-item-inc="true" type="button"></button>
+                    <button class="catalog__item-cart" type="button" data-catalog-item-cart="true">в корзину</button>
+                  </div>
+                  <div class="catalog__item-price">
+                    <div class="catalog__item-price-active">1 100</div>
+                    <div class="catalog__item-price-old">1 500</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-6 catalog__item-wrap">
+              <div class="catalog__item"><a class="catalog__item-link" href="#">
+                  <div class="catalog__item-img-wrap"><img class="catalog__item-img" src="img/catalog__item-img-4.jpg" alt="Img">
+                    <div class="catalog__item-img-info-icons">
+                      <div class="catalog__item-img-info-icon catalog__item-img-info-icon--leaves"></div>
+                      <div class="catalog__item-img-info-icon catalog__item-img-info-icon--choco"></div>
+                    </div>
+                  </div></a>
+                <div class="catalog__item-main">
+                  <div class="catalog__item-heading">Торт «Мокко»</div>
+                  <div class="catalog__item-desc">Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка</div>
+                  <div class="catalog__item-weight">1270 гр</div>
+                </div>
+                <div class="catalog__item-footer">
+                  <div class="catalog__item-controls" data-catalog-item-controls>
+                    <button class="catalog__item-btn catalog__item-btn--minus" data-catalog-item-dec="true" type="button"></button>
+                    <div class="catalog__item-input-wrap">
+                      <input class="catalog__item-input" type="number" value="1" readonly data-catalog-item-input>
+                    </div>
+                    <button class="catalog__item-btn catalog__item-btn--plus" data-catalog-item-inc="true" type="button"></button>
+                    <div class="catalog__item-cart" type="button" data-catalog-item-cart="">в корзине</div>
+                  </div>
+                  <div class="catalog__item-price">
+                    <div class="catalog__item-price-active">1 700</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-6 catalog__item-wrap">
+              <div class="catalog__item"><a class="catalog__item-link" href="#">
+                  <div class="catalog__item-img-wrap"><img class="catalog__item-img" src="img/catalog__item-img-5.jpg" alt="Img">
+                    <div class="catalog__item-img-action"></div>
+                    <div class="catalog__item-img-info-icons">
+                      <div class="catalog__item-img-info-icon catalog__item-img-info-icon--berry"></div>
+                      <div class="catalog__item-img-info-icon catalog__item-img-info-icon--leaves"></div>
+                      <div class="catalog__item-img-info-icon catalog__item-img-info-icon--choco"></div>
+                    </div>
+                  </div></a>
+                <div class="catalog__item-main">
+                  <div class="catalog__item-heading">Графские развалины</div>
+                  <div class="catalog__item-desc">Безе, шоколадный бисквит, крем чиз, шоколад, ягоды, грецкий орех</div>
+                  <div class="catalog__item-weight">950 - 1350 гр</div>
+                </div>
+                <div class="catalog__item-footer">
+                  <div class="catalog__item-controls hidden" data-catalog-item-controls>
+                    <button class="catalog__item-btn catalog__item-btn--minus" data-catalog-item-dec="true" type="button"></button>
+                    <div class="catalog__item-input-wrap">
+                      <input class="catalog__item-input" type="number" value="0" readonly data-catalog-item-input>
+                    </div>
+                    <button class="catalog__item-btn catalog__item-btn--plus" data-catalog-item-inc="true" type="button"></button>
+                    <button class="catalog__item-cart" type="button" data-catalog-item-cart="true">в корзину</button>
+                  </div>
+                  <div class="catalog__item-price">
+                    <div class="catalog__item-price-active">1 100</div>
+                    <div class="catalog__item-price-old">1 500</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-6 catalog__item-wrap">
+              <div class="catalog__item"><a class="catalog__item-link" href="#">
+                  <div class="catalog__item-img-wrap"><img class="catalog__item-img" src="img/catalog__item-img-6.jpg" alt="Img">
+                    <div class="catalog__item-img-info-icons">
+                      <div class="catalog__item-img-info-icon catalog__item-img-info-icon--berry"></div>
+                      <div class="catalog__item-img-info-icon catalog__item-img-info-icon--leaves"></div>
+                    </div>
+                  </div></a>
+                <div class="catalog__item-main">
+                  <div class="catalog__item-heading">Фисташка-Малина</div>
+                  <div class="catalog__item-desc">Фисташковый бисквит, крем чиз с фисташкой, малиновое конфи</div>
+                  <div class="catalog__item-weight">840 гр</div>
+                </div>
+                <div class="catalog__item-footer">
+                  <div class="catalog__item-controls hidden" data-catalog-item-controls>
+                    <button class="catalog__item-btn catalog__item-btn--minus" data-catalog-item-dec="true" type="button"></button>
+                    <div class="catalog__item-input-wrap">
+                      <input class="catalog__item-input" type="number" value="0" readonly data-catalog-item-input>
+                    </div>
+                    <button class="catalog__item-btn catalog__item-btn--plus" data-catalog-item-inc="true" type="button"></button>
+                    <button class="catalog__item-cart" type="button" data-catalog-item-cart="true">в корзину</button>
+                  </div>
+                  <div class="catalog__item-price">
+                    <div class="catalog__item-price-active">2 300</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="btn catalog__more-btn">показать ещё</button>
+        </div>
+      </section>
+      <section class="section gallery">
+        <div class="gallery__bg-text">@MY_RECEPT_</div>
+        <div class="container">
+          <div class="row gallery__row">
+            <div class="col-xl-7 col-lg-6 gallery__heading-wrap">
+              <h2 class="h2 gallery__heading">Мы в Instagram</h2>
+            </div>
+            <div class="col-xl-3 col-lg-4 gallery__text-wrap">
+              <div class="gallery__text">Подписывайтесь, чтобы быть в курсе всех наших активностей и обновлений</div>
+            </div>
+            <div class="col-xl-2 col-lg-2 gallery__link-wrap"><a class="link link--arrow gallery__link" href="#">подписаться</a>
+            </div>
+            <div class="col-12">
+              <div class="swiper-container gallery__slider" data-gallery>
+                <div class="swiper-wrapper gallery__slider-wrapper">
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-1.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-2.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-3.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-4.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-5.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-6.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-7.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-8.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-9.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-10.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-11.jpg" alt="Img"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-container gallery__slider" data-gallery>
+                <div class="swiper-wrapper gallery__slider-wrapper">
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-1.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-2.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-3.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-4.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-5.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-6.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-7.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-8.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-9.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-10.jpg" alt="Img"></div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-11.jpg" alt="Img"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section free-book">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 free-book__form-wrap">
+              <form class="free-book__form">
+                <h3 class="h3 free-book__form-heading">Получите книгу рецептов <br>БЕСПЛАТНО</h3>
+                <label class="input discont__form-input free-book__form-input" data-input="">
+                  <input class="input__field" type="text" data-input-field=""/><span class="input__placeholder" data-input-placeholder="">Ваше имя</span>
+                </label>
+                <label class="input discont__form-input free-book__form-input" data-input="">
+                  <input class="input__field" type="email" data-input-field=""/><span class="input__placeholder" data-input-placeholder="">Ваша почта</span>
+                </label>
+                <button class="btn free-book__form-btn">ПОЛУЧИТЬ</button>
+                <div class="free-book__form-text">* Нажимая кнопку Получить, <br>Вы соглашаетесь с нашими <a href="#">правилами</a></div>
+              </form>
+            </div>
+            <div class="col-lg-6 free-book__img-wrap"><img class="free-book__img" src="img/free-book__img.jpg" alt="Img"></div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row footer__row">
+            <div class="col-lg-2 footer__logo-wrap"><a class="footer__logo" href="index.html"><img class="img-responsive footer__logo-img" src="img/logo.svg" alt="MY RECEPT"></a></div>
+            <div class="col-xl-8 col-lg-7 footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">доставка и оплата</a></li>
+                <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">индивидуальный заказ</a></li>
+              </ul>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">обучение</a></li>
+                <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">конструктор тортов</a></li>
+              </ul>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">информация</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-2 col-lg-3 footer__info"><a class="footer__info-tel" href="tel:+79286666950">+7 (928) 666-69-50</a>
+              <div class="footer__info-address">Махачкала, <br>пр-т. Имама Шамиля, 75</div>
+            </div>
+          </div>
+          <div class="row footer__row">
+            <div class="col-lg-3 footer__policy-wrap"><a class="footer__policy" href="#">Политика конфиденциальности</a></div>
+            <div class="col-lg-3 footer__copyright-wrap">
+              <div class="footer__copyright" href="#">©My_recept 2021</div>
+            </div>
+            <div class="col-lg-3 footer__socials-list-wrap">
+              <div class="footer__socials-list-label">Мы в сети:</div>
+              <ul class="footer__socials-list">
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-inst.svg"></a></li>
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-fb.svg"></a></li>
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-vk.svg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/index.min.js"></script>
+  </body>
+</html>

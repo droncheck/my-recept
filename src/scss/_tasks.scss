@@ -1,0 +1,157 @@
+.tasks {
+  padding: 116px 0 160px;
+  background: #fce7eb;
+
+  &__header {
+    padding-bottom: 140px;
+  }
+
+  &__heading {
+    margin-bottom: 50px;
+  }
+
+  &__row {
+    margin-bottom: 70px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+
+    &:nth-child(1),
+    &:nth-child(2) {
+      &::before {
+        content: '';
+        position: absolute;
+        background-position: left top;
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+
+    &:nth-child(1) {
+      &::before {
+        content: '';
+        position: absolute;
+        top: -120px;
+        right: 50px;
+        width: 284px;
+        height: 302px;
+        background-image: url(../img/tasks-cake-1.png);
+      }
+    }
+
+    &:nth-child(2) {
+      &::before {
+        content: '';
+        position: absolute;
+        top: -50px;
+        left: 90px;
+        width: 247px;
+        height: 249px;
+        background-image: url(../img/tasks-cake-2.png);
+      }
+    }
+
+    &:nth-child(even) {
+      justify-content: flex-end;
+    }
+  }
+
+  &__icon {
+    &-wrap {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    padding-top: 15px;
+
+    &-heading {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    padding: 100px 0;
+
+    &__row {
+      &:nth-child(1) {
+        &::before {
+          top: -60px;
+          right: 15px;
+        }
+      }
+      &:nth-child(2) {
+        &::before {
+          left: 30px;
+          top: -30px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &__header {
+      padding-bottom: 80px;
+    }
+
+    &__row {
+      margin-bottom: 35px;
+
+      &:nth-child(1) {
+        &::before {
+          top: -105px;
+          right: -55px;
+          width: 111px;
+          height: 111px;
+        }
+      }
+      &:nth-child(2) {
+        &::before {
+          left: auto;
+          right: -65px;
+          bottom: -73px;
+          top: auto;
+          width: 102px;
+          height: 99px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 60px 0;
+  }
+
+  @media (max-width: 575.98px) {
+    &__header {
+      font-size: 13px;
+    }
+
+    &__heading {
+      margin-bottom: 40px;
+    }
+
+    &__row {
+      margin-left: -4px;
+      margin-right: -4px;
+    }
+
+    &__icon {
+      &-wrap {
+        padding-left: 4px;
+        padding-right: 4px;
+      }
+    }
+
+    &__item {
+      padding-left: 4px;
+      padding-right: 4px;
+      &-text {
+        font-size: 12px;
+      }
+    }
+  }
+}

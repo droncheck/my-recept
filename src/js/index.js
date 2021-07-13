@@ -1,6 +1,7 @@
 import initArticles from "./articles";
 import initBanners from "./banners";
 import initCatalogItem from "./catalog-item";
+import initCatalogSliders from "./catalog-sliders";
 import initGallery from "./gallery";
 import initMobileMenu from "./header";
 import initInputs from "./input";
@@ -21,4 +22,6 @@ document.addEventListener('DOMContentLoaded', function() {
   initArticles();
 
   initGallery();
+
+  initCatalogSliders();
 });

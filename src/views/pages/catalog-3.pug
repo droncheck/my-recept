@@ -1,0 +1,93 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Каталог Торты
+
+block main
+
+  section.section.shop-cover
+    .container.shop-cover__container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная страница
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Магазин
+        li.breadcrumbs__item
+          a.breadcrumbs__link Наборы
+      .row.shop-cover__row
+        .col-lg-6.shop-cover__main
+          .shop-cover__header
+            h1.h2.shop-cover__heading Наборы
+            .shop-cover__header-text Обещаем хорошее настроение и незабываемое послевкусие!
+          .shop-cover__text
+            | Наборы — повод собраться с близкими и друзьями за одним столом, способ поднять настроения или наградить себя за успехи. У нас есть сладость для любого события и настроения: хочется ярких и необычных эмоций — попробуйте фисташку-малину. Чего-то изысканного — трюфельный торт идеально подойдёт.
+        .col-lg-6.shop-cover__img-wrap
+          img.img-responsive.shop-cover__img.shop-cover__img--sets(src="img/shop-cover__img-4.jpg" alt="Img")
+
+  section.section.catalog
+    .container
+
+      ul.catalog__categories-filter
+        li.catalog__categories-filter-item
+          a.catalog__categories-filter-link.active(href="#")
+            .catalog__categories-filter-icon-wrap
+              img.img-responsive.catalog__categories-filter-icon(src="img/catalog__categories-filter-icon-1.svg" alt="")
+            .catalog__categories-filter-text Популярные десерты
+        li.catalog__categories-filter-item
+          a.catalog__categories-filter-link(href="#")
+            .catalog__categories-filter-icon-wrap
+              img.img-responsive.catalog__categories-filter-icon(src="img/catalog__categories-filter-icon-2.svg" alt="")
+            .catalog__categories-filter-text С шоколадом
+        li.catalog__categories-filter-item
+          a.catalog__categories-filter-link(href="#")
+            .catalog__categories-filter-icon-wrap
+              img.img-responsive.catalog__categories-filter-icon(src="img/catalog__categories-filter-icon-3.svg" alt="")
+            .catalog__categories-filter-text 100% Vegan
+        li.catalog__categories-filter-item
+          a.catalog__categories-filter-link(href="#")
+            .catalog__categories-filter-icon-wrap
+              img.img-responsive.catalog__categories-filter-icon(src="img/catalog__categories-filter-icon-4.svg" alt="")
+            .catalog__categories-filter-text Ягодные
+        li.catalog__categories-filter-item
+          a.catalog__categories-filter-link(href="#")
+            .catalog__categories-filter-icon-wrap
+              img.img-responsive.catalog__categories-filter-icon(src="img/catalog__categories-filter-icon-5.svg" alt="")
+            .catalog__categories-filter-text Минимум сахара
+
+      .catalog__items-filter
+        .catalog__items-filter-slider-wrap(data-slider-parent)
+          .catalog__items-filter-slider-label Цена:
+          .catalog__items-filter-slider-value(data-slider-value)
+          .catalog__items-filter-slider(data-slider data-slider-min="59" data-slider-max="11999" data-slider-step="1" data-slider-decimals="0" data-slider-postfix=" ₽")
+          .catalog__items-filter-slider-value(data-slider-value)
+        .catalog__items-filter-slider-wrap(data-slider-parent)
+          .catalog__items-filter-slider-label Вес:
+          .catalog__items-filter-slider-value(data-slider-value)
+          .catalog__items-filter-slider(data-slider data-slider-min="1" data-slider-max="20" data-slider-step="0.5" data-slider-decimals="1" data-slider-postfix=" кг")
+          .catalog__items-filter-slider-value(data-slider-value)
+        .catalog__items-filter-select-wrap
+          select.catalog__items-filter-select
+            option(value="Сначала популярные") Сначала популярные
+            option(value="Сначала дешевые") Сначала дешевые
+            option(value="Сначала дорогие") Сначала дорогие
+
+
+      //- Items
+
+      include ../blocks/_catalog-items.pug
+
+      button.btn.catalog__more-btn показать ещё
+
+  include ../blocks/_gallery.pug
+
+  include ../blocks/_free-book.pug
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,22 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  line-height: 2.18;
+  @extend .fz-11;
+
+  &__item {
+    position: relative;
+
+    &:first-child {
+      &::before {
+        display: none;
+      }
+    }
+
+    &::before {
+      content: ' > ';
+      white-space: pre;
+    }
+  }
+}

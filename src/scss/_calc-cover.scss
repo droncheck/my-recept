@@ -1,0 +1,85 @@
+.calc-cover {
+  padding: 136px 0 0;
+  background: #fff3f5;
+
+  &__bg-img {
+    position: absolute;
+    left: 0;
+    top: 115px;
+  }
+
+  &__heading {
+    position: relative;
+    // z-index: 2;
+    margin-bottom: 70px;
+    margin-top: 90px;
+
+    &-line {
+      display: block;
+
+      &:last-child {
+        text-align: right;
+      }
+    }
+  }
+
+  &__img {
+    display: block;
+    position: relative;
+    margin-top: -210px;
+  }
+
+  &__text {
+    margin-left: 81px;
+    @extend .lh-175;
+  }
+
+  @media (max-width: 1199.98px) {
+
+    &__bg-img {
+      display: none;
+    }
+
+    &__img {
+      width: 520px;
+      margin-top: -190px;
+    }
+
+    &__heading {
+      margin-top: 50px;
+      margin-bottom: 50px;
+    }
+
+    &__text {
+      margin-left: 0;
+    }
+
+  }
+
+  @media (max-width: 991.98px) {
+    padding-top: 125px;
+    text-align: center;
+
+    &__heading {
+      margin-top: 40px;
+      margin-bottom: 30px;
+      &-line {
+        &:last-child {
+          text-align: center;
+        }
+      }
+    }
+
+
+    &__img {
+      margin: 70px auto 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+
+      &-wrap {
+        order: 1;
+      }
+    }
+
+  }
+}

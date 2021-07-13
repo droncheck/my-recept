@@ -77,9 +77,16 @@ a {
 
   &:hover,
   &:focus {
-    color: $accent-color;
+    color: inherit;
     text-decoration: none;
     outline: none;
+  }
+
+  &[href] {
+    &:hover,
+    &:focus {
+      color: $accent-color;
+    }
   }
 }
 
@@ -119,6 +126,10 @@ a {
   overflow: hidden;
 }
 
+.main {
+  z-index: 2;
+}
+
 .swiper {
   &-wrapper {
     box-sizing: border-box;
@@ -140,6 +151,46 @@ a {
       top: -1px;
       height: 3px;
       background: $accent-color;
+    }
+  }
+}
+
+.noUi {
+
+  &-target {
+    border: none;
+    box-shadow: none;
+  }
+
+  &-horizontal {
+    height: 1px;
+    background: #c4c4c4;
+    .noUi-handle {
+      right: -9px;
+      top: -9px;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &-connect {
+    background: $accent-color;
+  }
+
+  &-connects {
+    border-radius: 0;
+  }
+
+  &-handle {
+    border: none;
+    border-radius: 50%;
+    background: $accent-color;
+    box-shadow: none;
+    cursor: pointer;
+
+    &::before,
+    &::after {
+      display: none;
     }
   }
 }

@@ -101,6 +101,10 @@
 }
 
 .lh {
+  &-175 {
+    line-height: 1.75;
+  }
+
   &-150 {
     line-height: 1.5;
   }
@@ -159,6 +163,15 @@
   @extend .fw-300;
   @extend .lh-120;
   @extend .ls-3;
+  @extend .ttu;
+
+  @media (max-width: 991.98px) {
+    font-size: 72px;
+  }
+
+  @media (max-width: 575.98px) {
+    font-size: 36px;
+  }
 }
 
 .h1-2 {
@@ -167,6 +180,10 @@
   @extend .fw-300;
   @extend .lh-120;
   @extend .ls-3;
+
+  @media (max-width: 575.98px) {
+    font-size: 36px;
+  }
 }
 
 .h2 {
@@ -208,4 +225,8 @@
   @extend .fw-300;
   @extend .lh-120;
   @extend .ttu;
+
+  @media (max-width: 575.98px) {
+    font-size: 20px;
+  }
 }

@@ -29,6 +29,7 @@
     "webpack-stream": "^6.1.2"
   },
   "dependencies": {
+    "nouislider": "^15.2.0",
     "swiper": "^6.7.5"
   }
 }

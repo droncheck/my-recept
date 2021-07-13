@@ -105,10 +105,11 @@
       display: flex;
       justify-content: flex-end;
       padding-right: 65px;
-      pointer-events: auto;
+
 
       &-item {
         margin-right: 45px;
+        pointer-events: auto;
 
         @extend .fz-11;
         @extend .ls-7;

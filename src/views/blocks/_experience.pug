@@ -1,0 +1,38 @@
+-
+  const items = [
+    {
+      text: 'Открытие 1 магазина 2002 год',
+      img: 'img/experience__item-img-1.jpg'
+    },
+    {
+      text: 'Открытие 2 магазина 2015 год',
+      img: 'img/experience__item-img-2.jpg'
+    },
+    {
+      text: 'Новый бренд',
+      img: 'img/experience__item-img-3.jpg'
+    },
+    {
+      text: 'Открытие сайта',
+      img: 'img/experience__item-img-4.jpg'
+    },
+    {
+      text: 'Первые 1000 клиентов',
+      img: 'img/experience__item-img-5.jpg'
+    },
+    {
+      text: 'Первые 100 сотрудников',
+      img: 'img/experience__item-img-6.jpg'
+    },
+  ]
+
+section.section.experience
+  .container.experience__container
+    h2.h2.experience__heading НАШ ОПЫТ
+    .row.experience__row
+      each item in items
+        .col-lg-4.col-sm-6.experience__item-wrap
+          .experience__item
+            .experience__item-heading= item.text
+            .experience__item-img-wrap
+              img.experience__item-img(src= item.img, alt="Img")

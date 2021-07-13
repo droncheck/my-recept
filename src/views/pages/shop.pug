@@ -1,0 +1,48 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Магазин
+
+block main
+
+  include ../blocks/_shop-cover.pug
+
+  section.section.catalog
+    .catalog__bg-text АССОРТИМЕНТ
+
+    .container
+      //- Categories
+
+      .row.catalog__categories
+
+        //- Categories Header
+
+        .col-lg-9.col-md-8.catalog__categories-heading-wrap
+          h2.h2.catalog__categories-heading Наш ассортимент
+        .col-lg-3.col-md-4.catalog__categories-link-wrap
+          +link('shop.html', 'перейти в магазин')(class="catalog__categories-link")
+
+        //- Categories Items
+
+        .col-12.catalog__categories-items-wrap
+
+          include ../blocks/_catalog-categories.pug
+
+  .logo-line
+
+  include ../blocks/_steps.pug
+
+  include ../blocks/_interest.pug
+
+  include ../blocks/_cooperation.pug
+
+
+
+
+
+
+
+
+
+
+

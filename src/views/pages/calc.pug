@@ -1,0 +1,145 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Калькулятор
+
+block main
+
+  section.section.calc-cover
+    img.calc-cover__bg-img(src="img/calc-cover__bg-img.png")
+    .container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная страница
+        li.breadcrumbs__item
+          a.breadcrumbs__link Калькулятор
+      h1.h1-1.calc-cover__heading
+        span.calc-cover__heading-line Уникальный Торт
+        span.calc-cover__heading-line  на заказ
+      .row
+        .col-lg-7.calc-cover__img-wrap
+          img.calc-cover__img(src="img/calc-cover__img.png" alt="Img")
+        .col-lg-5.calc-cover__text-wrap
+          .calc-cover__text
+            | Составьте из нужных параметров
+            br
+            | подходящий Вам торт
+
+  section.secton.calc
+    .container
+      h2.h2.calc__heading Заполните параметры для заказа
+      .calc__block
+        .calc__block-heading Форма:
+        .calc__block-text Квадратные и прямоугольные торты, как правило, получаются тяжелее круглых и рассчитываются на большие компании сладкоежек.
+        .calc__forms
+          label.calc__forms-item
+            input.visually-hidden.calc__forms-item-input(type="radio" name="form" checked)
+            span.calc__forms-item-icon-wrap
+              img.img-responsive.calc__forms-item-icon(src="img/calc__forms-item-icon-1.svg" alt="Img")
+            span.calc__forms-item-text Круглая
+          label.calc__forms-item
+            input.visually-hidden.calc__forms-item-input(type="radio" name="form")
+            span.calc__forms-item-icon-wrap
+              img.img-responsive.calc__forms-item-icon(src="img/calc__forms-item-icon-2.svg" alt="Img")
+            span.calc__forms-item-text Квадратная
+          label.calc__forms-item
+            input.visually-hidden.calc__forms-item-input(type="radio" name="form")
+            span.calc__forms-item-icon-wrap
+              img.img-responsive.calc__forms-item-icon(src="img/calc__forms-item-icon-3.svg" alt="Img")
+            span.calc__forms-item-text Треугольная
+
+      .calc__block
+        .calc__block-heading Количество ярусов:
+        .calc__block-text Большой плюс двухъярусного торта – это возможность сочетать разные начинки. Таким образом вы сможете угодить даже самым привередливым гостям :)
+        .row.no-gutters.calc__block-row
+          label.calc__radio
+            input.visually-hidden.calc__radio-input(type="radio" name="stairs" checked)
+            span.calc__radio-window
+            span.calc__radio-label Одноярусный
+          label.calc__radio
+            input.visually-hidden.calc__radio-input(type="radio" name="stairs")
+            span.calc__radio-window
+            span.calc__radio-label Двухярусный
+
+      .calc__block
+        .calc__block-heading Основа и начинка:
+        .calc__block-text
+          |Здесь представлены самые популярные начинки тортов, которые мы делаем. С более подробным списком вы можете ознакомиться здесь.
+          br
+          |P.S. В жизни они, конечно же, куда красивее и аппетитнее, чем на картинке :)
+        .row.no-gutters.calc__block-row
+          .calc__block-col
+            .calc__block-subheading Основа:
+            .calc__block-row
+              label.calc__radio
+                input.visually-hidden.calc__radio-input(type="radio" name="base" checked)
+                span.calc__radio-window
+                span.calc__radio-label Бисквит
+              label.calc__radio
+                input.visually-hidden.calc__radio-input(type="radio" name="base")
+                span.calc__radio-window
+                span.calc__radio-label Шоколадная
+              label.calc__radio
+                input.visually-hidden.calc__radio-input(type="radio" name="base")
+                span.calc__radio-window
+                span.calc__radio-label Медовая
+              label.calc__radio
+                input.visually-hidden.calc__radio-input(type="radio" name="base")
+                span.calc__radio-window
+                span.calc__radio-label Песочная
+          .calc__block-col
+            .calc__block-subheading Начинка:
+            .calc__block-row
+              label.calc__radio
+                input.visually-hidden.calc__radio-input(type="radio" name="filling" checked)
+                span.calc__radio-window
+                span.calc__radio-label Пралине
+              label.calc__radio
+                input.visually-hidden.calc__radio-input(type="radio" name="filling")
+                span.calc__radio-window
+                span.calc__radio-label Шоколадная
+              label.calc__radio
+                input.visually-hidden.calc__radio-input(type="radio" name="filling")
+                span.calc__radio-window
+                span.calc__radio-label Медовая
+              label.calc__radio
+                input.visually-hidden.calc__radio-input(type="radio" name="filling")
+                span.calc__radio-window
+                span.calc__radio-label Творожная
+          .calc__block-col
+            .calc__block-subheading Начинка:
+            .calc__block-row
+              label.calc__checkbox
+                input.visually-hidden.calc__checkbox-input(type="checkbox" name="decoration" checked)
+                span.calc__checkbox-window
+                span.calc__checkbox-label Ягоды
+              label.calc__checkbox
+                input.visually-hidden.calc__checkbox-input(type="checkbox" name="decoration")
+                span.calc__checkbox-window
+                span.calc__checkbox-label Свечи
+              label.calc__checkbox
+                input.visually-hidden.calc__checkbox-input(type="checkbox" name="decoration")
+                span.calc__checkbox-window
+                span.calc__checkbox-label Цифры
+              label.calc__checkbox
+                input.visually-hidden.calc__checkbox-input(type="checkbox" name="decoration")
+                span.calc__checkbox-window
+                span.calc__checkbox-label Заливка глазурью
+
+      .calc__block
+        .calc__block-heading Вес торта:
+        .calc__block-text Мы делаем торты от 1.5 кг. Рекомендуем ответственно отнестись к этому вопросу, чтобы никто из гостей не остался без своего кусочка :)
+        .calc__counter(data-calc-counter="")
+          .calc__counter-label Выберите вес (кг):
+          button.calc__counter-btn.calc__counter-btn--minus(data-calc-counter-minus="true")
+          input.calc__counter-input(readonly="" data-calc-counter-input="" value="1")
+          button.calc__counter-btn.calc__counter-btn--plus(data-calc-counter-plus="true")
+          .calc__counter-parts
+            | ~
+            .calc__counter-parts-number(data-calc-counter-parts="")
+            | порций
+
+
+
+
+

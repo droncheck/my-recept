@@ -1,0 +1,182 @@
+.shop-cover {
+  padding-top: 136px;
+  min-height: 592px;
+  background: #fff3f5;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__main {
+    padding-top: 24px;
+  }
+
+  &__header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 68px;
+
+    &-text {
+      margin-bottom: 16px;
+      max-width: 280px;
+      padding-left: 40px;
+      border-left: 1px solid;
+    }
+  }
+
+  &__heading {
+    margin-right: 40px;
+    margin-bottom: 16px;
+    text-transform: none;
+  }
+
+  &__text {
+    @extend .lh-150;
+  }
+
+  &__img {
+    position: relative;
+    display: block;
+    margin-top: -5px;
+    left: 70px;
+
+    &--cake {
+      top: auto;
+      left: -85px;
+      margin-top: -90px;
+    }
+
+    &--dessert {
+      top: auto;
+      left: -45px;
+      margin-top: -43px;
+    }
+
+    &--macarons {
+      top: auto;
+      left: -3px;
+      margin-top: -17px;
+    }
+
+    &--sets {
+      top: auto;
+      left: auto;
+      margin-top: -80px;
+      bottom: -63px;
+    }
+  }
+
+  @media (max-width: 1199.98px ) {
+    &__img {
+      margin-top: 0;
+      left: 0;
+
+      &--cake {
+        left: -85px;
+        margin-top: -90px;
+      }
+
+      &--dessert {
+        left: -45px;
+        margin-top: -43px;
+      }
+
+      &--macarons {
+        left: -3px;
+        margin-top: -17px;
+      }
+
+      &--sets {
+        margin-top: -17px;
+        bottom: auto;
+      }
+    }
+
+    &__header {
+      margin-bottom: 40px;
+    }
+  }
+
+  @media (max-width: 991.98px ) {
+    padding-top: 125px;
+
+    &__main {
+      margin-bottom: 65px;
+    }
+
+    &__img {
+      display: block;
+      left: 30px;
+      width: 471px;
+      height: auto;
+      margin: 0 auto;
+
+      &--cake {
+        left: -35px;
+      }
+
+      &--dessert {
+        left: -5px;
+      }
+
+      &--macarons {
+        left: 5px;
+      }
+
+      &--sets {
+        left: auto;
+        margin-top: 0px;
+      }
+    }
+
+    &__header {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media (max-width: 575.98px ) {
+    overflow: hidden;
+
+    &__img {
+      width: 360px;
+      left: 10px;
+
+      &--cake {
+        margin-top: -100px;
+        margin-bottom: -60px;
+        width: 560px;
+      }
+
+      &--dessert {
+        margin-top: -70px;
+        margin-bottom: -60px;
+        width: 560px;
+      }
+
+      &--macarons {
+        margin-top: -70px;
+        margin-bottom: -60px;
+        width: 560px;
+      }
+
+      &--sets {
+        left: auto;
+        width: auto;
+      }
+    }
+
+    &__header {
+      &-text {
+        padding-left: 15px;
+        font-size: 14px;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+    }
+  }
+}
