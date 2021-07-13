@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>My Recept | Калькулятор</title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="row header__row">
+          <div class="col-3 header__burger-wrap">
+            <div class="header__burger">
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+            </div>
+          </div>
+          <div class="col-lg-2 col-4 header__logo"><a class="header__logo-link" href="index.html"><img class="img-responsive header__logo-img" src="img/logo.svg" alt="MY RECEPT"></a></div>
+          <nav class="col-lg-8 header__nav">
+            <ul class="header__nav-list">
+              <li class="header__nav-list-item"><a class="header__nav-link" href="shop.html">магазин</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-link" href="#">кулинарный дневник</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-link" href="#">обучение</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-link" href="about.html">о проекте</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-link" href="#">команда</a></li>
+              <li class="header__nav-list-item"><a class="header__nav-link" href="#">контакты</a></li>
+            </ul>
+          </nav>
+          <div class="col-lg-2 col-3 header__controls">
+            <button class="header__btn header__btn--search"></button><a class="header__cart" href="cart.html"><span class="header__btn header__btn--cart"><span class="header__btn-counter">14</span></span><span class="header__cart-sum">2 340</span></a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="menu">
+      <ul class="menu__nav-list">
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="shop.html">магазин</a></li>
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="#">кулинарный дневник</a></li>
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="#">обучение</a></li>
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="about.html">о проекте</a></li>
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="#">команда</a></li>
+        <li class="menu__nav-list-item"><a class="menu__nav-link" href="#">контакты</a></li>
+      </ul>
+      <div class="menu__info"><a class="menu__info-tel" href="tel:+79286666950">+7 (928) 666-69-50</a>
+        <div class="menu__info-address">Махачкала, <br>пр-т. Имама Шамиля, 75</div>
+      </div>
+      <div class="menu__socials-list-wrap">
+        <div class="menu__socials-list-label">Мы в сети:</div>
+        <ul class="menu__socials-list">
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-inst.svg"></a></li>
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-fb.svg"></a></li>
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-vk.svg"></a></li>
+        </ul>
+      </div>
+    </div>
+    <main class="main">
+      <section class="section calc-cover"><img class="calc-cover__bg-img" src="img/calc-cover__bg-img.png">
+        <div class="container">
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link" href="index.html">Главная страница</a></li>
+            <li class="breadcrumbs__item"><a class="breadcrumbs__link">Калькулятор</a></li>
+          </ul>
+          <h1 class="h1-1 calc-cover__heading"><span class="calc-cover__heading-line">Уникальный Торт</span><span class="calc-cover__heading-line"> на заказ</span></h1>
+          <div class="row">
+            <div class="col-lg-7 calc-cover__img-wrap"><img class="calc-cover__img" src="img/calc-cover__img.png" alt="Img"></div>
+            <div class="col-lg-5 calc-cover__text-wrap">
+              <div class="calc-cover__text">Составьте из нужных параметров<br>подходящий Вам торт</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="secton calc">
+        <div class="container">
+          <h2 class="h2 calc__heading">Заполните параметры для заказа</h2>
+          <div class="calc__block">
+            <div class="calc__block-heading">Форма:</div>
+            <div class="calc__block-text">Квадратные и прямоугольные торты, как правило, получаются тяжелее круглых и рассчитываются на большие компании сладкоежек.</div>
+            <div class="calc__forms">
+              <label class="calc__forms-item">
+                <input class="visually-hidden calc__forms-item-input" type="radio" name="form" checked><span class="calc__forms-item-icon-wrap"><img class="img-responsive calc__forms-item-icon" src="img/calc__forms-item-icon-1.svg" alt="Img"></span><span class="calc__forms-item-text">Круглая</span>
+              </label>
+              <label class="calc__forms-item">
+                <input class="visually-hidden calc__forms-item-input" type="radio" name="form"><span class="calc__forms-item-icon-wrap"><img class="img-responsive calc__forms-item-icon" src="img/calc__forms-item-icon-2.svg" alt="Img"></span><span class="calc__forms-item-text">Квадратная</span>
+              </label>
+              <label class="calc__forms-item">
+                <input class="visually-hidden calc__forms-item-input" type="radio" name="form"><span class="calc__forms-item-icon-wrap"><img class="img-responsive calc__forms-item-icon" src="img/calc__forms-item-icon-3.svg" alt="Img"></span><span class="calc__forms-item-text">Треугольная</span>
+              </label>
+            </div>
+          </div>
+          <div class="calc__block">
+            <div class="calc__block-heading">Количество ярусов:</div>
+            <div class="calc__block-text">Большой плюс двухъярусного торта – это возможность сочетать разные начинки. Таким образом вы сможете угодить даже самым привередливым гостям :)</div>
+            <div class="row no-gutters calc__block-row">
+              <label class="calc__radio">
+                <input class="visually-hidden calc__radio-input" type="radio" name="stairs" checked><span class="calc__radio-window"></span><span class="calc__radio-label">Одноярусный</span>
+              </label>
+              <label class="calc__radio">
+                <input class="visually-hidden calc__radio-input" type="radio" name="stairs"><span class="calc__radio-window"></span><span class="calc__radio-label">Двухярусный</span>
+              </label>
+            </div>
+          </div>
+          <div class="calc__block">
+            <div class="calc__block-heading">Основа и начинка:</div>
+            <div class="calc__block-text">Здесь представлены самые популярные начинки тортов, которые мы делаем. С более подробным списком вы можете ознакомиться здесь.<br>P.S. В жизни они, конечно же, куда красивее и аппетитнее, чем на картинке :)</div>
+            <div class="row no-gutters calc__block-row">
+              <div class="calc__block-col">
+                <div class="calc__block-subheading">Основа:</div>
+                <div class="calc__block-row">
+                  <label class="calc__radio">
+                    <input class="visually-hidden calc__radio-input" type="radio" name="base" checked><span class="calc__radio-window"></span><span class="calc__radio-label">Бисквит</span>
+                  </label>
+                  <label class="calc__radio">
+                    <input class="visually-hidden calc__radio-input" type="radio" name="base"><span class="calc__radio-window"></span><span class="calc__radio-label">Шоколадная</span>
+                  </label>
+                  <label class="calc__radio">
+                    <input class="visually-hidden calc__radio-input" type="radio" name="base"><span class="calc__radio-window"></span><span class="calc__radio-label">Медовая</span>
+                  </label>
+                  <label class="calc__radio">
+                    <input class="visually-hidden calc__radio-input" type="radio" name="base"><span class="calc__radio-window"></span><span class="calc__radio-label">Песочная</span>
+                  </label>
+                </div>
+              </div>
+              <div class="calc__block-col">
+                <div class="calc__block-subheading">Начинка:</div>
+                <div class="calc__block-row">
+                  <label class="calc__radio">
+                    <input class="visually-hidden calc__radio-input" type="radio" name="filling" checked><span class="calc__radio-window"></span><span class="calc__radio-label">Пралине</span>
+                  </label>
+                  <label class="calc__radio">
+                    <input class="visually-hidden calc__radio-input" type="radio" name="filling"><span class="calc__radio-window"></span><span class="calc__radio-label">Шоколадная</span>
+                  </label>
+                  <label class="calc__radio">
+                    <input class="visually-hidden calc__radio-input" type="radio" name="filling"><span class="calc__radio-window"></span><span class="calc__radio-label">Медовая</span>
+                  </label>
+                  <label class="calc__radio">
+                    <input class="visually-hidden calc__radio-input" type="radio" name="filling"><span class="calc__radio-window"></span><span class="calc__radio-label">Творожная</span>
+                  </label>
+                </div>
+              </div>
+              <div class="calc__block-col">
+                <div class="calc__block-subheading">Начинка:</div>
+                <div class="calc__block-row">
+                  <label class="calc__checkbox">
+                    <input class="visually-hidden calc__checkbox-input" type="checkbox" name="decoration" checked><span class="calc__checkbox-window"></span><span class="calc__checkbox-label">Ягоды</span>
+                  </label>
+                  <label class="calc__checkbox">
+                    <input class="visually-hidden calc__checkbox-input" type="checkbox" name="decoration"><span class="calc__checkbox-window"></span><span class="calc__checkbox-label">Свечи</span>
+                  </label>
+                  <label class="calc__checkbox">
+                    <input class="visually-hidden calc__checkbox-input" type="checkbox" name="decoration"><span class="calc__checkbox-window"></span><span class="calc__checkbox-label">Цифры</span>
+                  </label>
+                  <label class="calc__checkbox">
+                    <input class="visually-hidden calc__checkbox-input" type="checkbox" name="decoration"><span class="calc__checkbox-window"></span><span class="calc__checkbox-label">Заливка глазурью</span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="calc__block">
+            <div class="calc__block-heading">Вес торта:</div>
+            <div class="calc__block-text">Мы делаем торты от 1.5 кг. Рекомендуем ответственно отнестись к этому вопросу, чтобы никто из гостей не остался без своего кусочка :)</div>
+            <div class="calc__counter" data-calc-counter="">
+              <div class="calc__counter-label">Выберите вес (кг):</div>
+              <button class="calc__counter-btn calc__counter-btn--minus" data-calc-counter-minus="true"></button>
+              <input class="calc__counter-input" readonly="" data-calc-counter-input="" value="1">
+              <button class="calc__counter-btn calc__counter-btn--plus" data-calc-counter-plus="true"></button>
+              <div class="calc__counter-parts">~
+                <div class="calc__counter-parts-number" data-calc-counter-parts=""></div>порций
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="row footer__row">
+            <div class="col-lg-2 footer__logo-wrap"><a class="footer__logo" href="index.html"><img class="img-responsive footer__logo-img" src="img/logo.svg" alt="MY RECEPT"></a></div>
+            <div class="col-xl-8 col-lg-7 footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">доставка и оплата</a></li>
+                <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">индивидуальный заказ</a></li>
+              </ul>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">обучение</a></li>
+                <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">конструктор тортов</a></li>
+              </ul>
+              <ul class="footer__nav-list">
+                <li class="footer__nav-list-item"><a class="footer__nav-link" href="#">информация</a></li>
+              </ul>
+            </div>
+            <div class="col-xl-2 col-lg-3 footer__info"><a class="footer__info-tel" href="tel:+79286666950">+7 (928) 666-69-50</a>
+              <div class="footer__info-address">Махачкала, <br>пр-т. Имама Шамиля, 75</div>
+            </div>
+          </div>
+          <div class="row footer__row">
+            <div class="col-lg-3 footer__policy-wrap"><a class="footer__policy" href="#">Политика конфиденциальности</a></div>
+            <div class="col-lg-3 footer__copyright-wrap">
+              <div class="footer__copyright" href="#">©My_recept 2021</div>
+            </div>
+            <div class="col-lg-3 footer__socials-list-wrap">
+              <div class="footer__socials-list-label">Мы в сети:</div>
+              <ul class="footer__socials-list">
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-inst.svg"></a></li>
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-fb.svg"></a></li>
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-vk.svg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="js/index.min.js"></script>
+  </body>
+</html>
