@@ -3,6 +3,31 @@
   padding-bottom: 130px;
   background: $white-color;
 
+  & + .free-lesson {
+    padding-top: 25px;
+  }
+
+  &--diary {
+    padding-top: 166px;
+    background: #fff;
+
+    .articles__heading {
+      text-transform: none;
+
+      &-wrap {
+        margin-bottom: 65px;
+      }
+    }
+  }
+
+  &--bg-fff {
+    background: #fff;
+
+    & + .free-lesson {
+      background: #fff;
+    }
+  }
+
   &__bg-text {
     position: absolute;
     top: 20px;
@@ -24,6 +49,49 @@
     &-wrap {
       margin-bottom: 88px;
     }
+  }
+
+  &__filter {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+
+    &-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      padding: 14px 22px;
+      margin-right: 20px;
+      margin-bottom: 15px;
+      border: 1px solid #DED4CA;
+      border-radius: 37.5px;
+
+      @extend .fz-12;
+      @extend .fw-500;
+      @extend .ttu;
+      @extend .ls-7;
+
+      &.active {
+        border-color: #F3EAE0;
+        background: #F3EAE0;
+      }
+
+      &-text {
+        position: relative;
+        bottom: -2px;
+      }
+
+      &-icon {
+        flex: 0 0 20px;
+        max-width: 20px;
+        margin-right: 15px;
+      }
+    }
+  }
+
+  &__more-btn {
+    margin: 42px auto 0;
   }
 
   &__link {
@@ -71,6 +139,7 @@
 
       @extend .fz-12;
       @extend .fw-500;
+      @extend .ttu;
     }
 
     &-heading {
@@ -190,9 +259,35 @@
         margin-bottom: 42px;
       }
     }
+
+    &__row {
+      margin-bottom: 0;
+    }
   }
 
   @media (max-width: 575.98px) {
+    &--diary {
+      z-index: 3;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -40px;
+        right: -160px;
+        width: 321px;
+        height: 458px;
+        background: url(../img/articles-diary-bg.png) no-repeat center / 100%;
+      }
+
+      .articles__heading-wrap {
+        margin-bottom: 36px;
+      }
+    }
+
+    &__filter {
+      margin-bottom: 25px;
+    }
+
     &__bg-text {
       top: 0px;
       left: -74px;
@@ -205,6 +300,22 @@
       padding-right: 8px;
       margin-bottom: 30px;
       overflow-y: auto;
+
+      &--not-scroll {
+        flex-wrap: wrap;
+
+        .articles__item {
+          &-main {
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+          &-wrap {
+            flex-basis: 100%;
+            max-width: 100%;
+          }
+        }
+      }
     }
 
     &__item {
@@ -230,6 +341,11 @@
       &-date {
         font-size: 10px;
       }
+    }
+
+    &__more-btn {
+      width: 100%;
+      margin-top: 26px;
     }
   }
 }

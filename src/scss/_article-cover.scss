@@ -1,0 +1,110 @@
+.article-cover {
+  padding-top: 131px;
+
+  &__img {
+    width: 492px;
+    height: 438px;
+    object-fit: cover;
+  }
+
+  &__row {
+    margin-top: 40px;
+  }
+
+  &__main {
+    padding-left: 75px;
+    padding-top: 22px;
+  }
+
+  &__heading {
+    margin-bottom: 40px;
+    letter-spacing: normal;
+    text-transform: none;
+  }
+
+  &__info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    color: #ABA5A0;
+    @extend .fz-14;
+
+    &-date {
+      margin-right: 40px;
+    }
+
+    &-views {
+      padding-left: 35px;
+      background: url(../img/views.svg) no-repeat left center / contain;
+    }
+  }
+
+  &__text {
+    margin-bottom: 75px;
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+
+    &-label {
+      margin-right: 4px;
+      @extend .fw-500;
+    }
+
+    &-link {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 100%;
+    }
+
+    &-list {
+      display: flex;
+      &-item {
+        flex: 0 0 35px;
+        max-width: 35px;
+        width: 35px;
+        height: 35px;
+      }
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    &__img {
+      display: block;
+      width: auto;
+      height: auto;
+      max-width: 100%;
+    }
+
+    &__main {
+      padding-left: 15px;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &__img {
+      &-wrap {
+        margin-bottom: 15px;
+      }
+    }
+
+    &__heading {
+      margin-bottom: 30px;
+    }
+
+    &__text {
+      margin-bottom: 25px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    &__socials {
+      font-size: 14px;
+    }
+  }
+
+}

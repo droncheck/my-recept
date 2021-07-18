@@ -53,9 +53,9 @@
       <div class="menu__socials-list-wrap">
         <div class="menu__socials-list-label">Мы в сети:</div>
         <ul class="menu__socials-list">
-          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-inst.svg"></a></li>
-          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-fb.svg"></a></li>
-          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-vk.svg"></a></li>
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-inst.svg)"></a></li>
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-fb.svg)"></a></li>
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-vk.svg)"></a></li>
         </ul>
       </div>
     </div>
@@ -83,13 +83,13 @@
             <div class="calc__block-text">Квадратные и прямоугольные торты, как правило, получаются тяжелее круглых и рассчитываются на большие компании сладкоежек.</div>
             <div class="calc__forms">
               <label class="calc__forms-item">
-                <input class="visually-hidden calc__forms-item-input" type="radio" name="form" checked><span class="calc__forms-item-icon-wrap"><img class="img-responsive calc__forms-item-icon" src="img/calc__forms-item-icon-1.svg" alt="Img"></span><span class="calc__forms-item-text">Круглая</span>
+                <input class="visually-hidden calc__forms-item-input" type="radio" name="form" checked><span class="calc__radio-window"></span><span class="calc__forms-item-icon-wrap"><img class="img-responsive calc__forms-item-icon" src="img/calc__forms-item-icon-1.svg" alt="Img"></span><span class="calc__forms-item-text">Круглая</span>
               </label>
               <label class="calc__forms-item">
-                <input class="visually-hidden calc__forms-item-input" type="radio" name="form"><span class="calc__forms-item-icon-wrap"><img class="img-responsive calc__forms-item-icon" src="img/calc__forms-item-icon-2.svg" alt="Img"></span><span class="calc__forms-item-text">Квадратная</span>
+                <input class="visually-hidden calc__forms-item-input" type="radio" name="form"><span class="calc__radio-window"></span><span class="calc__forms-item-icon-wrap"><img class="img-responsive calc__forms-item-icon" src="img/calc__forms-item-icon-2.svg" alt="Img"></span><span class="calc__forms-item-text">Квадратная</span>
               </label>
               <label class="calc__forms-item">
-                <input class="visually-hidden calc__forms-item-input" type="radio" name="form"><span class="calc__forms-item-icon-wrap"><img class="img-responsive calc__forms-item-icon" src="img/calc__forms-item-icon-3.svg" alt="Img"></span><span class="calc__forms-item-text">Треугольная</span>
+                <input class="visually-hidden calc__forms-item-input" type="radio" name="form"><span class="calc__radio-window"></span><span class="calc__forms-item-icon-wrap"><img class="img-responsive calc__forms-item-icon" src="img/calc__forms-item-icon-3.svg" alt="Img"></span><span class="calc__forms-item-text">Треугольная</span>
               </label>
             </div>
           </div>
@@ -109,9 +109,9 @@
             <div class="calc__block-heading">Основа и начинка:</div>
             <div class="calc__block-text">Здесь представлены самые популярные начинки тортов, которые мы делаем. С более подробным списком вы можете ознакомиться здесь.<br>P.S. В жизни они, конечно же, куда красивее и аппетитнее, чем на картинке :)</div>
             <div class="row no-gutters calc__block-row">
-              <div class="calc__block-col">
+              <div class="col-lg-4 calc__block-col">
                 <div class="calc__block-subheading">Основа:</div>
-                <div class="calc__block-row">
+                <div class="row no-gutters calc__block-row">
                   <label class="calc__radio">
                     <input class="visually-hidden calc__radio-input" type="radio" name="base" checked><span class="calc__radio-window"></span><span class="calc__radio-label">Бисквит</span>
                   </label>
@@ -126,9 +126,9 @@
                   </label>
                 </div>
               </div>
-              <div class="calc__block-col">
+              <div class="col-lg-4 calc__block-col">
                 <div class="calc__block-subheading">Начинка:</div>
-                <div class="calc__block-row">
+                <div class="row no-gutters calc__block-row">
                   <label class="calc__radio">
                     <input class="visually-hidden calc__radio-input" type="radio" name="filling" checked><span class="calc__radio-window"></span><span class="calc__radio-label">Пралине</span>
                   </label>
@@ -143,9 +143,9 @@
                   </label>
                 </div>
               </div>
-              <div class="calc__block-col">
+              <div class="col-lg-4 calc__block-col">
                 <div class="calc__block-subheading">Начинка:</div>
-                <div class="calc__block-row">
+                <div class="row no-gutters calc__block-row">
                   <label class="calc__checkbox">
                     <input class="visually-hidden calc__checkbox-input" type="checkbox" name="decoration" checked><span class="calc__checkbox-window"></span><span class="calc__checkbox-label">Ягоды</span>
                   </label>
@@ -165,15 +165,40 @@
           <div class="calc__block">
             <div class="calc__block-heading">Вес торта:</div>
             <div class="calc__block-text">Мы делаем торты от 1.5 кг. Рекомендуем ответственно отнестись к этому вопросу, чтобы никто из гостей не остался без своего кусочка :)</div>
-            <div class="calc__counter" data-calc-counter="">
+            <div class="calc__counter" data-counter="">
               <div class="calc__counter-label">Выберите вес (кг):</div>
-              <button class="calc__counter-btn calc__counter-btn--minus" data-calc-counter-minus="true"></button>
-              <input class="calc__counter-input" readonly="" data-calc-counter-input="" value="1">
-              <button class="calc__counter-btn calc__counter-btn--plus" data-calc-counter-plus="true"></button>
-              <div class="calc__counter-parts">~
-                <div class="calc__counter-parts-number" data-calc-counter-parts=""></div>порций
-              </div>
+              <button class="calc__counter-btn calc__counter-btn--minus" data-counter-minus="true"></button>
+              <input class="calc__counter-input" readonly="" type="number" data-counter-input="" data-counter-min="1.5" data-counter-step="0.5" value="1.5">
+              <button class="calc__counter-btn calc__counter-btn--plus" data-counter-plus="true"></button>
+              <div class="calc__counter-parts">~<span class="calc__counter-parts-number" data-counter-parts="">8</span> порций</div>
             </div>
+          </div>
+          <div class="calc__block">
+            <div class="calc__block-heading">Фото и комментарии:</div>
+            <div class="calc__block-text">Добавьте комментарии или фото которые помогут нам более точно посчитать стоимость вашего тортика:</div>
+            <label class="calc__block-textarea-wrap">
+              <textarea class="calc__block-textarea" placeholder="Ваш комментарий"></textarea>
+            </label>
+            <label class="file calc__block-file" data-file-wrap>
+              <input class="file__input calc__block-file-input visually-hidden" type="file" data-file><span class="file__label calc__block-file-label" data-file-label="Прикрепить фото">Прикрепить фото</span>
+            </label>
+          </div>
+          <div class="calc__footer">
+            <div class="calc__footer-heading">У вас получился отличный торт!</div>
+            <div class="calc__footer-text">Мы уже просчитываем его цену. Введите свои контактные данные, чтобы мы могли сообщить вам стоимость:</div>
+            <form class="calc__footer-form">
+              <label class="input discont__form-input calc__footer-form-input" data-input="">
+                <input class="input__field" type="text" data-input-field=""/><span class="input__placeholder" data-input-placeholder="">Ваше имя</span>
+              </label>
+              <label class="input discont__form-input calc__footer-form-input" data-input="">
+                <input class="input__field" type="email" data-input-field=""/><span class="input__placeholder" data-input-placeholder="">Ваша почта</span>
+              </label>
+              <label class="input discont__form-input calc__footer-form-input" data-input="">
+                <input class="input__field" type="tel" data-input-field=""/><span class="input__placeholder" data-input-placeholder="">Ваш телефон</span>
+              </label>
+              <button class="btn calc__footer-form-btn" type="submit">УЗНАТЬ стоимость</button>
+              <div class="calc__footer-form-text">* Нажимая кнопку Узнать вы соглашаетесь с условиями использования сервиса, а также с передачей и обработкой данных в My recept.</div>
+            </form>
           </div>
         </div>
       </section>
@@ -201,14 +226,14 @@
           <div class="row footer__row">
             <div class="col-lg-3 footer__policy-wrap"><a class="footer__policy" href="#">Политика конфиденциальности</a></div>
             <div class="col-lg-3 footer__copyright-wrap">
-              <div class="footer__copyright" href="#">©My_recept 2021</div>
+              <div class="footer__copyright">©My_recept 2021</div>
             </div>
             <div class="col-lg-3 footer__socials-list-wrap">
               <div class="footer__socials-list-label">Мы в сети:</div>
               <ul class="footer__socials-list">
-                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-inst.svg"></a></li>
-                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-fb.svg"></a></li>
-                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-vk.svg"></a></li>
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-inst.svg)"></a></li>
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-fb.svg)"></a></li>
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-vk.svg)"></a></li>
               </ul>
             </div>
           </div>
@@ -216,5 +241,53 @@
       </footer>
     </main>
     <script src="js/index.min.js"></script>
+    <div class="popup__overlay" data-popup-close="true" data-popup-overlay></div>
+    <div class="popup__wrap" data-popup="filling" data-popup-close="true">
+      <div class="popup popup--filling">
+        <button class="popup__close" data-popup-close="true"></button>
+        <div class="popup__slider-parent">
+          <div class="popup__slider-heading">Начинки</div>
+          <div class="popup__slider-wrap" data-popup-slider-wrap>
+            <div class="swiper-container popup__slider" data-popup-slider>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide popup__slide">
+                  <div class="popup__slide-img-wrap"><img class="popup__slide-img" src="img/popup__slide-img-1.jpg" alt="Img"></div>
+                  <div class="popup__slide-heading">Пралине</div>
+                  <div class="popup__slide-text">Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободка</div>
+                  <button class="popup__slide-btn" data-filling-btn="filling" data-filling="Пралине"><span class="popup__slide-btn-circle"></span><span class="popup__slide-btn-text">выбрать</span></button>
+                </div>
+                <div class="swiper-slide popup__slide">
+                  <div class="popup__slide-img-wrap"><img class="popup__slide-img" src="img/popup__slide-img-2.jpg" alt="Img"></div>
+                  <div class="popup__slide-heading">Медовая</div>
+                  <div class="popup__slide-text">Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободка</div>
+                  <button class="popup__slide-btn disabled" data-filling-btn="filling" data-filling="Медовая"><span class="popup__slide-btn-circle"></span><span class="popup__slide-btn-text">выбрать</span></button>
+                </div>
+                <div class="swiper-slide popup__slide">
+                  <div class="popup__slide-img-wrap"><img class="popup__slide-img" src="img/popup__slide-img-3.jpg" alt="Img"></div>
+                  <div class="popup__slide-heading">Творожная</div>
+                  <div class="popup__slide-text">Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободка</div>
+                  <button class="popup__slide-btn" data-filling-btn="filling" data-filling="Творожная"><span class="popup__slide-btn-circle"></span><span class="popup__slide-btn-text">выбрать</span></button>
+                </div>
+                <div class="swiper-slide popup__slide">
+                  <div class="popup__slide-img-wrap"><img class="popup__slide-img" src="img/popup__slide-img-4.jpg" alt="Img"></div>
+                  <div class="popup__slide-heading">Шоколадная</div>
+                  <div class="popup__slide-text">Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободка</div>
+                  <button class="popup__slide-btn" data-filling-btn="filling" data-filling="Шоколадная"><span class="popup__slide-btn-circle"></span><span class="popup__slide-btn-text">выбрать</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="popup__slider-controls">
+              <button class="arrow arrow--left arrow--lg products__slider-arrow products__slider-arrow--prev" data-popup-slider-prev=""></button>
+              <button class="arrow arrow--right arrow--lg products__slider-arrow products__slider-arrow--next" data-popup-slider-next=""></button>
+              <div class="popup__slider-scrollbar-wrapper">
+                <div class="swiper-scrollbar-wrap popup__slider-scrollbar-wrap">
+                  <div class="swiper-scrollbar popup__slider-scrollbar" data-popup-slider-scrollbar=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

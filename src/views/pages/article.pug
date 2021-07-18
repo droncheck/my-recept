@@ -1,0 +1,162 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Кулинарный дневник- статья
+
+block main
+
+  section.section.article-cover
+    .container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная страница
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="diary.html") Кулинарный дневник
+        li.breadcrumbs__item
+          a.breadcrumbs__link Топ-30 самых необычных булочных и пекарен мира
+      .row.article-cover__row
+        .col-lg-5.article-cover__img-wrap
+          img.article-cover__img(src="img/article-cover__img.jpg" alt="Img")
+        .col-lg-7.article-cover__main
+          h1.h2.article-cover__heading ТОП-30 самых необычных булочных и пекарен мира
+          .article-cover__info
+            .article-cover__info-date 22 июня 2020
+            .article-cover__info-views 525 прочтений
+          .article-cover__text Не ускользнет ни одна деталь. Используйте возможности сенсора в сочетании с широкоугольным объективом и телеобъективом с 5-кратным оптическим зумом, чтобы делать качественные снимки, где бы вы нинаходились.телеобъективом.
+          .article-cover__socials
+            .article-cover__socials-label Поделиться:
+            ul.article-cover__socials-list
+              li.article-cover__socials-list-item
+                a.article-cover__socials-link(href="#" style="background-image: url(img/card__socials-inst.svg")
+              li.article-cover__socials-list-item
+                a.article-cover__socials-link(href="#" style="background-image: url(img/card__socials-fb.svg")
+              li.article-cover__socials-list-item
+                a.article-cover__socials-link(href="#" style="background-image: url(img/card__socials-vk.svg")
+
+  section.section.article-main
+    .container
+      .article-main__header
+        h2.h2.article-main__heading Оглавление
+        ul.article-main__header-list
+          li.article-main__header-list-item
+            a.article-main__header-link(href="#") Пекарня в бывшем почтовом офисе
+          li.article-main__header-list-item
+            a.article-main__header-link(href="#") Скалки и разделочные доски как элемент декора
+          li.article-main__header-list-item
+            a.article-main__header-link(href="#") Гавайская премиум-пекарня
+          li.article-main__header-list-item
+            a.article-main__header-link(href="#") Пакеты для выпечки в виде газет
+          li.article-main__header-list-item
+            a.article-main__header-link(href="#") Пекарня в бывшем почтовом офисе
+          li.article-main__header-list-item
+            a.article-main__header-link(href="#") Скалки и разделочные доски как элемент декора
+          li.article-main__header-list-item
+            a.article-main__header-link(href="#") Гавайская премиум-пекарня
+          li.article-main__header-list-item
+            a.article-main__header-link(href="#") Пакеты для выпечки в виде газет
+
+      .article-main__main
+        h2 Пекарня в бывшем почтовом офисе
+        p Пекарня Margo в Лондоне расположена в бывшем почтовом отделении, основные мотивы дизайна которого решено было сохранить для булочной. Задачей дизайнера было создать связь современного пространства с прошлым и вызвать у лондонцев положительные воспоминания о почтовых офисах. Пекарня может похвастать постоянно меняющимся меню, которое зависит от настроения повара, предпочтений клиентов и сезона. Также в Margo гордятся использованием яиц от кур «свободного выгула» (т.е. привезенными с фермы), что в таком большом городе как Лондон является дополнительным козырем.
+        img(src="img/img-1.jpg" alt="Img")
+        hr
+        h2 Скалки и разделочные доски как элемент декора
+        p Пекарня  Andersen Bakery в китайском городе Сямынь использует скалки и разделочные доски как один из элементов декора. Вид скалок, в частности, имеют дверные ручки и держатели вывесок, а разделочные доски с логотипами развешены на стенах. Кроме того, стоит отметить и довольно умелое использование внутреннего пространства с размещением полок с продукцией:
+        ol
+          li вдоль двух противоположных стен
+          li что создает очень уютную атмосферу заведения
+
+        // два изображения в ряд
+        // одиночный див будет обрамлять все не стандартные элементы далее
+
+        div
+          div
+            img(src="img/img-2.jpg" alt="Img")
+            img(src="img/img-3.jpg" alt="Img")
+
+        hr
+
+        h2 Гавайская премиум-пекарня
+        p Пекарня  Andersen Bakery в китайском городе Сямынь использует скалки и разделочные доски как один из элементов декора. Вид скалок, в частности, имеют дверные ручки и держатели вывесок, а разделочные доски с логотипами развешены на стенах. Кроме того, стоит отметить и довольно умелое использование внутреннего пространства с размещением полок с продукцией:
+        ul
+          li вдоль двух противоположных стен
+          li что создает очень уютную атмосферу заведения
+
+        // цитата
+
+        div
+          p В отличие от газет настоящих, такие газеты безопасны для хлеба и неспособны пропитать его типографской краской, а бумага на 100% биоразлагаема.
+
+        img(src="img/img-4.jpg" alt="Img")
+        p Вид скалок, в частности, имеют дверные ручки и держатели вывесок, а разделочные доски с логотипами развешены на стенах. Кроме того, стоит отметить и довольно умелое использование внутреннего пространства с размещением полок с продукцией:
+        hr
+
+      .article-main__footer
+        a.article-main__footer-link
+          +arrow('div', 'left')(class="article-main__footer-link-arrow")
+          span Предыдущая статья
+        a.article-main__footer-link
+          span Следующая статья
+          +arrow('div', 'right')(class="article-main__footer-link-arrow")
+
+
+  section.section.articles.articles--bg-fff
+    .container
+      .row.articles__row
+        .col-xl-6.col-md-9.articles__heading-wrap
+          h2.h2.articles__heading Читайте также
+        .col-xl-6.col-md-3.articles__link-wrap
+          +link('diary.html', 'смотреть ещё')(class="articles__link")
+        .col-12.articles__items-wrap
+          .articles__items
+            .articles__item-wrap
+              a.articles__item(href="#")
+                .articles__item-img-wrap
+                  img.articles__item-img(src="img/articles__item-img-1.jpg" alt="Img")
+                .articles__item-main
+                  .articles__item-header
+                    .articles__item-type Кулинария
+                    .articles__item-date 22.03.2021
+                  .articles__item-heading Как сделать коржи для торта, чтобы они были супер вкусные
+            .articles__item-wrap
+              a.articles__item(href="#")
+                .articles__item-img-wrap.articles__item-img-wrap--lg
+                  img.articles__item-img(src="img/articles__item-img-3.jpg" alt="Img")
+                .articles__item-main
+                  .articles__item-header
+                    .articles__item-type Кулинария
+                    .articles__item-date 22.03.2021
+                  .articles__item-heading Как сделать коржи для торта, чтобы они были супер вкусные
+            .articles__item-wrap
+              a.articles__item(href="#")
+                .articles__item-img-wrap
+                  img.articles__item-img(src="img/articles__item-img-2.jpg" alt="Img")
+                .articles__item-main
+                  .articles__item-header
+                    .articles__item-type Кулинария
+                    .articles__item-date 22.03.2021
+                  .articles__item-heading Как сделать коржи для торта, чтобы они были супер вкусные
+
+  section.section.free-lesson
+    .container
+      .row
+        .col-xl-11.free-lesson__main
+          .free-lesson__form-wrap
+            h3.h3.free-lesson__heading Подпишитесь на рассылку #[br] интересных обновлений от My recept
+            form.free-lesson__form
+              +input('text', 'Введите имя')(class="free-lesson__form-input")
+              +input('email', 'Ваша почта')(class="free-lesson__form-input")
+              button.btn.free-lesson__form-btn(type="submit") ПОЛУЧИТЬ
+              .free-lesson__form-text * Нажимая кнопку Получить, #[br]Вы соглашаетесь с нашими #[a(href="#") правилами]
+        .col-xl-6
+        .col-xl-6.free-lesson__img-wrap
+          img.free-lesson__img(src="img/free-lesson__img.jpg" alt="Img")
+
+
+
+
+
+
+
+
+

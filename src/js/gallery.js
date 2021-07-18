@@ -3,7 +3,7 @@ Swiper.use([Autoplay]);
 
 export default function initGallery() {
 
-  new Swiper('[data-gallery]', {
+  new Swiper('[data-gallery-slider]', {
     slidesPerView: 2,
     spaceBetween: 8,
     loop: true,

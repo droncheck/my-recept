@@ -1,0 +1,46 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Команда
+
+block main
+
+  include ../blocks/_team-cover.pug
+
+  include ../blocks/_team.pug
+
+  .logo-line
+
+  include ../blocks/_job.pug
+
+  include ../blocks/_job-conditions.pug
+
+  section.section.request
+    .container
+      h2.h2.request__heading Оставить заявку
+
+      form.request__form
+        .request__form-main
+          .request__form-heading Заполните все поля и приложите резюме
+          .request__form-subheading Мы уже просчитываем его цену. Введите свои контактные данные, чтобы мы могли сообщить вам стоимость:
+          +input('text', 'Ваше имя')(class="request__form-input")
+          +input('email', 'Ваша почта')(class="request__form-input")
+          +input('tel', 'Ваш телефон')(class="request__form-input")
+          +input('text', 'Вакансия')(class="request__form-input")
+          .request__form-file-wrap
+            label.file.request__form-file(data-file-wrap)
+              input.file__input.request__form-file-input.visually-hidden(type="file" data-file)
+              span.file__label.request__form-file-label(data-file-label="Прикрепить порфтолио") Прикрепить порфтолио
+          button.btn.request__form-btn ОТПРАВИТЬ
+          .request__form-text * Нажимая кнопку Отправить вы соглашаетесь с условиями использования сервиса, а также с передачей и обработкой данных в My recept.
+        img.request__form-img(src="img/request__form-img-1.jpg" alt="Img")
+
+
+
+
+
+
+
+
+
+

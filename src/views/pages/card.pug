@@ -1,0 +1,168 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Торт «Мокко»
+
+block main
+
+  section.section.card
+    .container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная страница
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Магазин
+        li.breadcrumbs__item
+          a.breadcrumbs__link Торт «Мокко»
+
+      .row.card__row
+        .col-lg-6.card__img-wrap
+          .swiper-container.card__img-slider(data-card-img-slider)
+            .swiper-wrapper
+              - for(let i = 0; i < 4; i++)
+                .swiper-slide
+                  a.glightbox.card__img-link(href="img/card__img.jpg" data-gallery="img/card__img.jpg")
+                    img.card__img(src="img/card__img.jpg" alt="Img")
+            .card__img-slider-controls
+              +arrow('button', 'left')(class="arrow--lg" data-card-img-slider-prev)
+              .card__img-slider-counter(data-card-img-slider-counter)
+              +arrow('button', 'right')(class="arrow--lg" data-card-img-slider-next)
+        .col-lg-6.card__main
+          h1.h2.card__heading Торт «Мокко»
+          .card__info
+            .card__vendor Артикул: 1ddd02
+            .card__icon.card__icon--berry
+            .card__icon.card__icon--leaves
+            .card__icon.card__icon--choco
+          .card__desc-wrap
+            .card__desc Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободка
+          .card__params
+            .card__params-heading Параметры
+            .card__params-counter-wrap
+              .card__params-subheading Выберите вес, кг:
+              .card__params-counter(data-counter="")
+                button.card__params-counter-btn.card__params-counter-btn--minus(data-counter-minus="true")
+                input.card__params-counter-input(readonly="" type="number" data-counter-input="" data-counter-min="1.5" data-counter-step="0.5" value="1.5")
+                button.card__params-counter-btn.card__params-counter-btn--plus(data-counter-plus="true")
+            .card__params-filling-wrap
+              .card__params-subheading Выберите начинку:
+              input.card__params-filling-input(value="Медовая" data-popup-btn="filling" data-filling-input="filling" readonly)
+            .card__params-comment-wrap
+              .card__params-subheading Надпись на торте
+              input.card__params-comment(type="text" placeholder="Ваш комментарий")
+          .card__footer
+            .card__footer-price-wrap
+              .card__footer-price 1 100
+              .card__footer-price-caption * Цена торта 2 кг. без оформления
+            .card__footer-btns
+              button.btn.card__footer-btn в корзину
+              button.link.card__footer-link заказать в один клик
+
+      .card__tabs-wrap(data-tabs)
+        ul.card__pills
+          li.card__pills-item
+            button.card__pill.active(data-pill="1") Описание
+          li.card__pills-item
+            button.card__pill(data-pill="2") Доставка
+          li.card__pills-item
+            button.card__pill(data-pill="3") Оплата
+        .card__socials
+          .card__socials-label Поделиться:
+          ul.card__socials-list
+            li.card__socials-list-item
+              a.card__socials-link(href="#" style="background-image: url(img/card__socials-inst.svg")
+            li.card__socials-list-item
+              a.card__socials-link(href="#" style="background-image: url(img/card__socials-fb.svg")
+            li.card__socials-list-item
+              a.card__socials-link(href="#" style="background-image: url(img/card__socials-vk.svg")
+
+        .card__tabs
+          .card__tab.active(data-tab="1")
+            .card__tab-params
+              .card__tab-params-item
+                span.card__tab-params-item-cell
+                  span Цена за кг:
+                span.card__tab-params-item-cell.fw-500  1 400 р.
+              .card__tab-params-item
+                span.card__tab-params-item-cell
+                  span Покрытие:
+                span.card__tab-params-item-cell.fw-500  Сливки
+              .card__tab-params-item
+                span.card__tab-params-item-cell
+                  span Декор:
+                span.card__tab-params-item-cell.fw-500  Как на фото
+              .card__tab-params-item
+                span.card__tab-params-item-cell
+                  span Мин. вес:
+                span.card__tab-params-item-cell.fw-500  2 кг
+              .card__tab-params-item
+                span.card__tab-params-item-cell
+                  span Количество ярусов:
+                span.card__tab-params-item-cell.fw-500  1 ярус
+              .card__tab-params-item
+                span.card__tab-params-item-cell
+                  span Срок годности:
+                span.card__tab-params-item-cell.fw-500  2 дня
+            .card__tab-text
+              | Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободкаБисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободкаБисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободка
+
+          .card__tab(data-tab="2")
+            .card__tab-row
+              .card__tab-info
+                .card__tab-info-heading(style="background-image: url(img/card__tab-info-icon-1.svg") Доставка на дом
+                .card__tab-info-text
+                  | 8:00–20:00
+                  br
+                  | (интервалы по 4 часа)
+                .card__tab-info-text
+                  | Стоимость
+                  span.fw-500  - 250 р.
+                .card__tab-info-text
+                  | Бесплатно: заказы
+                  span.fw-500  от 7500 р.
+              .card__tab-info
+                .card__tab-info-heading(style="background-image: url(img/card__tab-info-icon-2.svg") Самовывоз
+                .card__tab-info-text
+                  | Махачкала,  пр-т. Имама Шамиля, 75
+                .card__tab-info-text
+                  span.fw-500 Пн–Пт:
+                  |  10:00–20:00
+                .card__tab-info-text
+                  span.fw-500 Пн–Пт:
+                  |  10:00–18:00
+              .card__tab-info
+                .card__tab-info-heading(style="background-image: url(img/card__tab-info-icon-3.svg") Дополнения
+                .card__tab-info-text
+                  | Фигурки:
+                  span.fw-500  150–1600 р.
+                .card__tab-info-text
+                  | Фотопечать:
+                  span.fw-500  950–1200 р.
+                .card__tab-info-text
+                  | 3D-торты:
+                  span.fw-500  2250 р./кг
+                .card__tab-info-text
+                  | Фрукты и ягоды:
+                  span.fw-500  1300–2600 р.
+
+          .card__tab(data-tab="3")
+            ul.card__tab-list
+              li.card__tab-list-item
+                span.card__tab-list-item-number 1
+                span
+                  span.card__tab-list-item-accent Доставка:
+                  |  Оплата наличными курьеру, получая торт по адресу доставки
+              li.card__tab-list-item
+                span.card__tab-list-item-number 2
+                span
+                  span.card__tab-list-item-accent Самовывоз:
+                  |  Оплата наличными или картой в кондитерской
+
+  include ../blocks/_card-products.pug
+
+
+
+
+
+
+

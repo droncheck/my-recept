@@ -1,0 +1,197 @@
+.request {
+  padding: 160px 0 170px;
+
+  &__heading {
+    margin-bottom: 60px;
+    text-transform: none;
+
+    & + .request__text {
+      margin-top: -30px;
+    }
+  }
+
+  &__text {
+    margin-bottom: 60px;
+    line-height: 1.6;
+  }
+
+  &__form {
+    display: flex;
+    border: 1px solid $accent-color;
+
+    &-main {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      flex-wrap: wrap;
+      flex: 0 0 calc(100% - 515px);
+      max-width: calc(100% - 515px);
+      padding: 50px;
+    }
+
+    &-heading,
+    &-subheading {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    &-subheading {
+      margin-bottom: 32px;
+    }
+
+    &-input {
+      flex: 0 0 calc(50% - 50px);
+      max-width: calc(50% - 50px);
+      margin: 0 7.5px 24px;
+    }
+
+    &-btn {
+      flex: 0 0 194px;
+      max-width: 194px;
+      margin-right: 27px;
+      margin-left: 35px;
+    }
+
+    &-text {
+      flex: 0 0 calc(100% - 256px);
+      max-width: calc(100% - 256px);
+      color: #959899;
+      @extend .fz-12;
+      @extend .lh-130;
+    }
+
+    &-file {
+      &-wrap {
+        flex: 0 0 calc(100% - 70px);
+        max-width: calc(100% - 70px);
+        margin-top: 13px;
+        margin-bottom: 32px;
+      }
+    }
+
+    &-img {
+      flex: 0 0 515px;
+      max-width: 515px;
+      object-fit: cover;
+    }
+
+    &-heading {
+      margin-bottom: 18px;
+      color: $dark-grey-color;
+      @extend .ff-accent;
+      @extend .fz-22;
+      @extend .fw-300;
+      @extend .lh-120;
+    }
+
+    &-text {
+      @extend .fz-14;
+      @extend .lh-150;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    padding: 100px 0;
+
+    &__form {
+      &-img {
+        display: none;
+      }
+
+      &-main {
+        justify-content: space-between;
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      &-input {
+        flex-basis: calc(50% - 30px);
+        max-width: calc(50% - 30px);
+        margin-right: 0;
+        margin-left: 0;
+      }
+
+      &-file {
+        &-wrap {
+          flex-basis: 100%;
+          max-width: 100%;
+        }
+      }
+
+      &-btn {
+        margin-left: 0;
+      }
+
+      &-text {
+        flex-basis: calc(100% - 221px);
+        max-width: calc(100% - 221px);
+        align-self: center;
+      }
+    }
+
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 60px 0;
+
+    &__heading {
+      margin-bottom: 34px;
+
+      & + .request__text {
+        margin-top: -12px;
+      }
+    }
+
+    &__text {
+      margin-bottom: 40px;
+    }
+
+    &__form {
+      &-main {
+        padding: 30px;
+      }
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    &__form {
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: -82px;
+        right: -61px;
+        width: 152px;
+        height: 157px;
+        transform: scale(-1, 1);
+        background: url(../img/cooperation__blueberry.png) no-repeat center / 100%;
+      }
+
+      &-main {
+        padding: 40px 15px;
+      }
+
+      &-input {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      &-btn {
+        flex-basis: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 26px;
+      }
+
+      &-file {
+        margin-top: 10px;
+      }
+
+      &-text {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+}

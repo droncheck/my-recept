@@ -41,6 +41,7 @@ textarea {
   box-shadow: none;
   background: 0 0;
   resize: none;
+  color: $text-color;
 
   &:focus {
     outline: none;
@@ -198,4 +199,19 @@ a {
 .logo-line {
   height: 65px;
   background: url(../img/logo-line.jpg) repeat-x left center / auto 65px;
+}
+
+.file {
+  display: inline-block;
+  min-height: 16px;
+  padding-left: 26px;
+  color: $accent-color;
+  background: url(../img/clip.svg) no-repeat left center;
+  cursor: pointer;
+
+  &__label {
+    display: block;
+    position: relative;
+    top: 2px;
+  }
 }

@@ -34,16 +34,19 @@ block main
         .calc__forms
           label.calc__forms-item
             input.visually-hidden.calc__forms-item-input(type="radio" name="form" checked)
+            span.calc__radio-window
             span.calc__forms-item-icon-wrap
               img.img-responsive.calc__forms-item-icon(src="img/calc__forms-item-icon-1.svg" alt="Img")
             span.calc__forms-item-text Круглая
           label.calc__forms-item
             input.visually-hidden.calc__forms-item-input(type="radio" name="form")
+            span.calc__radio-window
             span.calc__forms-item-icon-wrap
               img.img-responsive.calc__forms-item-icon(src="img/calc__forms-item-icon-2.svg" alt="Img")
             span.calc__forms-item-text Квадратная
           label.calc__forms-item
             input.visually-hidden.calc__forms-item-input(type="radio" name="form")
+            span.calc__radio-window
             span.calc__forms-item-icon-wrap
               img.img-responsive.calc__forms-item-icon(src="img/calc__forms-item-icon-3.svg" alt="Img")
             span.calc__forms-item-text Треугольная
@@ -68,9 +71,9 @@ block main
           br
           |P.S. В жизни они, конечно же, куда красивее и аппетитнее, чем на картинке :)
         .row.no-gutters.calc__block-row
-          .calc__block-col
+          .col-lg-4.calc__block-col
             .calc__block-subheading Основа:
-            .calc__block-row
+            .row.no-gutters.calc__block-row
               label.calc__radio
                 input.visually-hidden.calc__radio-input(type="radio" name="base" checked)
                 span.calc__radio-window
@@ -87,9 +90,9 @@ block main
                 input.visually-hidden.calc__radio-input(type="radio" name="base")
                 span.calc__radio-window
                 span.calc__radio-label Песочная
-          .calc__block-col
+          .col-lg-4.calc__block-col
             .calc__block-subheading Начинка:
-            .calc__block-row
+            .row.no-gutters.calc__block-row
               label.calc__radio
                 input.visually-hidden.calc__radio-input(type="radio" name="filling" checked)
                 span.calc__radio-window
@@ -106,9 +109,9 @@ block main
                 input.visually-hidden.calc__radio-input(type="radio" name="filling")
                 span.calc__radio-window
                 span.calc__radio-label Творожная
-          .calc__block-col
+          .col-lg-4.calc__block-col
             .calc__block-subheading Начинка:
-            .calc__block-row
+            .row.no-gutters.calc__block-row
               label.calc__checkbox
                 input.visually-hidden.calc__checkbox-input(type="checkbox" name="decoration" checked)
                 span.calc__checkbox-window
@@ -129,17 +132,31 @@ block main
       .calc__block
         .calc__block-heading Вес торта:
         .calc__block-text Мы делаем торты от 1.5 кг. Рекомендуем ответственно отнестись к этому вопросу, чтобы никто из гостей не остался без своего кусочка :)
-        .calc__counter(data-calc-counter="")
+        .calc__counter(data-counter="")
           .calc__counter-label Выберите вес (кг):
-          button.calc__counter-btn.calc__counter-btn--minus(data-calc-counter-minus="true")
-          input.calc__counter-input(readonly="" data-calc-counter-input="" value="1")
-          button.calc__counter-btn.calc__counter-btn--plus(data-calc-counter-plus="true")
+          button.calc__counter-btn.calc__counter-btn--minus(data-counter-minus="true")
+          input.calc__counter-input(readonly="" type="number" data-counter-input="" data-counter-min="1.5" data-counter-step="0.5" value="1.5")
+          button.calc__counter-btn.calc__counter-btn--plus(data-counter-plus="true")
           .calc__counter-parts
             | ~
-            .calc__counter-parts-number(data-calc-counter-parts="")
-            | порций
+            span.calc__counter-parts-number(data-counter-parts="") 8
+            |  порций
 
+      .calc__block
+        .calc__block-heading Фото и комментарии:
+        .calc__block-text Добавьте комментарии или фото которые помогут нам более точно посчитать стоимость вашего тортика:
+        label.calc__block-textarea-wrap
+          textarea.calc__block-textarea(placeholder="Ваш комментарий")
+        label.file.calc__block-file(data-file-wrap)
+          input.file__input.calc__block-file-input.visually-hidden(type="file" data-file)
+          span.file__label.calc__block-file-label(data-file-label="Прикрепить фото") Прикрепить фото
 
-
-
-
+      .calc__footer
+        .calc__footer-heading У вас получился отличный торт!
+        .calc__footer-text Мы уже просчитываем его цену. Введите свои контактные данные, чтобы мы могли сообщить вам стоимость:
+        form.calc__footer-form
+          +input('text', 'Ваше имя')(class="calc__footer-form-input")
+          +input('email', 'Ваша почта')(class="calc__footer-form-input")
+          +input('tel', 'Ваш телефон')(class="calc__footer-form-input")
+          button.btn.calc__footer-form-btn(type="submit") УЗНАТЬ стоимость
+          .calc__footer-form-text * Нажимая кнопку Узнать вы соглашаетесь с условиями использования сервиса, а также с передачей и обработкой данных в My recept.

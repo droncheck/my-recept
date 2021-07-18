@@ -53,9 +53,9 @@
       <div class="menu__socials-list-wrap">
         <div class="menu__socials-list-label">Мы в сети:</div>
         <ul class="menu__socials-list">
-          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-inst.svg"></a></li>
-          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-fb.svg"></a></li>
-          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-vk.svg"></a></li>
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-inst.svg)"></a></li>
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-fb.svg)"></a></li>
+          <li class="menu__socials-list-item"><a class="menu__socials-link" href="#" style="background-image: url(img/icon-vk.svg)"></a></li>
         </ul>
       </div>
     </div>
@@ -305,7 +305,7 @@
             <div class="col-xl-2 col-lg-2 gallery__link-wrap"><a class="link link--arrow gallery__link" href="#">подписаться</a>
             </div>
             <div class="col-12">
-              <div class="swiper-container gallery__slider" data-gallery>
+              <div class="swiper-container gallery__slider" data-gallery-slider>
                 <div class="swiper-wrapper gallery__slider-wrapper">
                   <div class="swiper-slide">
                     <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-1.jpg" alt="Img"></div>
@@ -342,7 +342,7 @@
                   </div>
                 </div>
               </div>
-              <div class="swiper-container gallery__slider" data-gallery>
+              <div class="swiper-container gallery__slider" data-gallery-slider>
                 <div class="swiper-wrapper gallery__slider-wrapper">
                   <div class="swiper-slide">
                     <div class="gallery__img-wrap"><img class="gallery__img" src="img/gallery__img-1.jpg" alt="Img"></div>
@@ -427,14 +427,14 @@
           <div class="row footer__row">
             <div class="col-lg-3 footer__policy-wrap"><a class="footer__policy" href="#">Политика конфиденциальности</a></div>
             <div class="col-lg-3 footer__copyright-wrap">
-              <div class="footer__copyright" href="#">©My_recept 2021</div>
+              <div class="footer__copyright">©My_recept 2021</div>
             </div>
             <div class="col-lg-3 footer__socials-list-wrap">
               <div class="footer__socials-list-label">Мы в сети:</div>
               <ul class="footer__socials-list">
-                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-inst.svg"></a></li>
-                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-fb.svg"></a></li>
-                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-vk.svg"></a></li>
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-inst.svg)"></a></li>
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-fb.svg)"></a></li>
+                <li class="footer__socials-list-item"><a class="footer__socials-link" href="#" style="background-image: url(img/icon-vk.svg)"></a></li>
               </ul>
             </div>
           </div>
@@ -442,5 +442,53 @@
       </footer>
     </main>
     <script src="js/index.min.js"></script>
+    <div class="popup__overlay" data-popup-close="true" data-popup-overlay></div>
+    <div class="popup__wrap" data-popup="filling" data-popup-close="true">
+      <div class="popup popup--filling">
+        <button class="popup__close" data-popup-close="true"></button>
+        <div class="popup__slider-parent">
+          <div class="popup__slider-heading">Начинки</div>
+          <div class="popup__slider-wrap" data-popup-slider-wrap>
+            <div class="swiper-container popup__slider" data-popup-slider>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide popup__slide">
+                  <div class="popup__slide-img-wrap"><img class="popup__slide-img" src="img/popup__slide-img-1.jpg" alt="Img"></div>
+                  <div class="popup__slide-heading">Пралине</div>
+                  <div class="popup__slide-text">Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободка</div>
+                  <button class="popup__slide-btn" data-filling-btn="filling" data-filling="Пралине"><span class="popup__slide-btn-circle"></span><span class="popup__slide-btn-text">выбрать</span></button>
+                </div>
+                <div class="swiper-slide popup__slide">
+                  <div class="popup__slide-img-wrap"><img class="popup__slide-img" src="img/popup__slide-img-2.jpg" alt="Img"></div>
+                  <div class="popup__slide-heading">Медовая</div>
+                  <div class="popup__slide-text">Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободка</div>
+                  <button class="popup__slide-btn disabled" data-filling-btn="filling" data-filling="Медовая"><span class="popup__slide-btn-circle"></span><span class="popup__slide-btn-text">выбрать</span></button>
+                </div>
+                <div class="swiper-slide popup__slide">
+                  <div class="popup__slide-img-wrap"><img class="popup__slide-img" src="img/popup__slide-img-3.jpg" alt="Img"></div>
+                  <div class="popup__slide-heading">Творожная</div>
+                  <div class="popup__slide-text">Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободка</div>
+                  <button class="popup__slide-btn" data-filling-btn="filling" data-filling="Творожная"><span class="popup__slide-btn-circle"></span><span class="popup__slide-btn-text">выбрать</span></button>
+                </div>
+                <div class="swiper-slide popup__slide">
+                  <div class="popup__slide-img-wrap"><img class="popup__slide-img" src="img/popup__slide-img-4.jpg" alt="Img"></div>
+                  <div class="popup__slide-heading">Шоколадная</div>
+                  <div class="popup__slide-text">Бисквит "Джоконда" на миндальной муке, шоколадное креме с бобами тонка, карамельный крем с маскарпоне, мусс на белом шоколаде с кофейной пастой, подушка из бисквитных сливок, декор из шоколадного ободка</div>
+                  <button class="popup__slide-btn" data-filling-btn="filling" data-filling="Шоколадная"><span class="popup__slide-btn-circle"></span><span class="popup__slide-btn-text">выбрать</span></button>
+                </div>
+              </div>
+            </div>
+            <div class="popup__slider-controls">
+              <button class="arrow arrow--left arrow--lg products__slider-arrow products__slider-arrow--prev" data-popup-slider-prev=""></button>
+              <button class="arrow arrow--right arrow--lg products__slider-arrow products__slider-arrow--next" data-popup-slider-next=""></button>
+              <div class="popup__slider-scrollbar-wrapper">
+                <div class="swiper-scrollbar-wrap popup__slider-scrollbar-wrap">
+                  <div class="swiper-scrollbar popup__slider-scrollbar" data-popup-slider-scrollbar=""></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

@@ -1,0 +1,150 @@
+.job-conditions {
+  padding: 190px 0 160px;
+
+  & + .request {
+    padding-top: 160px;
+  }
+
+  &__main {
+    padding-left: 60px;
+  }
+
+  &__heading {
+    margin-bottom: 50px;
+    color: $dark-grey-color;
+    @extend .ff-accent;
+    @extend .fz-20;
+    @extend .fw-400;
+    @extend .lh-150;
+  }
+
+  &__list {
+    max-width: 370px;
+    @extend .lh-150;
+    &-item {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__footer {
+
+    @extend .fz-18;
+    @extend .fw-500;
+
+    &-text {
+      position: relative;
+      top: -4px;
+      vertical-align: bottom;
+    }
+
+    &-link {
+      @extend .fz-24;
+    }
+  }
+
+  &__img {
+    position: absolute;
+    object-fit: cover;
+
+    &:nth-child(1) {
+      top: -45px;
+      right: 70px;
+      width: 616px;
+      height: 636px;
+    }
+
+    &:nth-child(2) {
+      top: 455px;
+      right: 510px;
+      width: 451px;
+      height: 293px;
+    }
+
+    &:nth-child(3) {
+      bottom: -511px;
+      right: -1169px;
+      width: 542px;
+      height: 542px;
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    padding: 100px 0;
+
+    & + .request {
+      padding-top: 100px;
+    }
+
+    &__main {
+      padding-left: 15px;
+    }
+
+    &__img {
+      &:nth-child(3) {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+
+    &__img {
+      &:nth-child(1) {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 73.888vw;
+        height: 76.111vw;
+      }
+
+      &:nth-child(2) {
+        top: auto;
+        right: 15px;
+        bottom: -13.055vw;
+        width: 54.444vw;
+        height: 35vw;
+      }
+
+      &-wrap {
+        margin-top: 78px;
+        order: 1;
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    padding: 60px 0;
+
+    &__heading {
+      margin-top: 30px;
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    & + .request {
+      padding-top: 60px;
+    }
+
+    &__heading {
+      margin-bottom: 23px;
+      font-size: 20px;
+    }
+
+    &__list {
+      font-size: 14px;
+    }
+
+    &__footer {
+      margin-top: 10px;
+      font-size: 14px;
+
+      &-text {
+        top: -1px;
+      }
+
+      &-link {
+        font-size: 16px;
+      }
+    }
+  }
+}

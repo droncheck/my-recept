@@ -1,0 +1,29 @@
+-
+  const list = [
+    'Различные графики работы (можно брать доп. смены и подработки)',
+    'Официальное оформление по ТК',
+    'Зарплата 2 раза в месяц',
+    'Бесплатное 3-ех разовое питание и стильная форма',
+    'Посещение СПА-салона',
+    'Карьерный рост',
+    'Премии по результатам работы',
+    'Скидки на продукцию компании',
+    'Дружный и молодой коллектив профессионалов',
+    'Обучение за счет компании',
+  ]
+
+section.section.job-conditions
+  .container
+    .row
+      .col-lg-6.job-conditions__img-wrap
+        img.job-conditions__img(src="img/job-conditions__img-1.jpg" alt="Img")
+        img.job-conditions__img(src="img/job-conditions__img-2.jpg" alt="Img")
+        img.job-conditions__img(src="img/job-conditions__img-3.png" alt="Img")
+      .col-lg-6.job-conditions__main
+        h2.job-conditions__heading Для каждого члена нашей дружной команды мы предлагаем:
+        ul.job-conditions__list
+          each text in list
+            li.job-conditions__list-item= text
+        .job-conditions__footer
+          span.job-conditions__footer-text Звоните по номеру:
+          a.job-conditions__footer-link(href="tel:+79214000590")  8 (921) 400-05-90

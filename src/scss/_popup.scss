@@ -1,0 +1,263 @@
+.popup {
+  position: relative;
+  background: #fff;
+  margin: 50px auto;
+
+  &--filling {
+   max-width: 1624px;
+   padding: 78px 185px 125px;
+  }
+
+  &__wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 200;
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    @include transitions;
+
+    &.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 199;
+    background: rgba(0,0,0,.92);
+    opacity: 0;
+    pointer-events: none;
+    @include transitions;
+
+    &.active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: -35px;
+    right: -35px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: url(../img/close.svg) no-repeat center / 38px 38px $dark-rose-color;
+  }
+
+  &__slide {
+    &-heading {
+      margin-bottom: 10px;
+      color: $accent-color;
+      @extend .ff-accent;
+      @extend .fz-20;
+    }
+
+    &-text {
+      margin-bottom: 24px;
+      @extend .fz-14;
+    }
+
+    &-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+
+      &-wrap {
+        position: relative;
+        padding-top: 77%;
+        margin-bottom: 30px;
+      }
+    }
+
+    &-btn {
+      display: flex;
+      align-items: center;
+      color: $accent-color;
+
+      &.disabled {
+        color: $dark-grey-color;
+
+        .popup__slide-btn {
+          &-circle {
+            &::before {
+              background: $dark-grey-color;
+            }
+
+            &::after {
+              display: none;
+            }
+          }
+        }
+      }
+
+      &-circle {
+        position: relative;
+        flex: 0 0 32px;
+        max-width: 32px;
+        width: 32px;
+        height: 32px;
+        margin-right: 13px;
+        border-radius: 50%;
+        border: 1px solid;
+        pointer-events: none;
+
+        &::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 12px;
+          height: 1px;
+          background: $accent-color;
+        }
+
+        &::after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 1px;
+          height: 12px;
+          background: $accent-color;
+        }
+      }
+
+      &-text {
+        border-bottom: 1px solid;
+        pointer-events: none;
+
+        @extend .fz-12;
+        @extend .fw-500;
+        @extend .lh-150;
+        @extend .ls-7;
+        @extend .ttu;
+      }
+    }
+  }
+
+  &__slider {
+    &-wrap {
+      position: relative;
+    }
+
+    &-heading {
+      margin-bottom: 60px;
+      text-align: center;
+      color: $accent-color;
+      @extend .ff-accent;
+      @extend .fz-44;
+      @extend .fw-500;
+    }
+
+    &-scrollbar {
+      &-wrapper {
+        display: none;
+      }
+    }
+
+    &-controls {
+      position: absolute;
+      left: -92px;
+      right: -92px;
+      top: 50%;
+      transform: translate(0, -50%);
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  @media (max-width: 1624px) {
+    &--filling {
+      max-width: 800px;
+      padding: 60px 120px;
+    }
+
+    &__slider {
+      &-controls {
+        left: -80px;
+        right: -80px;
+      }
+    }
+  }
+
+  @media (max-width: 991.98px)  {
+    max-width: 100%;
+    min-height: 100%;
+    margin: 0;
+    padding: 60px 15px;
+
+    &__close {
+      top: 15px;
+      right: 15px;
+      width: 30px;
+      height: 30px;
+      background-size: 25px;
+    }
+
+    &__slider {
+      margin-bottom: 45px;
+
+      &-heading {
+        margin-bottom: 30px;
+      }
+
+      &-controls {
+        position: relative;
+        left: 0;
+        right: 0;
+        top: auto;
+        transform: none;
+        justify-content: flex-start;
+      }
+
+      &-scrollbar {
+        &-wrapper {
+          display: block;
+          order: 1;
+          flex: 0 0 calc(100% - 125px);
+          max-width: calc(100% - 125px);
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575.98px) {
+    &__slider {
+      &-heading {
+        font-size: 28px;
+        text-align: left;
+      }
+
+      &-scrollbar {
+        &-wrapper {
+          flex-basis: calc(100% - 105px);
+          max-width: calc(100% - 105px);
+        }
+      }
+    }
+
+    &__slide {
+      &-text {
+        font-size: 11px;
+      }
+    }
+  }
+}
