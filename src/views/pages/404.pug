@@ -1,0 +1,19 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Корзина
+
+block main
+
+  section.section.error
+    .container
+      .error__heading Ой! Кажется эту страницу еще не приготовили)))
+      .error__subheading Попробуйте поискать еще или вернуться на главную
+      img.img-responsive.error__img(src="img/error.png" alt="404")
+      +link('index.html', 'на главную')
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Корзина
+
+block main
+
+  section.section.cart
+    .container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная страница
+        li.breadcrumbs__item
+          a.breadcrumbs__link Корзина
+
+      .cart__header
+        h1.h2.cart__heading Оформление заказа
+        .cart__header-text Обещаем хорошее настроение и незабываемое послевкусие!
+
+      .row.cart__row
+        .col-lg-7.cart__main
+          .cart__subheading Доставка
+          .cart__main-block
+            .cart__main-radios
+              .cart__main-radios-block
+                label.calc__radio
+                  input.visually-hidden.calc__radio-input(type="radio" name="del" checked)
+                  span.calc__radio-window
+                  span.calc__radio-label Курьерская доставка*
+              .cart__main-radios-block
+                label.calc__radio
+                  input.visually-hidden.calc__radio-input(type="radio" name="del" checked)
+                  span.calc__radio-window
+                  span.calc__radio-label Самовывоз Адрес 1
+              .cart__main-radios-block
+                label.calc__radio
+                  input.visually-hidden.calc__radio-input(type="radio" name="del" checked)
+                  span.calc__radio-window
+                  span.calc__radio-label Самовывоз Адрес 1
+          .cart__main-block
+            .cart__main-inputs
+              +input('text', 'Имя получателя')(class="cart__main-input input--required")
+              +input('tel', 'Ваш телефон')(class="cart__main-input input--required")
+              +input('text', 'Адрес доставки')(class="cart__main-input input--required")
+              +input('text', 'Дата доставки')(class="cart__main-input input--required" data-calendar)
+              label.calc__block-textarea-wrap
+                textarea.calc__block-textarea(placeholder="Комментарий к заказу")
+          a.btn.btn--white.cart__btn(href="#") назад
+          a.btn.cart__btn(href="#") ДАЛЕЕ
+        .col-lg-5
+          .cart__subheading Корзина:
+          .cart__total
+            .cart__total-text 5 товаров на
+              span.cart__total-price  7 300
+            +link('#', 'РЕДАКТИРОВАТЬ')
+
+
+
+
+
+
+

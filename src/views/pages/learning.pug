@@ -1,0 +1,87 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Обучение
+
+block main
+
+  section.section.learning-cover
+    .container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная страница
+        li.breadcrumbs__item
+          a.breadcrumbs__link Обучение
+
+      .learning-cover__header
+        h1.h2.learning-cover__heading Обучение
+        .learning-cover__header-text Обещаем хорошее настроение и незабываемое послевкусие!
+
+      .learning-cover__slider-wrap(data-learning-slider-wrap)
+        .swiper-container.learning-cover__slider(data-learning-slider)
+          .swiper-wrapper
+            .swiper-slide
+              .learning-cover__slide
+                .learning-cover__slide-img-wrap
+                  img.learning-cover__slide-img(src="img/learning-cover__slide-img.jpg" alt="Img")
+                .learning-cover__slide-type Онлайн-курс
+                .learning-cover__slide-name «Домашний кондитер»
+                .learning-cover__slide-desc Научитесь готовить более 35 десертов-шедевров у себя на кухне, даже если никогда не дружили с духовкой
+                +link('#', 'записаться')(class="learning-cover__slide-link")
+            .swiper-slide
+              .learning-cover__slide
+                .learning-cover__slide-img-wrap
+                  img.learning-cover__slide-img(src="img/learning-cover__slide-img.jpg" alt="Img")
+                .learning-cover__slide-type Онлайн-курс
+                .learning-cover__slide-name «Домашний кондитер»
+                .learning-cover__slide-desc Научитесь готовить более 35 десертов-шедевров у себя на кухне, даже если никогда не дружили с духовкой
+                +link('#', 'записаться')(class="learning-cover__slide-link")
+        +arrow('button', 'left')(class="arrow--lg learning-cover__slider-arrow learning-cover__slider-arrow--prev" data-learning-slider-prev)
+        +arrow('button', 'right')(class="arrow--lg learning-cover__slider-arrow learning-cover__slider-arrow--next" data-learning-slider-next)
+        img.learning-cover__strawberry(src="img/learning-cover-strawberry.png" alt="Img")
+
+      img.learning-cover__img.learning-cover__img--1(src="img/learning-cover-img-1.png" alt="Img")
+      img.learning-cover__img.learning-cover__img--2(src="img/learning-cover-img-2.png" alt="Img")
+
+  section.section.founder
+    .founder__bg-text @my_recept
+    .container
+      h2.h2.founder__heading My recept
+      .row
+        .col-lg-6.founder__img-wrap
+          img.img-responsive.founder__img(src="img/founder__img.jpg" alt="Img")
+        .col-lg-6.founder__main
+          .founder__name ХАДИЖА
+          .founder__caption Основательница My recept
+          .founder__quote Десерты  — любимое дело, которым я занималась задолго до открытия кофейни. Мне нравилось экспериментировать со вкусами и придумывать новые сочетания. Я видела, как кусочек торта может спасти даже самый неудачный день.
+          .founder__text
+            | Близкие приходят уставшие с работы, а дома их ждут пирожные. Они садятся пить чай, откусывают кусочек, и на их лице появляется улыбка. Раздражённость и усталость пропадают.
+            br
+            br
+            | Если ты так же как и я любишь сладкое, радовать своих близких и готовить твоя страсть, то жду тебя на своем курсе.
+          +link('#', 'ЗАПИСАТЬСЯ НА КУРС')(class="founder__link")
+
+  include ../blocks/_learn-products.pug
+
+  section.section.free-lesson.free-lesson--bg-fff
+    .container
+      .row
+        .col-xl-11.free-lesson__main
+          .free-lesson__form-wrap
+            h3.h3.free-lesson__heading Получите доступ к бесплатному уроку
+            form.free-lesson__form
+              +input('text', 'Введите имя')(class="free-lesson__form-input")
+              +input('email', 'Ваша почта')(class="free-lesson__form-input")
+              button.btn.free-lesson__form-btn(type="submit") ПОЛУЧИТЬ
+              .free-lesson__form-text * Нажимая кнопку Получить, #[br]Вы соглашаетесь с нашими #[a(href="#") правилами]
+        .col-xl-6
+        .col-xl-6.free-lesson__img-wrap
+          img.free-lesson__img(src="img/free-lesson__img.jpg" alt="Img")
+
+  include ../blocks/_reviews.pug
+
+
+
+
+
+

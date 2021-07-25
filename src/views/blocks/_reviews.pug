@@ -1,0 +1,28 @@
+section.section.products.reviews
+  .container
+    h2.h2.reviews__heading отзывы наших учеников
+    .row.products__main.learn-products__main(data-products-slider-wrap="")
+      .col-lg-1.products__slider-controls
+        +arrow('button', 'right')(class="products__slider-arrow products__slider-arrow--next" data-products-slider-next="")
+        +arrow('button', 'left')(class="products__slider-arrow products__slider-arrow--prev" data-products-slider-prev="")
+        .products__slider-scrollbar-wrapper.reviews__scrollbar-wrapper
+          .swiper-scrollbar-wrap.products__slider-scrollbar-wrap
+            .swiper-scrollbar.products__slider-scrollbar.reviews__scrollbar(data-products-slider-scrollbar="")
+      .col-xl-7.col-lg-10
+        .swiper-container.products__slider(data-products-slider="1")
+          .swiper-wrapper
+            - for (let i = 0; i < 2; i++)
+              .swiper-slide.products__item-wrap
+                .reviews__item
+                  img.reviews__item-img(src="img/reviews__item-item-1.jpg" alt="Img")
+                  .reviews__item-header
+                    .reviews__item-name Анна Русланова
+                    .reviews__item-post кондитер компании Печка
+                  .reviews__item-text Пекарня Margo в Лондоне расположена в бывшем почтовом отделении, основные мотивы дизайна которого решено было сохранить для булочной. Задачей дизайнера было создать связь современного пространства мотивы дизайна которого решено было сохранить для булочной.
+              .swiper-slide.products__item-wrap
+                .reviews__item
+                  img.reviews__item-img(src="img/reviews__item-item-2.jpg" alt="Img")
+                  .reviews__item-header
+                    .reviews__item-name Анна Русланова
+                    .reviews__item-post кондитер компании Печка
+                  .reviews__item-text Пекарня Margo в Лондоне расположена в бывшем почтовом отделении, основные мотивы дизайна которого решено было сохранить для булочной. Задачей дизайнера было создать связь современного пространства мотивы дизайна которого решено было сохранить для булочной.

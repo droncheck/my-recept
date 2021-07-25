@@ -1,0 +1,74 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Контакты
+
+block main
+
+  section.section.contacts
+    .container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная страница
+        li.breadcrumbs__item
+          a.breadcrumbs__link Контакты
+
+      .contacts__header
+        h1.h2.contacts__heading Контакты
+        .contacts__header-text Обещаем хорошее настроение и незабываемое послевкусие!
+
+      .row.contacts__row
+        .col-xl-3.col-lg-4 MyRecept - контактные данные нашей кондитерской
+        .col-xl-5.col-lg-6.contacts__info-wrap
+          .contacts__info
+            img.contacts__info-icon(src="img/contacts__info-icon-1.svg" alt="")
+            .contacts__info-text Ежедневно #[br]с 10:00 до 19:00
+          .contacts__info
+            img.contacts__info-icon(src="img/contacts__info-icon-2.svg" alt="")
+            .contacts__info-text
+              a(href="tel:+79884491000") 8 (988) 449-10-00
+              br
+              a(href="tel:+79884492000") 8 (988) 449-20-00
+
+      .row.contacts__row
+        .col-lg-6.contacts__main
+          .contacts__subheading Где мы находимcя:
+          .row
+            .col-xl-6.col-lg-7
+              .contacts__info
+                img.contacts__info-icon(src="img/contacts__info-icon-3.svg" alt="")
+                .contacts__info-text Махачкала, пр-т. Имама Шамиля, 75
+              .contacts__info
+                img.contacts__info-icon(src="img/contacts__info-icon-3.svg" alt="")
+                .contacts__info-text Махачкала, пр-т. Имама Шамиля, 75
+              .contacts__info
+                img.contacts__info-icon(src="img/contacts__info-icon-3.svg" alt="")
+                .contacts__info-text Махачкала, пр-т. Имама Шамиля, 75
+        .col-lg-6.contacts__map-wrap
+          .contacts__map
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A5b9d7494ebe03bbe85453cb3da1e8efad3c2834d5dcc864d10246f3bcaba1221&amp;width=100%25&amp;height=100%25&amp;lang=ru_RU&amp;scroll=true"></script>
+
+  section.section.request
+    .container
+      h2.h2.request__heading Обратная связь
+      form.request__form
+        .request__form-main
+          .request__form-heading Заполните все поля
+          .request__form-subheading Перезвоним и ответим на все вопросы , #[br] чтобы у вас не осталось никаких сомнений.
+          +input('text', 'Ваше имя')(class="request__form-input")
+          +input('email', 'Ваша почта')(class="request__form-input")
+          +input('tel', 'Ваш телефон')(class="request__form-input")
+          +input('text', 'Сообщение')(class="request__form-input")
+          button.btn.request__form-btn ОТПРАВИТЬ
+          .request__form-text * Нажимая кнопку Отправить вы соглашаетесь с условиями использования сервиса, а также с передачей и обработкой данных в My recept.
+        img.request__form-img(src="img/request__form-img-4.jpg" alt="Img")
+
+
+
+
+
+
+
+
+
+

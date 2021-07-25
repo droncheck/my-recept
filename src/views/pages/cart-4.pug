@@ -1,0 +1,61 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Корзина
+
+block main
+
+  section.section.cart
+    .container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная страница
+        li.breadcrumbs__item
+          a.breadcrumbs__link Корзина
+
+      .cart__header
+        h1.h2.cart__heading Оформление заказа
+        .cart__header-text Обещаем хорошее настроение и незабываемое послевкусие!
+
+      .row.cart__row
+        .col-lg-7.cart__main
+          .cart__subheading Оплата
+          .cart__main-block
+            .cart__main-radios
+              .cart__main-radios-block
+                label.calc__radio
+                  input.visually-hidden.calc__radio-input(type="radio" name="pay" checked)
+                  span.calc__radio-window
+                  span.calc__radio-label Наличные
+              .cart__main-radios-block
+                label.calc__radio
+                  input.visually-hidden.calc__radio-input(type="radio" name="pay" checked)
+                  span.calc__radio-window
+                  span.calc__radio-label На сайте онлайн
+              .cart__main-radios-block
+                label.calc__radio
+                  input.visually-hidden.calc__radio-input(type="radio" name="pay" checked)
+                  span.calc__radio-window
+                  span.calc__radio-label Картой курьеру
+          .cart__main-block
+            .cart__main-inputs
+              +input('text', 'Введите промокод')(class="cart__main-input")
+              button.btn.btn--white.cart__btn назад
+          .cart__main-block
+            .cart__main-total Доставка: 530 р.
+            .cart__main-total Итого: #[span.cart__main-total-price 3 530 р.]
+          a.btn.btn--white.cart__btn(href="#") назад
+          a.btn.cart__btn(href="#") ОФОРМИТЬ ЗАКАЗ
+        .col-lg-5
+          .cart__subheading Корзина:
+          .cart__total
+            .cart__total-text 5 товаров на
+              span.cart__total-price  7 300
+            +link('#', 'РЕДАКТИРОВАТЬ')
+
+
+
+
+
+
+

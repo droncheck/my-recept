@@ -3,8 +3,8 @@ Swiper.use([Navigation, Scrollbar]);
 
 export default function initProducts() {
 
-  const $parent = document.querySelector('[data-products-slider-wrap]');
-  if ($parent) {
+  const $parents = document.querySelectorAll('[data-products-slider-wrap]');
+  $parents.forEach($parent => {
     const $slider = $parent.querySelector('[data-products-slider]');
     const $prev = $parent.querySelector('[data-products-slider-prev]');
     const $next = $parent.querySelector('[data-products-slider-next]');
@@ -12,7 +12,9 @@ export default function initProducts() {
 
     new Swiper($slider, {
       slidesPerView: 1,
-      spaceBetween: 15,
+      spaceBetween: $slider.dataset.productsSlider
+        ? 30
+        : 15,
       navigation: {
         prevEl: $prev,
         nextEl: $next,
@@ -23,11 +25,15 @@ export default function initProducts() {
       },
       breakpoints: {
         768: {
-          slidesPerView: 2,
-          spaceBetween: 30,
+          slidesPerView: $slider.dataset.productsSlider
+            ? +$slider.dataset.productsSlider
+            : 2,
+          spaceBetween: $slider.dataset.productsSlider
+            ? 50
+            : 30,
         }
       }
     });
-  }
+  });
 
 }

@@ -3,6 +3,10 @@
   padding-bottom: 120px;
   background: $white-color;
 
+  &--bg-fff {
+    background: #fff;
+  }
+
   &__heading {
     margin-bottom: 55px;
     color: $dark-grey-color;

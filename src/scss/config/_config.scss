@@ -215,3 +215,88 @@ a {
     top: 2px;
   }
 }
+
+.datepicker {
+
+  .datepicker-controls .prev-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: url(../../img/date-prev.svg) no-repeat center / 4px 7px #D9C4AF;
+    font-size: 0;
+
+    &:hover,
+    &:focus {
+      background: url(../../img/date-prev.svg) no-repeat center / 4px 7px #D9C4AF;
+    }
+  }
+
+  .datepicker-controls .next-btn {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: url(../../img/date-next.svg) no-repeat center / 4px 7px #D9C4AF;
+    font-size: 0;
+
+    &:hover,
+    &:focus {
+      background: url(../../img/date-next.svg) no-repeat center / 4px 7px #D9C4AF;
+    }
+  }
+
+  .datepicker-controls .view-switch {
+    pointer-events: none;
+    background: 0 0;
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  .datepicker-picker {
+    padding: 13px 17px;
+    background: #FBF5EF;
+    border-radius: 9px;
+  }
+
+  .datepicker-dropdown .datepicker-picker {
+    box-shadow: none;
+    background: #FBF5EF;
+    border-radius: 9px;
+  }
+
+  .datepicker-header {
+    margin-bottom: 16px;
+  }
+
+  .datepicker-cell {
+    border-radius: 50%;
+    height: 25px;
+    line-height: 25px;
+    font-size: 10px;
+  }
+  .datepicker-grid {
+    width: 175px;
+  }
+
+  .datepicker-view .dow {
+    height: 25px;
+    line-height: 25px;
+    font-size: 10px;
+    font-weight: 400;
+  }
+
+  .datepicker-cell.selected, .datepicker-cell.selected:hover {
+    font-weight: 400;
+    border: 1px solid #D9C4AF;
+    color: $accent-color;
+    background: 0 0;
+  }
+
+}
+
+.datepicker-input.in-edit:active, .datepicker-input.in-edit:focus {
+  box-shadow: none;
+}
+
+.datepicker-input.in-edit {
+  border-color: rgba($text-color, 0.5);
+}

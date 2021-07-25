@@ -2,6 +2,20 @@
   background: #fff3f5;
   height: 800px;
 
+  &__strawberry {
+    position: absolute;
+
+    &--1 {
+      top: 352px;
+      right: -345px;
+    }
+
+    &--2 {
+      top: 127px;
+      left: -240px;
+    }
+  }
+
   &__container {
     height: 100%;
   }
@@ -124,6 +138,10 @@
 
   @media (max-width: 1199.98px) {
     height: 600px;
+
+    &__strawberry {
+      display: none;
+    }
 
     &__socials {
       width: 600px;

@@ -33,7 +33,17 @@
             </ul>
           </nav>
           <div class="col-lg-2 col-3 header__controls">
-            <button class="header__btn header__btn--search"></button><a class="header__cart" href="cart.html"><span class="header__btn header__btn--cart"><span class="header__btn-counter">14</span></span><span class="header__cart-sum">2 340</span></a>
+            <div class="header__search-wrap" data-search>
+              <input class="header__search" type="text" placeholder="Введите запрос">
+              <button class="btn header__search-btn">найти</button>
+              <div class="header__search-list">
+                <div class="header__search-list-item"><a class="header__search-link" href="#">Сладкие десерты</a></div>
+                <div class="header__search-list-item"><a class="header__search-link" href="#">Наборы</a></div>
+                <div class="header__search-list-item"><a class="header__search-link" href="#">Макаронс</a></div>
+                <div class="header__search-list-item"><a class="header__search-link" href="#">Торты</a></div>
+              </div>
+            </div>
+            <button class="header__btn header__btn--search" data-search-open="true"></button><a class="header__cart" href="cart.html"><span class="header__btn header__btn--cart"><span class="header__btn-counter">14</span></span><span class="header__cart-sum">2 340</span></a>
           </div>
         </div>
       </div>
@@ -186,10 +196,10 @@
               <div class="free-lesson__form-wrap">
                 <h3 class="h3 free-lesson__heading">Подпишитесь на рассылку <br> интересных обновлений от My recept</h3>
                 <form class="free-lesson__form">
-                  <label class="input discont__form-input free-lesson__form-input" data-input="">
+                  <label class="input free-lesson__form-input" data-input="">
                     <input class="input__field" type="text" data-input-field=""/><span class="input__placeholder" data-input-placeholder="">Введите имя</span>
                   </label>
-                  <label class="input discont__form-input free-lesson__form-input" data-input="">
+                  <label class="input free-lesson__form-input" data-input="">
                     <input class="input__field" type="email" data-input-field=""/><span class="input__placeholder" data-input-placeholder="">Ваша почта</span>
                   </label>
                   <button class="btn free-lesson__form-btn" type="submit">ПОЛУЧИТЬ</button>
@@ -286,6 +296,109 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup__wrap" data-popup="cart" data-popup-close="true">
+      <div class="popup popup--cart">
+        <button class="popup__close" data-popup-close="true"></button>
+        <div class="popup__cart">
+          <div class="popup__cart-heading">Товар добавлен в корзину</div>
+          <div class="popup__cart-item">
+            <div class="cart__item"><img class="cart__item-img" src="img/cart__items-img-1.jpg" alt="Img">
+              <div class="cart__item-name">Торт Мокко</div>
+              <div class="cart__item-counter" data-counter="">
+                <button class="cart__item-counter-btn cart__item-counter-btn--minus" data-counter-minus="true"></button>
+                <input class="cart__item-counter-input" readonly="" type="number" data-counter-input="" data-counter-min="1" data-counter-step="1" value="1">
+                <button class="cart__item-counter-btn cart__item-counter-btn--plus" data-counter-plus="true"></button>
+              </div>
+              <div class="cart__item-price">2 500</div>
+              <button class="cart__item-delete"></button>
+            </div>
+          </div>
+          <div class="popup__cart-btns"><a class="btn popup__cart-btn">Перейти в корзину</a>
+            <button class="btn btn--white popup__cart-btn" data-popup-close="true">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup__wrap" data-popup="thanks" data-popup-close="true">
+      <div class="popup popup--thanks">
+        <button class="popup__close" data-popup-close="true"></button>
+        <div class="popup__heading">Руслан, спасибо!</div>
+        <div class="popup__subheading">Ваш Заказ <span class="fw-700">N 283200825</span> успешно оформлен.<br>В ближайшее рабочее время с вами свяжется менеджер<br>для уточнения деталей.</div>
+        <button class="btn popup__btn" data-popup-close="true">Продолжить</button>
+      </div>
+    </div>
+    <div class="popup__wrap" data-popup="call" data-popup-close="true">
+      <div class="popup popup--form">
+        <button class="popup__close" data-popup-close="true"></button>
+        <div class="popup__heading">Заказать звонок</div>
+        <div class="popup__form">
+          <label class="input popup__form-input" data-input="">
+            <input class="input__field" type="text" data-input-field=""/><span class="input__placeholder" data-input-placeholder="">Ваше имя</span>
+          </label>
+          <label class="input popup__form-input" data-input="">
+            <input class="input__field" type="tel" data-input-field=""/><span class="input__placeholder" data-input-placeholder="">Ваш телефон</span>
+          </label>
+          <button class="btn popup__form-btn">ОТПРАВИТЬ</button>
+          <label class="calc__checkbox">
+            <input class="visually-hidden calc__checkbox-input" type="checkbox" checked><span class="calc__checkbox-window"></span><span class="calc__checkbox-label">Я согласен с <a href="#">условиями использования сервиса</a>, а также с передачей и обработкой моих данных в My recept.</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="popup__wrap" data-popup="click" data-popup-close="true">
+      <div class="popup popup--form">
+        <button class="popup__close" data-popup-close="true"></button>
+        <div class="popup__heading">Заказать в 1 клик</div>
+        <div class="popup__form">
+          <label class="input popup__form-input" data-input="">
+            <input class="input__field" type="text" data-input-field=""/><span class="input__placeholder" data-input-placeholder="">Ваше имя</span>
+          </label>
+          <label class="input popup__form-input" data-input="">
+            <input class="input__field" type="tel" data-input-field=""/><span class="input__placeholder" data-input-placeholder="">Ваш телефон</span>
+          </label>
+          <button class="btn popup__form-btn">Заказать</button>
+          <label class="calc__checkbox">
+            <input class="visually-hidden calc__checkbox-input" type="checkbox" checked><span class="calc__checkbox-window"></span><span class="calc__checkbox-label">Я согласен с <a href="#">условиями использования сервиса</a>, а также с передачей и обработкой моих данных в My recept.</span>
+          </label>
+        </div>
+      </div>
+    </div>
+    <div class="popup__wrap" data-popup="thanks-1" data-popup-close="true">
+      <div class="popup popup--success">
+        <button class="popup__close" data-popup-close="true"></button>
+        <div class="popup__success"><img class="popup__success-img" src="img/popup__success-img-1.jpg" alt="Img">
+          <div class="popup__success-main">
+            <div class="popup__heading">Спасибо! Ваша заявка получена.</div>
+            <div class="popup__subheading">Наш специалист свяжется с вами в ближайшее время</div>
+            <button class="link link--arrow" data-popup-close="true">продолжить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup__wrap" data-popup="thanks-2" data-popup-close="true">
+      <div class="popup popup--success">
+        <button class="popup__close" data-popup-close="true"></button>
+        <div class="popup__success"><img class="popup__success-img" src="img/popup__success-img-2.jpg" alt="Img">
+          <div class="popup__success-main">
+            <div class="popup__heading">Спасибо за Ваше обращение!</div>
+            <div class="popup__subheading">В ближайшее время вам постуип письмо на указанный вами адрес электронной почты.</div>
+            <button class="link link--arrow" data-popup-close="true">продолжить</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="popup__wrap" data-popup="thanks-3" data-popup-close="true">
+      <div class="popup popup--success">
+        <button class="popup__close" data-popup-close="true"></button>
+        <div class="popup__success">
+          <div class="popup__success-main">
+            <div class="popup__heading">Ваш заказ #2362 успешно оформлен!</div>
+            <div class="popup__subheading">Мы перезвоним вам в ближайшее время для  уточнения деталей заказа.</div>
+            <button class="link link--arrow" data-popup-close="true">продолжить</button>
+          </div><img class="popup__success-img" src="img/popup__success-img-3.jpg" alt="Img">
         </div>
       </div>
     </div>

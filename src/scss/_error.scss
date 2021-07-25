@@ -1,0 +1,36 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 131px 0;
+  min-height: calc(100vh - 290px);
+  text-align: center;
+
+  &__heading {
+    margin-bottom: 21px;
+    @extend .ff-accent;
+    @extend .fz-30;
+    @extend .fw-300;
+  }
+
+  &__subheading {
+    margin-bottom: 71px;
+  }
+
+  &__img {
+    margin: 0 auto 83px;
+  }
+
+  @media (max-width: 575.98px) {
+    &__heading {
+      margin-bottom: 40px;
+      font-size: 20px;
+    }
+
+    &__subheading {
+      margin-bottom: 60px;
+      font-size: 12px;
+    }
+  }
+}

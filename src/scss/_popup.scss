@@ -8,6 +8,44 @@
    padding: 78px 185px 125px;
   }
 
+  &--cart {
+    max-width: 909px;
+    padding: 85px 135px;
+  }
+
+  &--thanks {
+    max-width: 535px;
+    padding: 85px 55px;
+    text-align: center;
+  }
+
+  &--form {
+    max-width: 857px;
+    padding: 60px;
+  }
+
+  &--success {
+    max-width: 1073px;
+  }
+
+  &__heading {
+    margin-bottom: 25px;
+    text-align: center;
+    @extend .ff-accent;
+    @extend .fz-24;
+    @extend .fw-500;
+  }
+
+  &__subheading {
+    margin-bottom: 38px;
+    line-height: 1.8;
+    @extend .fz-14;
+  }
+
+  &__btn {
+    margin: 0 auto;
+  }
+
   &__wrap {
     position: fixed;
     top: 0;
@@ -183,6 +221,106 @@
     }
   }
 
+  &__cart {
+    &-heading {
+      margin-bottom: 80px;
+      text-align: center;
+      @extend .ff-accent;
+      @extend .fz-44;
+      @extend .fw-300;
+    }
+
+    &-item {
+      padding: 30px 0;
+      margin-bottom: 48px;
+      border-top: 1px solid #DECDD0;
+      border-bottom: 1px solid #DECDD0;
+      .cart__item {
+        margin-bottom: 0;
+      }
+    }
+
+    &-btn {
+      margin: 5px 15px;
+    }
+
+    &-btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    &-input {
+      flex: 0 0 232px;
+      max-width: 232px;
+      margin-bottom: 28px;
+    }
+
+    &-btn {
+      flex: 0 0 195px;
+      max-width: 195px;
+      margin-bottom: 28px;
+    }
+
+    .calc__checkbox {
+      flex-basis: 100%;
+      max-width: 430px;
+      &-input {
+        &:checked ~ .calc__checkbox-label {
+          font-weight: 400;
+        }
+      }
+      &-label {
+        font-size: 12px;
+        font-weight: 400;
+        white-space: normal;
+        color: #a6a1a2;
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &__success {
+    display: flex;
+    &-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      flex: 0 0 calc(100% - 380px);
+      max-width: calc(100% - 380px);
+      padding: 64px 50px;
+
+      .popup__heading {
+        margin-bottom: 12px;
+        font-size: 34px;
+        font-weight: 300;
+        text-align: left;
+      }
+      .popup__subheading {
+        font-size: 16px;
+      }
+      .link {
+        max-width: 123px;
+      }
+    }
+
+    &-img {
+      flex: 0 0 380px;
+      max-width: 380px;
+      object-fit: cover;
+    }
+  }
+
   @media (max-width: 1624px) {
     &--filling {
       max-width: 800px;
@@ -197,11 +335,42 @@
     }
   }
 
+  @media (max-width: 1073px) {
+    &--success {
+      max-width: 800px;
+    }
+
+    &__success {
+      flex-wrap: wrap;
+
+      &-main,
+      &-img {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      &-img {
+        height: 180px;
+      }
+    }
+  }
+
   @media (max-width: 991.98px)  {
     max-width: 100%;
     min-height: 100%;
     margin: 0;
     padding: 60px 15px;
+
+    &--success {
+      padding: 0;
+    }
+
+    &__success {
+      &-main {
+        padding: 60px 15px;
+        order: 1;
+      }
+    }
 
     &__close {
       top: 15px;
@@ -239,6 +408,16 @@
     }
   }
 
+  @media (max-width: 767.98px) {
+    &__form {
+      &-btn,
+      &-input {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
   @media (max-width: 575.98px) {
     &__slider {
       &-heading {
@@ -257,6 +436,60 @@
     &__slide {
       &-text {
         font-size: 11px;
+      }
+    }
+
+    &__cart {
+      &-heading {
+        margin-bottom: 30px;
+        font-size: 18px;
+      }
+
+      &-item  {
+        margin-bottom: 35px;
+      }
+
+      &-btn {
+        width: 282px;
+        padding: 15px;
+      }
+    }
+
+    &__heading {
+      margin-bottom: 16px;
+      font-size: 18px;
+    }
+
+    &__subheading {
+      line-height: 1.4;
+      font-size: 13px;
+
+      br {
+        display: none;
+      }
+    }
+
+    &__success {
+      &-main {
+        text-align: center;
+
+        .popup__heading {
+          max-width: 210px;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 18px;
+          text-align: center;
+        }
+        .popup__subheading {
+          max-width: 210px;
+          margin-left: auto;
+          margin-right: auto;
+          font-size: 13px;
+          text-align: center;
+        }
+        .link {
+          margin: 0 auto;
+        }
       }
     }
   }

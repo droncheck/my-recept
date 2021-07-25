@@ -30,7 +30,9 @@
   },
   "dependencies": {
     "glightbox": "^3.0.9",
+    "imask": "^6.1.0",
     "nouislider": "^15.2.0",
-    "swiper": "^6.7.5"
+    "swiper": "^6.7.5",
+    "vanillajs-datepicker": "^1.1.4"
   }
 }

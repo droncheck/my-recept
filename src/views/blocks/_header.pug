@@ -43,7 +43,20 @@ header.header
             li.header__nav-list-item
               a.header__nav-link(href= item.href)= item.text
       .col-lg-2.col-3.header__controls
-        button.header__btn.header__btn--search
+        .header__search-wrap(data-search)
+          input.header__search(type="text" placeholder="Введите запрос")
+          button.btn.header__search-btn найти
+          .header__search-list
+            .header__search-list-item
+              a.header__search-link(href="#") Сладкие десерты
+            .header__search-list-item
+              a.header__search-link(href="#") Наборы
+            .header__search-list-item
+              a.header__search-link(href="#") Макаронс
+            .header__search-list-item
+              a.header__search-link(href="#") Торты
+
+        button.header__btn.header__btn--search(data-search-open="true")
         a.header__cart(href="cart.html")
           span.header__btn.header__btn--cart
             span.header__btn-counter 14

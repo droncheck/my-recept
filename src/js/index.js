@@ -12,6 +12,10 @@ import GLightbox from 'glightbox';
 import initCard from "./card";
 import initPopups from "./popup";
 import initTabs from "./tabs";
+import initLearingSlider from "./learning-slider";
+import initCartSlider from "./cart-slider";
+import initCalendar from "./datepicker";
+import initMasks from "./mask-input";
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -42,5 +46,13 @@ document.addEventListener('DOMContentLoaded', function() {
   initPopups();
 
   initTabs();
+
+  initLearingSlider();
+
+  initCartSlider();
+
+  initCalendar();
+
+  initMasks();
 
 });

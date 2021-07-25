@@ -55,8 +55,8 @@ block main
               .card__footer-price 1 100
               .card__footer-price-caption * Цена торта 2 кг. без оформления
             .card__footer-btns
-              button.btn.card__footer-btn в корзину
-              button.link.card__footer-link заказать в один клик
+              button.btn.card__footer-btn(data-popup-btn="cart") в корзину
+              button.link.card__footer-link(data-popup-btn="click") заказать в один клик
 
       .card__tabs-wrap(data-tabs)
         ul.card__pills

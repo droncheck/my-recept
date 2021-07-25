@@ -1,0 +1,62 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Корзина
+
+block main
+
+  section.section.cart
+    .container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная страница
+        li.breadcrumbs__item
+          a.breadcrumbs__link Корзина
+
+      .cart__header
+        h1.h2.cart__heading Оформление заказа
+        .cart__header-text Обещаем хорошее настроение и незабываемое послевкусие!
+
+      .row.cart__row
+        .col-lg-7.cart__main
+          .cart__subheading Основная информация
+          .cart__main-block
+            .cart__main-inputs
+              +input('text', 'Ваше имя')(class="cart__main-input input--required")
+              +input('tel', 'Ваш телефон')(class="cart__main-input input--required")
+          .cart__main-block
+            .cart__main-radios
+              .cart__main-radios-block
+                .cart__main-radios-title Делаете заказ в подарок?
+                label.calc__radio
+                  input.visually-hidden.calc__radio-input(type="radio" name="gift" checked)
+                  span.calc__radio-window
+                  span.calc__radio-label Нет
+                label.calc__radio
+                  input.visually-hidden.calc__radio-input(type="radio" name="gift" checked)
+                  span.calc__radio-window
+                  span.calc__radio-label Да
+              .cart__main-radios-block
+                .cart__main-radios-title Добавить открытку?
+                label.calc__radio
+                  input.visually-hidden.calc__radio-input(type="radio" name="add" checked)
+                  span.calc__radio-window
+                  span.calc__radio-label Нет
+                label.calc__radio
+                  input.visually-hidden.calc__radio-input(type="radio" name="add" checked)
+                  span.calc__radio-window
+                  span.calc__radio-label Да
+          a.btn.cart__btn(href="#") ДАЛЕЕ
+        .col-lg-5
+          .cart__subheading Корзина:
+          .cart__total
+            .cart__total-text 5 товаров на
+              span.cart__total-price  7 300
+            +link('#', 'РЕДАКТИРОВАТЬ')
+
+
+
+
+
+
+

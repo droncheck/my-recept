@@ -1,0 +1,125 @@
+.pay {
+  padding-top: 191px;
+  padding-bottom: 25px;
+
+  &__heading {
+    margin-bottom: 60px;
+    text-transform: none;
+  }
+
+  &__subheading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    @extend .ff-accent;
+    @extend .fz-28;
+    @extend .fw-300;
+    @extend .lh-120;
+    @extend .ls-3;
+    @extend .ttu;
+
+    &-icon {
+      margin-left: 20px;
+    }
+  }
+
+  &__block {
+    margin-bottom: 76px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__main {
+    padding-left: 108px;
+    padding-top: 84px;
+    padding-bottom: 84px;
+  }
+
+  &__img {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    width: 484px;
+    height: 616px;
+
+    &-wrap {
+      &::before {
+        content: '';
+        position: absolute;
+        top: -137px;
+        left: -317px;
+        width: 577.83px;
+        height: 653.02px;
+        background: url(../img/pay-bubble.svg) no-repeat center / 100%;
+      }
+    }
+  }
+
+  @media (max-width: 1199.98px) {
+    padding: 100px 0 0;
+
+    &__img {
+      &-wrap {
+        &::before {
+          display: none;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    &__main {
+      padding: 0 15px;
+      margin-bottom: 45px;
+    }
+
+    &__block {
+      margin-bottom: 50px;
+    }
+
+    &__heading {
+      margin-bottom: 35px;
+    }
+
+    &__img {
+      position: relative;
+      width: 69%;
+      height: auto;
+      margin-left: 30px;
+
+      &-wrap {
+        order: 1;
+
+        &::before {
+          display: block;
+          right: 0;
+          top: 12%;
+          left: auto;
+          width: 69%;
+          height: 96%;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767.98px) {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  @media (max-width: 575.98px) {
+    &__subheading {
+      font-size: 18px;
+      &-icon {
+        height: 36px;
+        width: auto;
+      }
+    }
+    &__text {
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Корзина
+
+block main
+
+  section.section.cart
+    .container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная страница
+        li.breadcrumbs__item
+          a.breadcrumbs__link Корзина
+
+      .cart__header
+        h1.h2.cart__heading Оформление заказа
+        .cart__header-text Обещаем хорошее настроение и незабываемое послевкусие!
+
+      .row.cart__row
+        .col-lg-7.cart__main
+          .cart__subheading Выберите открытку:
+          .swiper-container.cart__main-slider(data-cart-slider)
+            .swiper-wrapper
+                .swiper-slide
+                  label.cart__main-slide
+                    input.visually-hidden(type="radio" name="choose" checked)
+                    span.cart__main-slide-window
+                    img.cart__main-slide-img(src="img/cart__main-slide-img-1.jpg" alt="Img")
+                .swiper-slide
+                  label.cart__main-slide
+                    input.visually-hidden(type="radio" name="choose")
+                    span.cart__main-slide-window
+                    img.cart__main-slide-img(src="img/cart__main-slide-img-2.jpg" alt="Img")
+                .swiper-slide
+                  label.cart__main-slide
+                    input.visually-hidden(type="radio" name="choose")
+                    span.cart__main-slide-window
+                    img.cart__main-slide-img(src="img/cart__main-slide-img-3.jpg" alt="Img")
+                .swiper-slide
+                  label.cart__main-slide
+                    input.visually-hidden(type="radio" name="choose")
+                    span.cart__main-slide-window
+                    img.cart__main-slide-img(src="img/cart__main-slide-img-3.jpg" alt="Img")
+            .cart__main-slider-controls
+              +arrow('button', 'left')(class="arrow--lg" data-cart-slider-prev)
+              .cart__main-slider-counter(data-cart-slider-counter)
+              +arrow('button', 'right')(class="arrow--lg" data-cart-slider-next)
+              .cart__main-slider-scrollbar-wrapper
+                .swiper-scrollbar-wrap.cart__main-slider-scrollbar-wrap
+                  .swiper-scrollbar.cart__main-slider-scrollbar(data-cart-slider-scrollbar="")
+          .cart__main-block
+            .cart__subheading Добавить текст:
+            label.calc__block-textarea-wrap
+              textarea.calc__block-textarea(placeholder="Ваш комментарий")
+          a.btn.btn--white.cart__btn(href="#") назад
+          a.btn.cart__btn(href="#") ДАЛЕЕ
+        .col-lg-5
+          .cart__subheading Корзина:
+          .cart__total
+            .cart__total-text 5 товаров на
+              span.cart__total-price  7 300
+            +link('#', 'РЕДАКТИРОВАТЬ')
+
+
+
+
+
+
+

@@ -119,3 +119,144 @@ html(lang="ru")
                 .popup__slider-scrollbar-wrapper
                   .swiper-scrollbar-wrap.popup__slider-scrollbar-wrap
                     .swiper-scrollbar.popup__slider-scrollbar(data-popup-slider-scrollbar="")
+
+      .popup__wrap(data-popup="cart" data-popup-close="true")
+        .popup.popup--cart
+          button.popup__close(data-popup-close="true")
+
+          .popup__cart
+            .popup__cart-heading Товар добавлен в корзину
+
+            .popup__cart-item
+              .cart__item
+                img.cart__item-img(src="img/cart__items-img-1.jpg" alt="Img")
+                .cart__item-name Торт Мокко
+                .cart__item-counter(data-counter="")
+                  button.cart__item-counter-btn.cart__item-counter-btn--minus(data-counter-minus="true")
+                  input.cart__item-counter-input(readonly="" type="number" data-counter-input="" data-counter-min="1" data-counter-step="1" value="1")
+                  button.cart__item-counter-btn.cart__item-counter-btn--plus(data-counter-plus="true")
+                .cart__item-price 2 500
+                button.cart__item-delete
+
+            .popup__cart-btns
+              a.btn.popup__cart-btn Перейти в корзину
+              button.btn.btn--white.popup__cart-btn(data-popup-close="true") ПРОДОЛЖИТЬ ПОКУПКИ
+
+      .popup__wrap(data-popup="thanks" data-popup-close="true")
+        .popup.popup--thanks
+          button.popup__close(data-popup-close="true")
+
+          .popup__heading Руслан, спасибо!
+          .popup__subheading
+            | Ваш Заказ #[span.fw-700 N 283200825] успешно оформлен.
+            br
+            | В ближайшее рабочее время с вами свяжется менеджер
+            br
+            | для уточнения деталей.
+          button.btn.popup__btn(data-popup-close="true") Продолжить
+
+      .popup__wrap(data-popup="call" data-popup-close="true")
+        .popup.popup--form
+          button.popup__close(data-popup-close="true")
+
+          .popup__heading Заказать звонок
+          .popup__form
+            +input('text', 'Ваше имя')(class="popup__form-input")
+            +input('tel', 'Ваш телефон')(class="popup__form-input")
+            button.btn.popup__form-btn ОТПРАВИТЬ
+            label.calc__checkbox
+              input.visually-hidden.calc__checkbox-input(type="checkbox" checked)
+              span.calc__checkbox-window
+              span.calc__checkbox-label Я согласен с #[a(href="#") условиями использования сервиса], а также с передачей и обработкой моих данных в My recept.
+
+      .popup__wrap(data-popup="click" data-popup-close="true")
+        .popup.popup--form
+          button.popup__close(data-popup-close="true")
+
+          .popup__heading Заказать в 1 клик
+          .popup__form
+            +input('text', 'Ваше имя')(class="popup__form-input")
+            +input('tel', 'Ваш телефон')(class="popup__form-input")
+            button.btn.popup__form-btn Заказать
+            label.calc__checkbox
+              input.visually-hidden.calc__checkbox-input(type="checkbox" checked)
+              span.calc__checkbox-window
+              span.calc__checkbox-label Я согласен с #[a(href="#") условиями использования сервиса], а также с передачей и обработкой моих данных в My recept.
+
+      .popup__wrap(data-popup="thanks-1" data-popup-close="true")
+        .popup.popup--success
+          button.popup__close(data-popup-close="true")
+
+          .popup__success
+            img.popup__success-img(src="img/popup__success-img-1.jpg" alt="Img")
+            .popup__success-main
+              .popup__heading Спасибо! Ваша заявка получена.
+              .popup__subheading Наш специалист свяжется с вами в ближайшее время
+              button.link.link--arrow(data-popup-close="true") продолжить
+
+      .popup__wrap(data-popup="thanks-2" data-popup-close="true")
+        .popup.popup--success
+          button.popup__close(data-popup-close="true")
+
+          .popup__success
+            img.popup__success-img(src="img/popup__success-img-2.jpg" alt="Img")
+            .popup__success-main
+              .popup__heading Спасибо за Ваше обращение!
+              .popup__subheading В ближайшее время вам постуип письмо на указанный вами адрес электронной почты.
+              button.link.link--arrow(data-popup-close="true") продолжить
+
+      .popup__wrap(data-popup="thanks-3" data-popup-close="true")
+        .popup.popup--success
+          button.popup__close(data-popup-close="true")
+
+          .popup__success
+            .popup__success-main
+              .popup__heading Ваш заказ #2362 успешно оформлен!
+              .popup__subheading Мы перезвоним вам в ближайшее время для  уточнения деталей заказа.
+              button.link.link--arrow(data-popup-close="true") продолжить
+            img.popup__success-img(src="img/popup__success-img-3.jpg" alt="Img")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

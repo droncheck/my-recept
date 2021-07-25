@@ -17,6 +17,27 @@
     color: #fff;
   }
 
+  &[href]:hover,
+  &[href]:focus {
+    color: #fff;
+  }
+
+  &--white {
+    background: #fff;
+    border: 1px solid $dark-rose-color;
+    color: $dark-rose-color;
+
+    &:hover,
+    &:focus {
+      color: $dark-rose-color;
+    }
+
+    &[href]:hover,
+    &[href]:focus {
+      color: $dark-rose-color;
+    }
+  }
+
   @media (max-width: 575.98px) {
     height: 50px;
   }

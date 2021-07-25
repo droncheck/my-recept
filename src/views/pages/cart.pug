@@ -1,0 +1,68 @@
+extends ../layouts/default.pug
+
+block title
+  title My Recept | Корзина
+
+block main
+
+  section.section.cart
+    .container
+      ul.breadcrumbs
+        li.breadcrumbs__item
+          a.breadcrumbs__link(href="index.html") Главная страница
+        li.breadcrumbs__item
+          a.breadcrumbs__link Корзина
+
+      .cart__header
+        h1.h2.cart__heading Корзина
+        .cart__header-text Обещаем хорошее настроение и незабываемое послевкусие!
+
+      .row.cart__row
+        .col-lg-7.cart__main
+          .cart__subheading Оформление заказа
+          .cart__items
+            .cart__items-header
+              .cart__items-header-cell Товар:
+              .cart__items-header-cell Количество:
+              .cart__items-header-cell Цена за штуку:
+            .cart__item
+              img.cart__item-img(src="img/cart__items-img-1.jpg" alt="Img")
+              .cart__item-name Торт Мокко
+              .cart__item-counter(data-counter="")
+                button.cart__item-counter-btn.cart__item-counter-btn--minus(data-counter-minus="true")
+                input.cart__item-counter-input(readonly="" type="number" data-counter-input="" data-counter-min="1" data-counter-step="1" value="1")
+                button.cart__item-counter-btn.cart__item-counter-btn--plus(data-counter-plus="true")
+              .cart__item-price 2 500
+              button.cart__item-delete
+            .cart__item
+              img.cart__item-img(src="img/cart__items-img-2.jpg" alt="Img")
+              .cart__item-name Фисташка-малина
+              .cart__item-counter(data-counter="")
+                button.cart__item-counter-btn.cart__item-counter-btn--minus(data-counter-minus="true")
+                input.cart__item-counter-input(readonly="" type="number" data-counter-input="" data-counter-min="1" data-counter-step="1" value="1")
+                button.cart__item-counter-btn.cart__item-counter-btn--plus(data-counter-plus="true")
+              .cart__item-price 500
+              button.cart__item-delete
+            .cart__item
+              img.cart__item-img(src="img/cart__items-img-3.jpg" alt="Img")
+              .cart__item-name Графские развалины
+              .cart__item-counter(data-counter="")
+                button.cart__item-counter-btn.cart__item-counter-btn--minus(data-counter-minus="true")
+                input.cart__item-counter-input(readonly="" type="number" data-counter-input="" data-counter-min="1" data-counter-step="1" value="1")
+                button.cart__item-counter-btn.cart__item-counter-btn--plus(data-counter-plus="true")
+              .cart__item-price 4 300
+              button.cart__item-delete
+          .cart__items-caption * Проверьте все товары и только потом переходите к следующему шагу оформления заказа
+        .col-lg-5
+          .cart__subheading Итого:
+          .cart__total
+            .cart__total-text 5 товаров на
+              span.cart__total-price  7 300
+            +link('#', 'перейти к оформлению')
+
+
+
+
+
+
+

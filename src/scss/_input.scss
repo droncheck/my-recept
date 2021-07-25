@@ -2,6 +2,18 @@
   position: relative;
   height: 42px;
 
+
+  &--required {
+    &::after {
+      content: '*';
+      position: absolute;
+      right: 0;
+      bottom: 3px;
+      font-size: 15px;
+      color: #f33;
+    }
+  }
+
   &__field {
     position: absolute;
     bottom: 0;
