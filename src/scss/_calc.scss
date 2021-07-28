@@ -75,6 +75,10 @@
           max-width: 57px;
           margin-right: 13px;
         }
+
+        &--checked {
+          display: none;
+        }
       }
 
       &-text {
@@ -86,6 +90,16 @@
           & ~ .calc__forms-item-text {
             background: url(../img/check.svg) no-repeat right center;
           }
+          & ~ .calc__forms-item-icon-wrap {
+            .calc__forms-item-icon {
+              display: none;
+
+              &--checked {
+                display: block;
+              }
+            }
+          }
+
         }
       }
     }

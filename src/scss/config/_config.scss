@@ -172,6 +172,7 @@ a {
       width: 18px;
       height: 18px;
     }
+
   }
 
   &-connect {
@@ -222,12 +223,12 @@ a {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: url(../../img/date-prev.svg) no-repeat center / 4px 7px #D9C4AF;
+    background: url("data:image/svg+xml,%3Csvg width='5' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.354.646a.5.5 0 00-.708 0l-3 3a.5.5 0 000 .708l3 3a.5.5 0 10.708-.708L1.707 4l2.647-2.646a.5.5 0 000-.708z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center / 4px 7px #D9C4AF;
     font-size: 0;
 
     &:hover,
     &:focus {
-      background: url(../../img/date-prev.svg) no-repeat center / 4px 7px #D9C4AF;
+      background: url("data:image/svg+xml,%3Csvg width='5' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.354.646a.5.5 0 00-.708 0l-3 3a.5.5 0 000 .708l3 3a.5.5 0 10.708-.708L1.707 4l2.647-2.646a.5.5 0 000-.708z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center / 4px 7px #D9C4AF;
     }
   }
 
@@ -235,12 +236,12 @@ a {
     width: 24px;
     height: 24px;
     border-radius: 50%;
-    background: url(../../img/date-next.svg) no-repeat center / 4px 7px #D9C4AF;
+    background: url("data:image/svg+xml,%3Csvg width='5' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M.646.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 11-.708-.708L3.293 4 .646 1.354a.5.5 0 010-.708z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center / 4px 7px #D9C4AF;
     font-size: 0;
 
     &:hover,
     &:focus {
-      background: url(../../img/date-next.svg) no-repeat center / 4px 7px #D9C4AF;
+      background: url("data:image/svg+xml,%3Csvg width='5' height='8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M.646.646a.5.5 0 01.708 0l3 3a.5.5 0 010 .708l-3 3a.5.5 0 11-.708-.708L3.293 4 .646 1.354a.5.5 0 010-.708z' fill='%23fff'/%3E%3C/svg%3E") no-repeat center / 4px 7px #D9C4AF;
     }
   }
 

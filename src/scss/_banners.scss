@@ -136,8 +136,64 @@
     }
   }
 
+  &__btns {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    bottom: 38px;
+    right: 66px;
+    width: 522px;
+    height: 70px;
+    padding-left: 44px;
+    padding-right: 93px;
+    border-radius: 40px;
+    background: $dark-rose-color;
+
+    &-close {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: -1px;
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
+      background: url(../img/close-rose.svg) no-repeat center / 37px 37px #fff;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 36px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &-text {
+      margin-left: 11px;
+      border-bottom: 1px solid;
+      color: #fff;
+      @extend .fz-12;
+      @extend .fw-500;
+      @extend .lh-150;
+      @extend .ls-7;
+      @extend .ttu;
+    }
+
+    & > * {
+      pointer-events: none;
+    }
+  }
+
   @media (max-width: 1199.98px) {
     height: 600px;
+
+    &__btns {
+      display: none;
+    }
 
     &__strawberry {
       display: none;

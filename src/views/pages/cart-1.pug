@@ -47,12 +47,13 @@ block main
                   span.calc__radio-window
                   span.calc__radio-label Да
           a.btn.cart__btn(href="#") ДАЛЕЕ
-        .col-lg-5
-          .cart__subheading Корзина:
-          .cart__total
-            .cart__total-text 5 товаров на
-              span.cart__total-price  7 300
-            +link('#', 'РЕДАКТИРОВАТЬ')
+        .col-lg-5.cart__total-wrap(data-scroll-wrap)
+          div(data-scroll)
+            .cart__subheading Корзина:
+            .cart__total
+              .cart__total-text 5 товаров на
+                span.cart__total-price  7 300
+              +link('#', 'РЕДАКТИРОВАТЬ')
 
 
 

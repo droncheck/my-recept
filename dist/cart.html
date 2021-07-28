@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>My Recept | Корзина</title>
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
@@ -80,7 +80,7 @@
             <h1 class="h2 cart__heading">Корзина</h1>
             <div class="cart__header-text">Обещаем хорошее настроение и незабываемое послевкусие!</div>
           </div>
-          <div class="row cart__row">
+          <div class="row cart__row" id="target">
             <div class="col-lg-7 cart__main">
               <div class="cart__subheading">Оформление заказа</div>
               <div class="cart__items">
@@ -122,10 +122,12 @@
               </div>
               <div class="cart__items-caption">* Проверьте все товары и только потом переходите к следующему шагу оформления заказа</div>
             </div>
-            <div class="col-lg-5">
-              <div class="cart__subheading">Итого:</div>
-              <div class="cart__total">
-                <div class="cart__total-text">5 товаров на<span class="cart__total-price"> 7 300</span></div><a class="link link--arrow" href="#">перейти к оформлению</a>
+            <div class="col-lg-5 cart__total-wrap" data-scroll-wrap>
+              <div data-scroll>
+                <div class="cart__subheading">Итого:</div>
+                <div class="cart__total">
+                  <div class="cart__total-text">5 товаров на<span class="cart__total-price"> 7 300</span></div><a class="link link--arrow" href="#">перейти к оформлению</a>
+                </div>
               </div>
             </div>
           </div>

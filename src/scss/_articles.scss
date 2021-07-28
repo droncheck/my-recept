@@ -66,12 +66,14 @@
       margin-bottom: 15px;
       border: 1px solid #DED4CA;
       border-radius: 37.5px;
+      cursor: pointer;
 
       @extend .fz-12;
       @extend .fw-500;
       @extend .ttu;
       @extend .ls-7;
 
+      &:hover,
       &.active {
         border-color: #F3EAE0;
         background: #F3EAE0;

@@ -32,6 +32,10 @@
     padding: 54px 42px 54px 58px;
     border: 1px solid $accent-color;
 
+    &-wrap {
+      // align-self: flex-start;
+    }
+
     &-text {
       margin-bottom: 40px;
       @extend .ff-accent;

@@ -16,6 +16,7 @@ import initLearingSlider from "./learning-slider";
 import initCartSlider from "./cart-slider";
 import initCalendar from "./datepicker";
 import initMasks from "./mask-input";
+import initScroll from "./scroll";
 
 document.addEventListener('DOMContentLoaded', function() {
 
@@ -54,5 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
   initCalendar();
 
   initMasks();
+
+  initScroll();
 
 });

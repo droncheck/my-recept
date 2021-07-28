@@ -1,6 +1,10 @@
 .catalog {
   padding-bottom: 110px;
 
+  & + .gallery {
+    background: #fff;
+  }
+
   &__bg-text {
     position: absolute;
     top: 222px;
@@ -171,6 +175,7 @@
       &-slider {
         flex: 0 0 220px;
         max-width: 220px;
+        touch-action: none;
 
         &-wrap {
           display: flex;
@@ -692,7 +697,7 @@
         max-width: 278px;
         padding-left: 8px;
         padding-right: 8px;
-        margin-bottom: 0;
+        margin-bottom: 20px;
       }
     }
 

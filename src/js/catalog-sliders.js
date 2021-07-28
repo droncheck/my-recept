@@ -19,6 +19,7 @@ export default function initCatalogSliders() {
         min: [min],
         max: [max],
       },
+      behaviour: "tap-drag",
       step: step,
       start: [min, max],
       connect: true,

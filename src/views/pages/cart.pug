@@ -17,7 +17,7 @@ block main
         h1.h2.cart__heading Корзина
         .cart__header-text Обещаем хорошее настроение и незабываемое послевкусие!
 
-      .row.cart__row
+      .row.cart__row#target
         .col-lg-7.cart__main
           .cart__subheading Оформление заказа
           .cart__items
@@ -53,12 +53,13 @@ block main
               .cart__item-price 4 300
               button.cart__item-delete
           .cart__items-caption * Проверьте все товары и только потом переходите к следующему шагу оформления заказа
-        .col-lg-5
-          .cart__subheading Итого:
-          .cart__total
-            .cart__total-text 5 товаров на
-              span.cart__total-price  7 300
-            +link('#', 'перейти к оформлению')
+        .col-lg-5.cart__total-wrap(data-scroll-wrap)
+          div(data-scroll)
+            .cart__subheading Итого:
+            .cart__total
+              .cart__total-text 5 товаров на
+                span.cart__total-price  7 300
+              +link('#', 'перейти к оформлению')
 
 
 

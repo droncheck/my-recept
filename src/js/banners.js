@@ -19,6 +19,28 @@ export default function initBanners() {
       direction: 'vertical',
       touchReleaseOnEdges: true,
       on: {
+        init(swiper) {
+          if (!length) {
+            length = Array.prototype.filter.call(swiper.slides, (slide) => {
+              return !slide.classList.contains('swiper-slide-duplicate');
+            }).length;
+
+            if (length < 10) {
+              length = `0${length}`;
+            }
+          }
+
+          let active = swiper.realIndex + 1;
+
+          if (active < 10) {
+            active = `0${active}`;
+          }
+
+          $counter.innerHTML = `
+            <div class="banners__slider-counter-active">${active}&nbsp;/&nbsp;</div>
+            <div class="banners__slider-counter-all"> ${length}</div>
+          `
+        },
         slideChange(swiper) {
           if (!length) {
             length = Array.prototype.filter.call(swiper.slides, (slide) => {
@@ -44,5 +66,11 @@ export default function initBanners() {
       }
     });
   }
+
+  document.addEventListener('click', (e) => {
+    if (e.target.dataset.bannersBtnsClose) {
+      e.target.closest('.banners__btns').remove();
+    }
+  });
 
 }

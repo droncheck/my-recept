@@ -1,6 +1,10 @@
 .request {
   padding: 160px 0 170px;
 
+  & + .contacts-socials {
+    margin-top: -80px;
+  }
+
   &__heading {
     margin-bottom: 60px;
     text-transform: none;
@@ -92,6 +96,10 @@
 
   @media (max-width: 1199.98px) {
     padding: 100px 0;
+
+    & + .contacts-socials {
+      margin-top: 0px;
+    }
 
     &__form {
       &-img {

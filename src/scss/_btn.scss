@@ -11,15 +11,18 @@
   @extend .fw-500;
   @extend .ls-7;
   @extend .ttu;
+  @include transitions;
 
   &:hover,
   &:focus {
     color: #fff;
+    background-color: #6A3A43;
   }
 
   &[href]:hover,
   &[href]:focus {
     color: #fff;
+    background-color: #6A3A43;
   }
 
   &--white {
@@ -30,11 +33,13 @@
     &:hover,
     &:focus {
       color: $dark-rose-color;
+      background: rgba($dark-rose-color, 0.1);
     }
 
     &[href]:hover,
     &[href]:focus {
       color: $dark-rose-color;
+      background: rgba($dark-rose-color, 0.1);
     }
   }
 
