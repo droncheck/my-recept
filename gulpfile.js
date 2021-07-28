@@ -28,6 +28,9 @@ function scripts() {
 			mode: 'production',
 			performance: { hints: false },
       // devtool: 'eval-source-map',
+			optimization: {
+				minimize: false
+			},
 			module: {
 				rules: [
 					{
@@ -54,7 +57,7 @@ function styles() {
     .pipe(sassglob())
     .pipe(sass())
 		.pipe(autoprefixer({ overrideBrowserslist: ['last 10 versions'], grid: true }))
-		.pipe(cleancss({ level: { 1: { specialComments: 0 } },/* format: 'beautify' */ }))
+		.pipe(cleancss({ level: { 1: { specialComments: 0 } }, format: 'beautify' }))
 		.pipe(rename({ suffix: ".min" }))
 		.pipe(dest('src/css'))
 		.pipe(browserSync.stream())
